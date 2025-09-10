@@ -245,7 +245,44 @@ def save_merged_data_by_defender(merged_df, base_path='defender'):
                 
     print("Finished saving data by defender for the year.")
 
+def save_merged_data_by_shooter(merged_df, base_path='shooter'):
+    """
+    Saves the merged shot data into a directory structured by defender,
+    year, and season type.
+    """
+    print("--- Saving Data by Defender/Year ---")
+    if not os.path.exists(base_path):
+        os.makedirs(base_path)
+    
+    df_filtered = merged_df.dropna(subset=['PLAYER_ID']).copy()
+    df_filtered['PLAYER_ID'] = df_filtered['PLAYER_ID'].astype(str)
+    
+    s = df_filtered['PLAYER_ID']
+    unique_shooter_ids = s.unique()
+    
+    print(f"Found {len(unique_shooter_ids)} unique shooter IDs to process for the year.")
 
+    for player_id in unique_shooter_ids:
+        defender_data = df_filtered[df_filtered['PLAYER_ID']==player_id]
+        years_for_defender = defender_data['year'].unique()
+        for year in years_for_defender:
+            defender_year_data = defender_data[defender_data['year'] == year]
+            
+            reg_data = defender_year_data[defender_year_data['season_type'] == 'REG'].copy()
+            if not reg_data.empty:
+                reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                reg_dir = os.path.join(base_path, str(int(year)))
+                os.makedirs(reg_dir, exist_ok=True)
+                reg_data.to_csv(os.path.join(reg_dir, f'{player_id}.csv'), index=False)
+                
+            ps_data = defender_year_data[defender_year_data['season_type'] == 'PS'].copy()
+            if not ps_data.empty:
+                ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                ps_dir = os.path.join(base_path, f'{int(year)}ps')
+                os.makedirs(ps_dir, exist_ok=True)
+                ps_data.to_csv(os.path.join(ps_dir, f'{player_id}.csv'), index=False)
+                
+    print("Finished saving data by defender for the year.")
 # ==============================================================================
 # MAIN EXECUTION PIPELINE (REORGANIZED)
 # ==============================================================================
@@ -284,8 +321,9 @@ def process_year(year, lebron_df):
     print(f"For {year}, {coverage:.2f}% of shots have logged defenders.")
     
     # Step 6: Save the processed data into the two required structures
-    save_merged_data_by_team_year(merged_data_year, base_path='team')
-    save_merged_data_by_defender(merged_data_year, base_path='defender')
+    #save_merged_data_by_team_year(merged_data_year, base_path='team')
+    #save_merged_data_by_defender(merged_data_year, base_path='defender')
+    save_merged_data_by_shooter(merged_data_year,base_path='shooter')
     
     print(f"--- Successfully completed processing for year {year}. ---\n")
 
