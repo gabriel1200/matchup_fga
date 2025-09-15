@@ -10,33 +10,33 @@ import numpy as np
 
 def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/main/lebron.csv'):
     """
-    Loads the LEBRON player stats from a URL. This is loaded once and reused.
-    It also transforms the 'Season' column (e.g., "2014-15") into a 'year'
-    column (e.g., 2015).
+    Loads LEBRON player stats from a URL. This is loaded once and reused.
+    It now loads both offensive and defensive stats.
 
     Args:
         url (str): The URL to the LEBRON stats CSV file.
 
     Returns:
-        pd.DataFrame: A DataFrame containing the LEBRON stats with a corrected year format.
+        pd.DataFrame: A DataFrame containing LEBRON stats with a corrected year format.
     """
     print("--- Loading LEBRON Stats (once for all years) ---")
     try:
         lebron_df = pd.read_csv(url)
         
-        # BUG FIX 2: Convert "YYYY-YY" Season format to a single integer year.
-        # For "2014-15", this creates the integer 2015.
+        # Convert "YYYY-YY" Season format to a single integer year.
         lebron_df['year'] = lebron_df['Season'].str.split('-').str[0].astype(int) + 1
         
-        # Now select the columns, including the new 'year' column.
-        lebron_df = lebron_df[['year', 'Pos', 'Defensive Role', 'NBA ID', 'D-LEBRON']].rename(columns={
-            'Pos': 'DEF_POSITION', 
+        # Select all relevant offensive and defensive columns
+        lebron_df = lebron_df[['year', 'Pos', 'Defensive Role', 'Offensive Archetype', 'NBA ID', 'D-LEBRON', 'O-LEBRON']].rename(columns={
+            'Pos': 'POSITION', 
             'Defensive Role': 'DEF_ROLE', 
-            'NBA ID': 'def_id', 
-            'D-LEBRON': 'D_LEBRON'
+            'Offensive Archetype': 'OFF_ROLE',
+            'NBA ID': 'player_id', 
+            'D-LEBRON': 'D_LEBRON',
+            'O-LEBRON': 'O_LEBRON'
         })
         
-        lebron_df['def_id'] = pd.to_numeric(lebron_df['def_id'], errors='coerce').dropna().astype(int)
+        lebron_df['player_id'] = pd.to_numeric(lebron_df['player_id'], errors='coerce').dropna().astype(int)
         print("Successfully loaded and transformed LEBRON stats.")
         return lebron_df
     except Exception as e:
@@ -124,7 +124,7 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
 
 
 # ==============================================================================
-# DATA PROCESSING FUNCTION (Now accepts lebron_df as an argument)
+# DATA PROCESSING FUNCTIONS (Now accepts lebron_df as an argument)
 # ==============================================================================
 
 def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
@@ -162,12 +162,16 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     single_defender_rows = defender_df.merge(single_defender_plays, on=['gi', 'ei'], how='inner')
     
     # Filter the lebron_df for the current processing year BEFORE merging.
-    lebron_for_year = lebron_df[lebron_df['year'] == year]
+    lebron_for_year = lebron_df[lebron_df['year'] == year].copy()
     print(f"Filtered LEBRON stats for year {year}. Found {len(lebron_for_year)} records.")
 
     # 3. Merge with pre-loaded LEBRON stats ONLY for single-defender rows
     single_defender_rows['def_id'] = pd.to_numeric(single_defender_rows['def_id'])
-    single_defender_stats = pd.merge(single_defender_rows, lebron_for_year, on='def_id', how='left')
+    
+    # Select and rename LEBRON columns for the defensive merge
+    defender_lebron_stats = lebron_for_year[['player_id', 'POSITION', 'DEF_ROLE', 'D_LEBRON']].rename(columns={'POSITION': 'DEF_POSITION'})
+    
+    single_defender_stats = pd.merge(single_defender_rows, defender_lebron_stats, left_on='def_id', right_on='player_id', how='left')
 
     # 4. Combine the aggregated DEF_IDs with the single-defender stats
     df_combined = pd.merge(def_ids_agg, 
@@ -182,6 +186,50 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     merged_data.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'],inplace=True)
     print("Successfully merged defender stats for the year.")
     return merged_data
+
+
+def add_shooter_stats(shot_data_df, lebron_df, year):
+    """
+    Merges shooter offensive stats (Position, Role, O-LEBRON) onto the shot data.
+
+    Args:
+        shot_data_df (pd.DataFrame): The DataFrame with shot details for one year.
+        lebron_df (pd.DataFrame): The pre-loaded DataFrame with LEBRON stats for ALL years.
+        year (int): The specific year being processed, used to filter LEBRON stats.
+
+    Returns:
+        pd.DataFrame: The shot_data_df merged with the shooter stats.
+    """
+    print("--- Adding Shooter Stats ---")
+    if shot_data_df.empty:
+        print("Input shot_data_df is empty. Cannot add shooter stats.")
+        return shot_data_df
+
+    # 1. Filter LEBRON data for the specific year
+    lebron_for_year = lebron_df[lebron_df['year'] == year].copy()
+
+    # 2. Select and rename columns for clarity in the final merged DataFrame
+    shooter_stats = lebron_for_year[['player_id', 'POSITION', 'OFF_ROLE', 'O_LEBRON']].rename(columns={
+        'POSITION': 'OFF_POSITION'
+    })
+
+    # Ensure the merge key in shot_data_df is numeric, coercing errors
+    shot_data_df['PLAYER_ID'] = pd.to_numeric(shot_data_df['PLAYER_ID'], errors='coerce')
+
+    # 3. Merge the shooter stats onto the main shot data DataFrame
+    merged_df = pd.merge(
+        shot_data_df,
+        shooter_stats,
+        left_on='PLAYER_ID',
+        right_on='player_id',
+        how='left'
+    )
+
+    # 4. Drop the redundant 'player_id' column from the merge
+    merged_df.drop(columns=['player_id'], inplace=True, errors='ignore')
+
+    print(f"Successfully merged shooter stats for {year}.")
+    return merged_df
 
 
 # ==============================================================================
@@ -329,15 +377,18 @@ def process_year(year, lebron_df):
     if shot_data_year.empty:
         return # Skip to next year if no shot data
         
-    # Step 4: Process and merge data
+    # Step 4: Process and merge defender data
     merged_data_year = add_defender_stats(shot_data_year, dfga_year, lebron_df, year)
     
-    # Step 5: Show coverage stats for the year
+    # Step 5: Process and merge shooter data
+    merged_data_year = add_shooter_stats(merged_data_year, lebron_df, year)
+    
+    # Step 6: Show coverage stats for the year
     coverage = 100 - (100 * merged_data_year['DEF_ID'].isna().sum() / len(merged_data_year))
     print(f"\n--- Coverage Stats for {year} ---")
     print(f"For {year}, {coverage:.2f}% of shots have logged defenders.")
     
-    # Step 6: Save the processed data into the two required structures
+    # Step 7: Save the processed data into the required structures
     save_merged_data_by_team_year(merged_data_year, base_path='team')
     save_merged_data_by_defender(merged_data_year, base_path='defender')
     save_merged_data_by_shooter(merged_data_year,base_path='shooter')
