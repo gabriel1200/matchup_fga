@@ -7,7 +7,7 @@ import numpy as np
 # ==============================================================================
 # DATA LOADING FUNCTIONS (MODIFIED FOR YEAR-BY-YEAR PROCESSING)
 # ==============================================================================
-
+GAME_DATES = pd.read_csv('https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/game_dates.csv')
 def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/main/lebron.csv'):
     """
     Loads LEBRON player stats from a URL. This is loaded once and reused.
@@ -241,6 +241,11 @@ def save_merged_data_by_team_year(merged_df, base_path='team'):
     Saves the merged shot data back into a structured directory,
     split by team, year, and season type.
     """
+    team_map=dict(zip(GAME_DATES['team'],GAME_DATES['TEAM_ID']))
+
+    opp_info = GAME_DATES[['GAME_ID','TEAM_ID','opp_team']]
+    opp_info['OPP_ID']= opp_info['opp_team'].map(team_map)
+    merged_df = merged_df.merge(opp_info,on=['GAME_ID','TEAM_ID'])
     print("--- Saving Data by Team/Year ---")
     if not os.path.exists(base_path):
         os.makedirs(base_path)
@@ -267,6 +272,26 @@ def save_merged_data_by_team_year(merged_df, base_path='team'):
             ps_dir = os.path.join(base_path, f'{int(year)}ps')
             os.makedirs(ps_dir, exist_ok=True)
             ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}.csv'), index=False)
+        team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
+
+
+        opp_year_data = merged_df[(merged_df['OPP_ID'] == team_id) & (merged_df['year'] == year)]
+        
+        opp_reg_data = opp_year_data[opp_year_data['season_type'] == 'REG'].copy()
+        if not reg_data.empty:
+            opp_reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+            reg_dir = os.path.join(base_path, str(int(year)))
+            os.makedirs(reg_dir, exist_ok=True)
+            opp_reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}vs.csv'), index=False)
+            
+        opp_ps_data = opp_year_data[opp_year_data['season_type'] == 'PS'].copy()
+        if not ps_data.empty:
+            opp_ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+            ps_dir = os.path.join(base_path, f'{int(year)}ps')
+            os.makedirs(ps_dir, exist_ok=True)
+            opp_ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}vs.csv'), index=False)
+
+    
             
     print("Finished saving data by team for the year.")
 
@@ -390,8 +415,8 @@ def process_year(year, lebron_df):
     
     # Step 7: Save the processed data into the required structures
     save_merged_data_by_team_year(merged_data_year, base_path='team')
-    save_merged_data_by_defender(merged_data_year, base_path='defender')
-    save_merged_data_by_shooter(merged_data_year,base_path='shooter')
+    #save_merged_data_by_defender(merged_data_year, base_path='defender')
+    #save_merged_data_by_shooter(merged_data_year,base_path='shooter')
     
     print(f"--- Successfully completed processing for year {year}. ---\n")
 
