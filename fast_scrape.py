@@ -307,7 +307,7 @@ class OptimizedNBAScraper:
             master_record = pd.read_csv(master_record_path)
             master_record['TEAM_ID'] = master_record['TEAM_ID'].astype(int)
             master_record['PLAYER_ID'] = master_record['PLAYER_ID'].astype(int)
-            master_record = master_record[master_record.year > 2024]
+            master_record = master_record[master_record.year > 2025]
             print(f"\nLoaded master record with {len(master_record)} rows")
         except Exception as e:
             print(f"Error loading master record: {e}")
@@ -509,10 +509,10 @@ if __name__ == "__main__":
     
     # Analyze existing log
     analyze_scrape_log()
-    
+    url='https://raw.githubusercontent.com/gabriel1200/player_sheets/refs/heads/master/game_report/all_games/master_record.csv'
     # Run the optimized scraper
     scraper.scrape_sync_wrapper(
-        master_record_path='master_record.csv',
+        master_record_path='../../player_sheets/game_report/all_games/master_record.csv',
         context_measure="DEF_FGA",
         batch_size=50,
         force_retry_failed=False

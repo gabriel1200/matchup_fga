@@ -386,8 +386,8 @@ class NBAScraper:
             master_record = pd.read_csv(master_record_path)
             master_record['TEAM_ID'] = master_record['TEAM_ID'].astype(int)
             master_record['PLAYER_ID'] = master_record['PLAYER_ID'].astype(int)
-            master_record = master_record[master_record.year >= 2019]
-            print(f"\nLoaded master record with {len(master_record)} rows")
+            master_record = master_record[master_record.year >= 2025]
+    
         except Exception as e:
             print(f"Error loading master record: {e}")
             return
@@ -529,7 +529,7 @@ class NBAScraper:
                 file_path = os.path.join(year_path, file)
                 df = pd.read_csv(file_path)
                 year_batches.append(df)
-                print(f"  Loaded {file}: {len(df)} records")
+                #print(f"  Loaded {file}: {len(df)} records")
             
             if year_batches:
                 final_df = pd.concat(year_batches, ignore_index=True)
@@ -544,6 +544,12 @@ class NBAScraper:
                 final_filename = f"combined_video_details_{year}.csv"
                 final_path = os.path.join(year_path, final_filename)
                 final_df.to_csv(final_path, index=False)
+               
+                columns=['gi','ei','dsc','def_id','team_id','player_name','year']
+                print(year)
+                if year == '2026':
+                    print('hit current year')
+                    final_df[columns].to_csv(f"scraped_data/{year}_dfgtotal.csv")
                 print(f"  ✓ Combined file saved: {final_path} with {final_count} total records")
 
     def analyze_scrape_log(self, log_file="scrape_log.json"):
@@ -580,7 +586,7 @@ if __name__ == "__main__":
     
     # Run the optimized scraper
     scraper.scrape_nba_video_details(
-        master_record_path='master_record.csv',
+        master_record_path='../../player_sheets/game_report/all_games/master_record.csv',
         context_measure="DEF_FGA",
         batch_size=50,
         force_retry_failed=True

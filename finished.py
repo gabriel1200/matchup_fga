@@ -7,7 +7,7 @@ import sys
 import json
 import tempfile
 import shutil
-from typing import Dict, Set, Tuple, Optional
+from typing import Dict, Set, Tuple, Optional, List
 import logging
 
 # Set up logging
@@ -144,7 +144,8 @@ class SafeJSONManager:
             
             # Try to find complete entries using regex
             import re
-            pattern = r'"(\d+_\d+)"\s*:\s*(\{(?:[^{}]|(?:\{[^{}]*\}))*\})'
+            # This regex is simplified for game_id keys
+            pattern = r'"(\d+)"\s*:\s*(\{(?:[^{}]|(?:\{[^{}]*\}))*\})'
             matches = re.finditer(pattern, content)
             
             recovered_data = {}
@@ -170,18 +171,28 @@ class SafeJSONManager:
 
 class ImprovedNBAScraper:
     """
-    Improved NBA video details scraper with enhanced error handling and corruption resistance
+    Scrapes NBA video details by Game ID, based on a target season and remote CSV.
     """
     
-    def __init__(self, master_record_path: str, output_dir: str = "scraped_data", 
-                 log_file: str = "scrape_log.json"):
-        self.master_record_path = master_record_path
+    def __init__(self, game_dates_url: str, target_season_year: int, 
+                 output_dir: str = "scraped_data", log_file: str = "scrape_log.json"):
+        """
+        Initializes the scraper.
+        
+        Args:
+            game_dates_url: URL to the CSV file containing game IDs and seasons.
+            target_season_year: The ending year of the season to scrape (e.g., 2026 for '2025-26').
+            output_dir: Directory to save scraped CSV files.
+            log_file: JSON file to log scraping progress and attempts.
+        """
+        self.game_dates_url = game_dates_url
+        self.target_season_year = target_season_year
         self.output_dir = output_dir
         self.log_file = log_file
         self.json_manager = SafeJSONManager()
         
-        # Load master record
-        self.master_record = self._load_master_record()
+        # Load game IDs
+        self.game_id_df = self._load_game_ids_from_url()
         
         # Load scrape log
         self.log_data = self.json_manager.safe_load_json(self.log_file)
@@ -189,49 +200,74 @@ class ImprovedNBAScraper:
         # Migrate CSV data to log if needed
         self._migrate_csv_data_to_log()
     
-    def _load_master_record(self) -> pd.DataFrame:
-        """Load and prepare master record"""
+    def _load_game_ids_from_url(self) -> pd.DataFrame:
+        """Load and prepare game IDs from the remote CSV"""
         try:
-            df = pd.read_csv(self.master_record_path)
-            df['TEAM_ID'] = df['TEAM_ID'].astype(int)
-            df['PLAYER_ID'] = df['PLAYER_ID'].astype(int)
-            df = df[df.year >= 2019]
-            logger.info(f"Loaded master record with {len(df)} rows")
-            return df
+            # Format season string (e.g., 2026 -> '2025-26')
+            season_str = f"{self.target_season_year - 1}-{str(self.target_season_year)[-2:]}"
+            logger.info(f"Loading game IDs for season: {season_str}")
+            
+            df = pd.read_csv(self.game_dates_url)
+            
+            # Filter for the target season
+            df_season = df[df['season'] == season_str].copy()
+            
+            if df_season.empty:
+                logger.warning(f"No games found for season {season_str}. Check target_season_year.")
+                return pd.DataFrame(columns=['GAME_ID', 'year'])
+
+            # Keep relevant columns
+            df_season = df_season[['GAME_ID', 'TEAM_ID_HTM', 'TEAM_ID_VTM']]
+
+            # Melt dataframe to have one row per game_id, team_id combination
+            df_htm = df_season[['GAME_ID', 'TEAM_ID_HTM']].rename(columns={'TEAM_ID_HTM': 'TEAM_ID'})
+            df_vtm = df_season[['GAME_ID', 'TEAM_ID_VTM']].rename(columns={'TEAM_ID_VTM': 'TEAM_ID'})
+            
+            final_df = pd.concat([df_htm, df_vtm], ignore_index=True)
+            
+            final_df['GAME_ID'] = final_df['GAME_ID'].astype(str)
+            final_df['TEAM_ID'] = final_df['TEAM_ID'].astype(str)
+            
+            # Use the target_season_year for the 'year' column
+            final_df['year'] = self.target_season_year
+            
+            final_df = final_df[['GAME_ID', 'TEAM_ID', 'year']].drop_duplicates()
+            logger.info(f"Loaded {len(final_df)} unique Game-Team combinations for season {season_str}")
+            return final_df
+            
         except Exception as e:
-            logger.error(f"Error loading master record: {e}")
+            logger.error(f"Error loading game IDs from URL {self.game_dates_url}: {e}")
             raise
     
     def _migrate_csv_data_to_log(self):
-        """Migrate existing CSV data to log"""
+        """Migrate existing CSV data (by game_id, team_id) to the JSON log"""
         csv_combinations = self._load_existing_csv_combinations()
         if not csv_combinations:
+            logger.info("No existing CSV data found to migrate.")
             return
         
         migrated_count = 0
-        for player_id, game_id in csv_combinations:
-            key = f"{player_id}_{game_id}"
+        for game_id, team_id, year in csv_combinations:
+            key = f"{game_id}_{team_id}"
             if key not in self.log_data:
                 self.log_data[key] = {
-                    "player_id": str(player_id),
                     "game_id": str(game_id),
-                    "team_id": "unknown",
-                    "player_name": "unknown",
-                    "year": 2025,
+                    "team_id": str(team_id),
+                    "year": year,
                     "timestamp": "migrated_from_csv",
                     "success": True,
-                    "record_count": 1,
+                    "record_count": 1, # Can't know exact count, just mark as having data
                     "has_data": True,
                     "error_msg": None
                 }
                 migrated_count += 1
         
         if migrated_count > 0:
-            logger.info(f"Migrated {migrated_count} successful scrapes from CSV files to log")
+            logger.info(f"Migrated {migrated_count} successful game scrapes from CSV files to log")
             self._save_log()
     
-    def _load_existing_csv_combinations(self) -> Set[Tuple[str, str]]:
-        """Load all existing player-game combinations from CSV files"""
+    def _load_existing_csv_combinations(self) -> Set[Tuple[str, str, int]]:
+        """Load all existing game_id-team_id-year combinations from CSV files"""
         if not os.path.exists(self.output_dir):
             return set()
         
@@ -241,15 +277,21 @@ class ImprovedNBAScraper:
         
         for year_dir in year_dirs:
             year_path = os.path.join(self.output_dir, year_dir)
-            year = year_dir.replace('year_', '')
+            
+            try:
+                year = int(year_dir.replace('year_', ''))
+            except ValueError:
+                logger.warning(f"Could not parse year from directory: {year_dir}")
+                continue
             
             # Check combined file first
             combined_file = os.path.join(year_path, f"combined_video_details_{year}.csv")
             if os.path.exists(combined_file):
                 try:
                     df = pd.read_csv(combined_file)
-                    if 'def_id' in df.columns and 'gi' in df.columns:
-                        year_combinations = set(zip(df['def_id'].astype(str), df['gi'].astype(str)))
+                    if 'gi' in df.columns and 'ti' in df.columns:
+                        game_team_pairs = set(zip(df['gi'].astype(str), df['ti'].astype(str)))
+                        year_combinations = set((gid, tid, year) for gid, tid in game_team_pairs)
                         combinations.update(year_combinations)
                 except Exception as e:
                     logger.warning(f"Error reading {combined_file}: {e}")
@@ -261,29 +303,28 @@ class ImprovedNBAScraper:
                     try:
                         batch_path = os.path.join(year_path, batch_file)
                         df = pd.read_csv(batch_path)
-                        if 'def_id' in df.columns and 'gi' in df.columns:
-                            batch_combinations = set(zip(df['def_id'].astype(str), df['gi'].astype(str)))
+                        if 'gi' in df.columns and 'ti' in df.columns:
+                            game_team_pairs = set(zip(df['gi'].astype(str), df['ti'].astype(str)))
+                            batch_combinations = set((gid, tid, year) for gid, tid in game_team_pairs)
                             combinations.update(batch_combinations)
                     except Exception as e:
                         logger.warning(f"Error reading {batch_path}: {e}")
         
-        logger.info(f"Found {len(combinations)} existing combinations in CSV files")
+        logger.info(f"Found {len(combinations)} existing game-team combinations in CSV files")
         return combinations
     
     def _save_log(self) -> bool:
         """Safely save the scrape log"""
         return self.json_manager.safe_write_json(self.log_data, self.log_file)
     
-    def _update_log(self, player_id: str, game_id: str, team_id: str, player_name: str, 
-                   year: int, success: bool, record_count: int = 0, has_data: bool = None, 
+    def _update_log(self, game_id: str, team_id: str, year: int, success: bool, 
+                   record_count: int = 0, has_data: bool = None, 
                    error_msg: str = None):
         """Update the scrape log with a new attempt"""
-        key = f"{player_id}_{game_id}"
+        key = f"{game_id}_{team_id}"
         self.log_data[key] = {
-            "player_id": str(player_id),
             "game_id": str(game_id),
             "team_id": str(team_id),
-            "player_name": player_name,
             "year": year,
             "timestamp": datetime.now().isoformat(),
             "success": success,
@@ -292,9 +333,9 @@ class ImprovedNBAScraper:
             "error_msg": error_msg
         }
     
-    def _fetch_video_details(self, game_id: str, player_id: str, team_id: str, 
+    def _fetch_video_details(self, game_id: str, team_id: str,
                            context_measure: str = "DEF_FGA") -> Optional[dict]:
-        """Fetch video details from NBA API with improved error handling"""
+        """Fetch video details for an entire game from NBA API"""
         base_url = "https://stats.nba.com/stats/videodetailsasset"
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -307,8 +348,8 @@ class ImprovedNBAScraper:
         params = {
             "GameID": f"00{game_id}",
             "GameEventID": "",
-            "PlayerID": str(player_id),
-            "TeamID": str(team_id),
+            "PlayerID": "", # Empty PlayerID to get all players
+            "TeamID": str(team_id),   # Scrape by specific team
             "Season": "",
             "SeasonType": "",
             "AheadBehind": "",
@@ -373,24 +414,23 @@ class ImprovedNBAScraper:
                     return response.json()
                 elif response.status_code == 429:  # Rate limited
                     delay = base_delay * (2 ** attempt)
-                    logger.warning(f"Rate limited for Player {player_id}, Game {game_id}. Waiting {delay}s...")
+                    logger.warning(f"Rate limited for Game {game_id}, Team {team_id}. Waiting {delay}s...")
                     time.sleep(delay)
                     continue
                 else:
-                    logger.warning(f"Request failed with status {response.status_code} for Player {player_id}, Game {game_id}")
+                    logger.warning(f"Request failed with status {response.status_code} for Game {game_id}, Team {team_id}")
                     if attempt == max_retries - 1:
                         return None
                     
             except requests.RequestException as e:
-                logger.warning(f"Request error for Player {player_id}, Game {game_id} (attempt {attempt + 1}): {e}")
+                logger.warning(f"Request error for Game {game_id}, Team {team_id} (attempt {attempt + 1}): {e}")
                 if attempt == max_retries - 1:
                     return None
                 time.sleep(base_delay * (attempt + 1))
         
         return None
     
-    def _process_video_data(self, video_json: dict, player_id: str, team_id: str, 
-                          player_name: str, year: int) -> Optional[pd.DataFrame]:
+    def _process_video_data(self, video_json: dict, year: int) -> Optional[pd.DataFrame]:
         """Process video JSON response into DataFrame"""
         try:
             if not (video_json and 'resultSets' in video_json and 'playlist' in video_json['resultSets']):
@@ -400,22 +440,22 @@ class ImprovedNBAScraper:
             if not playlist:
                 return None
             
+            # Convert the entire playlist to a DataFrame
             df = pd.DataFrame(playlist)
-            if df.empty or not all(col in df.columns for col in ['gi', 'ei', 'dsc']):
+            
+            # Check for essential 'gi' (game_id) column
+            if df.empty or 'gi' not in df.columns:
                 return None
             
-            df = df[['gi', 'ei', 'dsc']]
-            df['def_id'] = player_id
-            df['team_id'] = team_id
-            df['player_name'] = player_name
+            # Add the known year
             df['year'] = year
             return df
             
         except Exception as e:
-            logger.error(f"Error processing video data for Player {player_id}: {e}")
+            logger.error(f"Error processing video data for year {year}: {e}")
             return None
     
-    def _save_batch_data(self, year_data_dict: Dict[int, list], batch_num: int) -> int:
+    def _save_batch_data(self, year_data_dict: Dict[int, List[pd.DataFrame]], batch_num: int) -> int:
         """Save batch data organized by year with improved error handling"""
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
@@ -431,7 +471,7 @@ class ImprovedNBAScraper:
                 year_dir = os.path.join(self.output_dir, f"year_{year}")
                 os.makedirs(year_dir, exist_ok=True)
                 
-                # Combine data
+                # Combine data for this year's batch
                 combined_df = pd.concat(data_list, ignore_index=True)
                 
                 # Save with atomic write
@@ -462,11 +502,15 @@ class ImprovedNBAScraper:
         return total_records_saved
     
     def analyze_scrape_status(self):
-        """Analyze current scrape status"""
-        unique_combinations = self.master_record[['PLAYER_ID', 'GAME_ID', 'TEAM_ID', 'PLAYER_NAME', 'year']].drop_duplicates()
-        total_combinations = len(unique_combinations)
+        """Analyze current scrape status based on game_id_df and log"""
+        if self.game_id_df.empty:
+            logger.info("No game IDs loaded, cannot analyze status.")
+            return None
+            
+        unique_games = self.game_id_df[['GAME_ID', 'TEAM_ID', 'year']].drop_duplicates()
+        total_games = len(unique_games)
         
-        unique_combinations['scrape_key'] = unique_combinations['PLAYER_ID'].astype(str) + "_" + unique_combinations['GAME_ID'].astype(str)
+        unique_games['scrape_key'] = unique_games['GAME_ID'].astype(str) + "_" + unique_games['TEAM_ID'].astype(str)
         
         def categorize_attempt(scrape_key):
             if scrape_key not in self.log_data:
@@ -474,66 +518,63 @@ class ImprovedNBAScraper:
             entry = self.log_data[scrape_key]
             if not entry['success']:
                 return 'failed'
-            elif entry.get('has_data', entry['record_count'] > 0):
+            elif entry.get('has_data', entry.get('record_count', 0) > 0):
                 return 'successful_with_data'
             else:
                 return 'successful_no_data'
         
-        unique_combinations['log_status'] = unique_combinations['scrape_key'].apply(categorize_attempt)
+        unique_games['log_status'] = unique_games['scrape_key'].apply(categorize_attempt)
         
-        status_counts = unique_combinations['log_status'].value_counts()
+        status_counts = unique_games['log_status'].value_counts()
         
         logger.info("=== SCRAPE STATUS ANALYSIS ===")
-        logger.info(f"Total combinations: {total_combinations}")
+        logger.info(f"Total unique game-team combinations for season {self.target_season_year}: {total_games}")
         for status, count in status_counts.items():
-            logger.info(f"{status}: {count} combinations")
+            logger.info(f"{status}: {count} game-teams")
         
-        # Show breakdown by year
-        for status in status_counts.index:
-            status_data = unique_combinations[unique_combinations['log_status'] == status]
-            if len(status_data) > 0:
-                logger.info(f"\n{status} by year:")
-                year_counts = status_data['year'].value_counts().sort_index()
-                for year, count in year_counts.items():
-                    logger.info(f"  {year}: {count} combinations")
-        
-        return unique_combinations
+        return unique_games
     
     def scrape(self, context_measure: str = "DEF_FGA", delay_between_requests: float = 2.0,
-              batch_size: int = 50, save_log_frequency: int = 10, 
+              batch_size: int = 10, save_log_frequency: int = 5, 
               force_retry_failed: bool = False, retry_no_data: bool = False):
         """
-        Main scraping function with improved error handling and progress tracking
+        Main scraping function. Iterates by game, not player.
+        
+        Args:
+            batch_size: Number of *games* to collect data for before saving a batch file.
         """
-        logger.info("=== STARTING IMPROVED NBA VIDEO SCRAPER ===")
+        logger.info("=== STARTING IMPROVED NBA VIDEO SCRAPER (BY GAME_ID) ===")
         
         # Analyze current status
-        unique_combinations = self.analyze_scrape_status()
+        unique_games = self.analyze_scrape_status()
+        if unique_games is None or unique_games.empty:
+            logger.info("No game-teams to scrape. Exiting.")
+            return
         
         # Determine what to scrape
-        to_scrape_parts = [unique_combinations[unique_combinations['log_status'] == 'never_attempted']]
+        to_scrape_parts = [unique_games[unique_games['log_status'] == 'never_attempted']]
         
         if force_retry_failed:
-            failed_combinations = unique_combinations[unique_combinations['log_status'] == 'failed']
-            to_scrape_parts.append(failed_combinations)
-            logger.info(f"Force retry failed enabled: Including {len(failed_combinations)} failed attempts")
+            failed_games = unique_games[unique_games['log_status'] == 'failed']
+            to_scrape_parts.append(failed_games)
+            logger.info(f"Force retry failed enabled: Including {len(failed_games)} failed game-teams")
         
         if retry_no_data:
-            no_data_combinations = unique_combinations[unique_combinations['log_status'] == 'successful_no_data']
-            to_scrape_parts.append(no_data_combinations)
-            logger.info(f"Retry no data enabled: Including {len(no_data_combinations)} no-data attempts")
+            no_data_games = unique_games[unique_games['log_status'] == 'successful_no_data']
+            to_scrape_parts.append(no_data_games)
+            logger.info(f"Retry no data enabled: Including {len(no_data_games)} no-data game-teams")
         
         to_scrape_df = pd.concat(to_scrape_parts) if len(to_scrape_parts) > 1 else to_scrape_parts[0]
         
         if len(to_scrape_df) == 0:
-            logger.info("🎉 No combinations to scrape!")
+            logger.info("🎉 No game-teams to scrape!")
             return
         
-        logger.info(f"Will attempt {len(to_scrape_df)} combinations")
+        logger.info(f"Will attempt {len(to_scrape_df)} game-team combinations")
         
         # Initialize tracking variables
-        year_data = {}
-        successful_requests = 0
+        year_data: Dict[int, List[pd.DataFrame]] = {}
+        games_with_data_in_batch = 0
         failed_requests = 0
         no_data_requests = 0
         batch_num = self._get_next_batch_number()
@@ -541,42 +582,37 @@ class ImprovedNBAScraper:
         
         logger.info(f"Starting with batch number: {batch_num}")
         
-        # Process each combination
+        # Process each game
         for idx, (_, row) in enumerate(to_scrape_df.iterrows()):
             try:
-                player_id = str(row['PLAYER_ID'])
                 game_id = str(row['GAME_ID'])
                 team_id = str(row['TEAM_ID'])
-                player_name = row['PLAYER_NAME']
-                year = row['year']
+                year = int(row['year'])
                 
-                if (idx + 1) % 50 == 0:
-                    logger.info(f"Processing {idx + 1}/{len(to_scrape_df)}: Player {player_name} ({player_id}) in Game {game_id} - {year}")
+                if (idx + 1) % 10 == 0:
+                    logger.info(f"Processing {idx + 1}/{len(to_scrape_df)}: Game {game_id}, Team {team_id} - {year}")
                 
                 # Fetch video details
-                video_json = self._fetch_video_details(game_id, player_id, team_id, context_measure)
+                video_json = self._fetch_video_details(game_id, team_id, context_measure)
                 
                 if video_json:
-                    processed_df = self._process_video_data(video_json, player_id, team_id, player_name, year)
+                    processed_df = self._process_video_data(video_json, year)
                     
                     if processed_df is not None and not processed_df.empty:
                         if year not in year_data:
                             year_data[year] = []
                         
                         year_data[year].append(processed_df)
-                        successful_requests += 1
+                        games_with_data_in_batch += 1
                         record_count = len(processed_df)
                         
-                        self._update_log(player_id, game_id, team_id, player_name, year, 
-                                       True, record_count, has_data=True)
+                        self._update_log(game_id, team_id, year, True, record_count, has_data=True)
                     else:
                         no_data_requests += 1
-                        self._update_log(player_id, game_id, team_id, player_name, year, 
-                                       True, 0, has_data=False)
+                        self._update_log(game_id, team_id, year, True, 0, has_data=False)
                 else:
                     failed_requests += 1
-                    self._update_log(player_id, game_id, team_id, player_name, year, 
-                                   False, 0, error_msg="API request failed")
+                    self._update_log(game_id, team_id, year, False, 0, error_msg="API request failed")
                 
                 # Save log periodically
                 if (idx + 1) % save_log_frequency == 0:
@@ -584,10 +620,11 @@ class ImprovedNBAScraper:
                         logger.error(f"Failed to save log at iteration {idx + 1}")
                 
                 # Save batch data when threshold is reached
-                if successful_requests > 0 and successful_requests % batch_size == 0:
+                if games_with_data_in_batch > 0 and games_with_data_in_batch % batch_size == 0:
                     records_saved = self._save_batch_data(year_data, batch_num)
                     total_records_saved += records_saved
                     year_data = {}
+                    games_with_data_in_batch = 0 # Reset for next batch
                     batch_num += 1
                 
                 # Rate limiting
@@ -598,7 +635,7 @@ class ImprovedNBAScraper:
                 logger.info("Scraping interrupted by user. Saving progress...")
                 break
             except Exception as e:
-                logger.error(f"Unexpected error processing row {idx}: {e}")
+                logger.error(f"Unexpected error processing game {game_id}, team {team_id} (row {idx}): {e}")
                 continue
         
         # Save any remaining data
@@ -611,18 +648,21 @@ class ImprovedNBAScraper:
             logger.error("Failed to save final log")
         
         # Print summary
+        total_attempted = idx + 1
+        total_successful_with_data = len(to_scrape_df) - len(to_scrape_df[to_scrape_df['log_status'] == 'never_attempted']) - failed_requests - no_data_requests
+        
         logger.info("=== SCRAPING COMPLETE ===")
-        logger.info(f"Attempted to scrape: {len(to_scrape_df)}")
-        logger.info(f"Successful requests with data: {successful_requests}")
+        logger.info(f"Total game-teams attempted: {total_attempted}")
+        logger.info(f"Successful requests with data: {total_successful_with_data}")
         logger.info(f"Successful requests with no data: {no_data_requests}")
         logger.info(f"Failed requests: {failed_requests}")
         logger.info(f"New video records saved: {total_records_saved}")
         
-        if len(to_scrape_df) > 0:
-            success_rate = ((successful_requests + no_data_requests) / len(to_scrape_df)) * 100
+        if total_attempted > 0:
+            success_rate = ((total_successful_with_data + no_data_requests) / total_attempted) * 100
             logger.info(f"Overall success rate: {success_rate:.1f}%")
-            if successful_requests > 0:
-                data_rate = (successful_requests / len(to_scrape_df)) * 100
+            if total_successful_with_data > 0:
+                data_rate = (total_successful_with_data / total_attempted) * 100
                 logger.info(f"Data found rate: {data_rate:.1f}%")
     
     def _get_next_batch_number(self) -> int:
@@ -658,11 +698,16 @@ class ImprovedNBAScraper:
             logger.info("No year directories found")
             return
         
-        logger.info(f"Found {len(year_dirs)} year directories")
+        logger.info(f"Found {len(year_dirs)} year directories to combine")
         
         for year_dir in sorted(year_dirs):
             year_path = os.path.join(self.output_dir, year_dir)
-            year = year_dir.replace('year_', '')
+            
+            try:
+                year = int(year_dir.replace('year_', ''))
+            except ValueError:
+                logger.warning(f"Skipping non-year directory: {year_dir}")
+                continue
             
             # Check if combined file already exists
             combined_file = os.path.join(year_path, f"combined_video_details_{year}.csv")
@@ -685,15 +730,24 @@ class ImprovedNBAScraper:
                 year_batches = []
                 for file in batch_files:
                     file_path = os.path.join(year_path, file)
-                    df = pd.read_csv(file_path)
-                    year_batches.append(df)
+                    try:
+                        df = pd.read_csv(file_path)
+                        year_batches.append(df)
+                    except pd.errors.EmptyDataError:
+                        logger.warning(f"Skipping empty batch file: {file_path}")
+                    except Exception as e:
+                        logger.error(f"Error reading batch file {file_path}: {e}")
                 
                 if year_batches:
                     final_df = pd.concat(year_batches, ignore_index=True)
                     
                     # Remove duplicates
                     initial_count = len(final_df)
-                    final_df = final_df.drop_duplicates()
+                    # Deduplicate based on 'gi' (game_id) and 'ei' (event_id)
+                    if 'gi' in final_df.columns and 'ei' in final_df.columns:
+                        final_df = final_df.drop_duplicates(subset=['gi', 'ei'])
+                    else:
+                        final_df = final_df.drop_duplicates()
                     final_count = len(final_df)
                     
                     if initial_count != final_count:
@@ -726,8 +780,11 @@ class ImprovedNBAScraper:
         total_records = 0
 
         for year_dir in sorted(year_dirs):
-            year = year_dir.replace('year_', '')
             year_path = os.path.join(self.output_dir, year_dir)
+            try:
+                year = int(year_dir.replace('year_', ''))
+            except ValueError:
+                continue # Skip non-year dirs
 
             # Look for combined file first, otherwise count batch files
             combined_file = os.path.join(year_path, f"combined_video_details_{year}.csv")
@@ -751,6 +808,8 @@ class ImprovedNBAScraper:
                         df = pd.read_csv(file_path)
                         record_count += len(df)
                         num_batch_files += 1
+                    except pd.errors.EmptyDataError:
+                         logger.warning(f"Skipping empty batch file: {file_path}")
                     except Exception as e:
                         logger.warning(f"Error reading batch file {file_path}: {e}")
                 logger.info(f"{year}: {record_count:,} records ({num_batch_files} batch files)")
@@ -758,3 +817,42 @@ class ImprovedNBAScraper:
             total_records += record_count
 
         logger.info(f"\nTotal records across all years: {total_records:,}")
+
+
+# --- Example of how to run the scraper ---
+if __name__ == "__main__":
+    
+    # URL provided by the user
+    GAME_DATES_URL = "https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/game_dates.csv"
+    
+    # Target season (e.g., 2026 for the 2025-26 season)
+    # This is now a customizable input as requested
+    TARGET_YEAR = 2026 
+    
+    try:
+        # Initialize the scraper
+        scraper = ImprovedNBAScraper(
+            game_dates_url=GAME_DATES_URL,
+            target_season_year=TARGET_YEAR
+        )
+        
+        # Run the scrape
+        # Retrying failed attempts and attempts that previously returned no data
+        scraper.scrape(
+            delay_between_requests=2.0,
+            batch_size=10,  # Save after every 10 successful *games*
+            force_retry_failed=True,
+            retry_no_data=True
+        )
+        
+        # Combine all batches into final yearly files
+        logger.info("Combining all batches...")
+        scraper.combine_batches_by_year()
+        
+        # Print final summary
+        scraper.get_summary()
+
+    except Exception as e:
+        logger.error(f"A critical error occurred: {e}")
+        sys.exit(1)
+

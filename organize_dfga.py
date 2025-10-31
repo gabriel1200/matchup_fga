@@ -84,6 +84,7 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
     """
     print(f"--- Loading Team Shot Data for {year} ---")
     unique_teams = defender_df['team_id'].drop_duplicates()
+    print(unique_teams)
     
     all_shot_data = []
     
