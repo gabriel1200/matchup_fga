@@ -485,8 +485,8 @@ def process_year(year, lebron_df):
     
     # Step 7: Save the processed data into the required structures
     save_merged_data_by_team_year(merged_data_year, base_path='team')
-    #save_merged_data_by_defender(merged_data_year, base_path='defender')
-    #save_merged_data_by_shooter(merged_data_year,base_path='shooter')
+    save_merged_data_by_defender(merged_data_year, base_path='defender')
+    save_merged_data_by_shooter(merged_data_year,base_path='shooter')
     
     print(f"--- Successfully completed processing for year {year}. ---\n")
 
