@@ -211,6 +211,8 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
         shot_data_df['DEF_POSITION'] = np.nan
         shot_data_df['DEF_ROLE'] = np.nan
         shot_data_df['D_LEBRON'] = np.nan
+        # IMPORTANT: Add 'dsc' column as NaN placeholder for empty merge case
+        shot_data_df['dsc'] = np.nan 
         return shot_data_df
 
     # 1. Group defender_df to handle single vs. multi-defender plays
@@ -222,6 +224,7 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     # 2. Identify single-defender plays to fetch their stats
     defender_counts = defender_df.groupby(['gi', 'ei']).size().reset_index(name='counts')
     single_defender_plays = defender_counts[defender_counts['counts'] == 1][['gi', 'ei']]
+    # single_defender_rows now includes 'dsc' from defender_df
     single_defender_rows = defender_df.merge(single_defender_plays, on=['gi', 'ei'], how='inner')
     
     # Filter the lebron_df for the current processing year BEFORE merging.
@@ -238,8 +241,9 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     single_defender_stats = pd.merge(single_defender_rows, defender_lebron_stats, left_on='def_id', right_on='player_id', how='left')
 
     # 4. Combine the aggregated DEF_IDs with the single-defender stats
+    # MODIFICATION: Included 'dsc' here to carry it into the final merge
     df_combined = pd.merge(def_ids_agg, 
-                             single_defender_stats[['gi', 'ei', 'DEF_POSITION', 'DEF_ROLE', 'D_LEBRON']], 
+                             single_defender_stats[['gi', 'ei', 'DEF_POSITION', 'DEF_ROLE', 'D_LEBRON', 'dsc']], 
                              on=['gi', 'ei'], how='left')
     
     # 5. Finalize the merge with the main shot data
@@ -253,7 +257,6 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     # This is the desired behavior for now.
     print("Successfully merged defender stats for the year.")
     return merged_data
-
 
 def add_shooter_stats(shot_data_df, lebron_df, year):
     """
