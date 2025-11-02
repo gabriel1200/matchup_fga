@@ -384,7 +384,7 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
     print(len(merged_df))
     merged_df = merged_df.merge(opp_info,on=['GAME_ID','TEAM_ID'])
     print(len(merged_df))
-    sys.exit()
+
     print("--- Saving Data by Team/Year ---")
     if not os.path.exists(base_path):
         os.makedirs(base_path)
@@ -397,19 +397,20 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
     for index, row in unique_teams_years.iterrows():
         team_id, year = row['TEAM_ID'], row['year']
         team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
+        team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
         
         reg_data = team_year_data[team_year_data['season_type'] == 'REG'].copy()
 
         if vs == False:
             if not reg_data.empty:
-                reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                reg_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'], inplace=True)
                 reg_dir = os.path.join(base_path, str(int(year)))
                 os.makedirs(reg_dir, exist_ok=True)
                 reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}.csv'), index=False)
                 
             ps_data = team_year_data[team_year_data['season_type'] == 'PS'].copy()
             if not ps_data.empty:
-                ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                ps_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'], inplace=True)
                 ps_dir = os.path.join(base_path, f'{int(year)}ps')
                 os.makedirs(ps_dir, exist_ok=True)
                 ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}.csv'), index=False)
@@ -420,14 +421,14 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
         else:
 
             if not reg_data.empty:
-                reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                reg_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'], inplace=True)
                 reg_dir = os.path.join(base_path, str(int(year)))
                 os.makedirs(reg_dir, exist_ok=True)
                 reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}vs.csv'), index=False)
                 
             ps_data = team_year_data[team_year_data['season_type'] == 'PS'].copy()
             if not ps_data.empty:
-                ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                ps_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'], inplace=True)
                 ps_dir = os.path.join(base_path, f'{int(year)}ps')
                 os.makedirs(ps_dir, exist_ok=True)
                 ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}vs.csv'), index=False)
