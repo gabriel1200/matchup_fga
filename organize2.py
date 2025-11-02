@@ -3,6 +3,7 @@
 import pandas as pd
 import os
 import numpy as np
+import sys
 
 # ==============================================================================
 # DATA LOADING FUNCTIONS (MODIFIED FOR YEAR-BY-YEAR PROCESSING)
@@ -371,8 +372,19 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
     team_map=dict(zip(GAME_DATES['team'],GAME_DATES['TEAM_ID']))
 
     opp_info = GAME_DATES[['GAME_ID','TEAM_ID','opp_team']]
+    print('data')
+    print(merged_df['TEAM_ID'].dtype)
+    print(opp_info['TEAM_ID'].dtype)
+    print(merged_df['GAME_ID'].dtype)
+    print(opp_info['GAME_ID'].dtype)
+    
     opp_info['OPP_ID']= opp_info['opp_team'].map(team_map)
+    print(opp_info[['GAME_ID','TEAM_ID']])
+    print(merged_df[['GAME_ID','TEAM_ID']])
+    print(len(merged_df))
     merged_df = merged_df.merge(opp_info,on=['GAME_ID','TEAM_ID'])
+    print(len(merged_df))
+    sys.exit()
     print("--- Saving Data by Team/Year ---")
     if not os.path.exists(base_path):
         os.makedirs(base_path)
