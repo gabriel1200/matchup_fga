@@ -186,6 +186,61 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
     return pd.concat(all_shot_data, ignore_index=True)
 
 
+def load_shot_vs_data_for_year(defender_df, year, base_path='../../shot_data/team'):
+    """
+    Loads regular season and post-season shot data for a single year, based on
+    the teams present in that year's defender data.
+
+    Args:
+        defender_df (pd.DataFrame): The defender DataFrame for a single year.
+        year (int): The year to load shot data for.
+        base_path (str): The base path to the shot data directory.
+
+    Returns:
+        pd.DataFrame: A single DataFrame containing all shot data for the year.
+    """
+    print(f"--- Loading Team Shot Data for {year} ---")
+    unique_teams = defender_df['team_id'].drop_duplicates()
+    print(defender_df[defender_df['team_id'].isnull()])
+    
+
+    print(unique_teams)
+    all_shot_data = []
+    
+    print(f"Found {len(unique_teams)} teams to process for {year}.")
+    
+    for team_id in unique_teams:
+        season_dfs = []
+
+        # Load Regular Season Data
+        reg_season_path = os.path.join(base_path, str(year), f'{team_id}vs.csv')
+        try:
+            reg_df = pd.read_csv(reg_season_path)
+            reg_df['season_type'] = 'REG'
+            season_dfs.append(reg_df)
+        except FileNotFoundError:
+            pass  # Expected if a team has no shot data
+
+        # Load Postseason Data
+        post_season_path = os.path.join(base_path, f'{year}ps', f'{team_id}vs.csv')
+        try:
+            post_df = pd.read_csv(post_season_path)
+            post_df['season_type'] = 'PS'
+            season_dfs.append(post_df)
+        except FileNotFoundError:
+            pass # Expected
+
+        if season_dfs:
+            combined_df = pd.concat(season_dfs, ignore_index=True)
+            combined_df['year'] = year
+            all_shot_data.append(combined_df)
+            
+    if not all_shot_data:
+        print(f"Warning: No shot data was loaded for {year}.")
+        return pd.DataFrame()
+        
+    print(f"Finished loading shot data for {year}.")
+    return pd.concat(all_shot_data, ignore_index=True)
 # ==============================================================================
 # DATA PROCESSING FUNCTIONS (Now accepts lebron_df as an argument)
 # ==============================================================================
@@ -308,7 +363,7 @@ def add_shooter_stats(shot_data_df, lebron_df, year):
 # DATA SAVING FUNCTIONS (UNCHANGED)
 # ==============================================================================
 
-def save_merged_data_by_team_year(merged_df, base_path='team'):
+def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
     """
     Saves the merged shot data back into a structured directory,
     split by team, year, and season type.
@@ -332,38 +387,40 @@ def save_merged_data_by_team_year(merged_df, base_path='team'):
         team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
         
         reg_data = team_year_data[team_year_data['season_type'] == 'REG'].copy()
-        if not reg_data.empty:
-            reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
-            reg_dir = os.path.join(base_path, str(int(year)))
-            os.makedirs(reg_dir, exist_ok=True)
-            reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}.csv'), index=False)
-            
-        ps_data = team_year_data[team_year_data['season_type'] == 'PS'].copy()
-        if not ps_data.empty:
-            ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
-            ps_dir = os.path.join(base_path, f'{int(year)}ps')
-            os.makedirs(ps_dir, exist_ok=True)
-            ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}.csv'), index=False)
-        team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
+
+        if vs == False:
+            if not reg_data.empty:
+                reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                reg_dir = os.path.join(base_path, str(int(year)))
+                os.makedirs(reg_dir, exist_ok=True)
+                reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}.csv'), index=False)
+                
+            ps_data = team_year_data[team_year_data['season_type'] == 'PS'].copy()
+            if not ps_data.empty:
+                ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                ps_dir = os.path.join(base_path, f'{int(year)}ps')
+                os.makedirs(ps_dir, exist_ok=True)
+                ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}.csv'), index=False)
+            team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
 
 
-        opp_year_data = merged_df[(merged_df['OPP_ID'] == team_id) & (merged_df['year'] == year)]
+       
+        else:
+
+            if not reg_data.empty:
+                reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                reg_dir = os.path.join(base_path, str(int(year)))
+                os.makedirs(reg_dir, exist_ok=True)
+                reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}vs.csv'), index=False)
+                
+            ps_data = team_year_data[team_year_data['season_type'] == 'PS'].copy()
+            if not ps_data.empty:
+                ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
+                ps_dir = os.path.join(base_path, f'{int(year)}ps')
+                os.makedirs(ps_dir, exist_ok=True)
+                ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}vs.csv'), index=False)
+            team_year_data = merged_df[(merged_df['TEAM_ID'] == team_id) & (merged_df['year'] == year)]
         
-        opp_reg_data = opp_year_data[opp_year_data['season_type'] == 'REG'].copy()
-        if not reg_data.empty:
-            opp_reg_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
-            reg_dir = os.path.join(base_path, str(int(year)))
-            os.makedirs(reg_dir, exist_ok=True)
-            opp_reg_data.to_csv(os.path.join(reg_dir, f'{int(team_id)}vs.csv'), index=False)
-            
-        opp_ps_data = opp_year_data[opp_year_data['season_type'] == 'PS'].copy()
-        if not ps_data.empty:
-            opp_ps_data.sort_values(by=['GAME_ID', 'GAME_EVENT_ID'], inplace=True)
-            ps_dir = os.path.join(base_path, f'{int(year)}ps')
-            os.makedirs(ps_dir, exist_ok=True)
-            opp_ps_data.to_csv(os.path.join(ps_dir, f'{int(team_id)}vs.csv'), index=False)
-
-    
             
     print("Finished saving data by team for the year.")
 
@@ -472,6 +529,8 @@ def process_year(year, lebron_df):
     
     # Step 3: Load the corresponding shot data
     shot_data_year = load_shot_data_for_year(dfga_year, year)
+
+    shot_data_year_vs = load_shot_vs_data_for_year(dfga_year, year)
     if shot_data_year.empty:
         return # Skip to next year if no shot data
         
@@ -481,6 +540,12 @@ def process_year(year, lebron_df):
     # Step 5: Process and merge shooter data
     merged_data_year = add_shooter_stats(merged_data_year, lebron_df, year)
     
+
+    merged_vs_data_year = add_defender_stats(shot_data_year_vs, dfga_year, lebron_df, year)
+    
+    # Step 5: Process and merge shooter data
+    merged_vs_data_year = add_shooter_stats(merged_vs_data_year, lebron_df, year)
+    
     # Step 6: Show coverage stats for the year
     coverage = 100 - (100 * merged_data_year['DEF_ID'].isna().sum() / len(merged_data_year))
     print(f"\n--- Coverage Stats for {year} ---")
@@ -488,6 +553,7 @@ def process_year(year, lebron_df):
     
     # Step 7: Save the processed data into the required structures
     save_merged_data_by_team_year(merged_data_year, base_path='team')
+    save_merged_data_by_team_year(merged_vs_data_year, base_path='team',vs=True)
     save_merged_data_by_defender(merged_data_year, base_path='defender')
     save_merged_data_by_shooter(merged_data_year,base_path='shooter')
     
