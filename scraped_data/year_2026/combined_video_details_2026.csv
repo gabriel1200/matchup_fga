@@ -1,4 +1,23 @@
 gi,ei,dsc,def_id,team_id,player_name,year
+22500034,53,Morant 9' Driving Floating Jump Shot (4 PTS),203939,1610612742,Dwight Powell,2026
+22500034,67,Morant 6' Driving Layup (8 PTS),203939,1610612742,Dwight Powell,2026
+22500034,77,MISS Williams Jr. 26' 3PT Jump Shot,203939,1610612742,Dwight Powell,2026
+22500034,95,Aldama 24' 3PT Running Jump Shot (6 PTS) (Coward 1 AST),203939,1610612742,Dwight Powell,2026
+22500034,105,MISS Aldama 25' 3PT Jump Shot,203939,1610612742,Dwight Powell,2026
+22500034,112,MISS Williams Jr. 25' 3PT Jump Shot,203939,1610612742,Dwight Powell,2026
+22500034,607,MISS Aldama 26' 3PT Jump Shot,203939,1610612742,Dwight Powell,2026
+22500034,56,Christie 1' Driving Dunk (5 PTS) (Russell 2 AST),1629630,1610612763,Ja Morant,2026
+22500034,65,MISS Christie 27' 3PT Jump Shot,1629630,1610612763,Ja Morant,2026
+22500034,194,Konchar BLOCK (1 BLK),1629630,1610612763,Ja Morant,2026
+22500034,304,Christie 8' Pullup Jump Shot (7 PTS) (Russell 4 AST),1629630,1610612763,Ja Morant,2026
+22500034,322,Christie 2' Driving Finger Roll Layup (9 PTS),1629630,1610612763,Ja Morant,2026
+22500034,330,Christie 26' 3PT Jump Shot (12 PTS) (Flagg 2 AST),1629630,1610612763,Ja Morant,2026
+22500034,364,MISS Washington 2' Alley Oop Layup,1629630,1610612763,Ja Morant,2026
+22500034,378,MISS Christie 25' 3PT Jump Shot,1629630,1610612763,Ja Morant,2026
+22500034,408,MISS Martin 3PT Jump Shot,1629630,1610612763,Ja Morant,2026
+22500034,444,Williams 2' Running Finger Roll Layup (6 PTS),1629630,1610612763,Ja Morant,2026
+22500034,551,MISS Christie 10' Driving Floating Jump Shot,1629630,1610612763,Ja Morant,2026
+22500034,556,Cisse 1' Dunk (7 PTS) (Hardy 2 AST),1629630,1610612763,Ja Morant,2026
 22500126,113,MISS Williams 25' 3PT Jump Shot,1629234,1610612758,Drew Eubanks,2026
 22500126,131,MISS Williams 24' 3PT Jump Shot,1629234,1610612758,Drew Eubanks,2026
 22500126,175,Barnhizer 5' Floating Jump Shot (2 PTS) (Hartenstein 1 AST),1629234,1610612758,Drew Eubanks,2026
@@ -276,6 +295,46 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500112,65,MISS Grant 13' Pullup Jump Shot,203992,1610612746,Bogdan Bogdanović,2026
 22500112,71,Holiday 27' 3PT Pullup Jump Shot (5 PTS),203992,1610612746,Bogdan Bogdanović,2026
 22500112,344,Holiday 26' 3PT Step Back Jump Shot (13 PTS) (Wesley 3 AST),203992,1610612746,Bogdan Bogdanović,2026
+22500030,13,Daniels BLOCK (1 BLK),1630700,1610612737,Dyson Daniels,2026
+22500030,29,MISS Barrett 25' 3PT Jump Shot,1630700,1610612737,Dyson Daniels,2026
+22500030,33,Ingram 3PT Jump Shot (5 PTS) (Quickley 1 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,45,Ingram 26' 3PT Jump Shot (8 PTS) (Quickley 2 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,113,MISS Ingram 3' Cutting Layup Shot,1630700,1610612737,Dyson Daniels,2026
+22500030,115,Ingram Tip Layup Shot (10 PTS),1630700,1610612737,Dyson Daniels,2026
+22500030,119,Mamukelashvili 25' 3PT Jump Shot (3 PTS) (Shead 1 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,359,Ingram 16' Turnaround Fadeaway (16 PTS) (Barnes 1 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,392,MISS Ingram 24' 3PT Jump Shot,1630700,1610612737,Dyson Daniels,2026
+22500030,411,MISS Ingram 16' Turnaround Fadeaway Shot,1630700,1610612737,Dyson Daniels,2026
+22500030,484,Murray-Boyles 3PT Jump Shot (3 PTS) (Shead 2 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,494,MISS Barnes 3' Driving Layup,1630700,1610612737,Dyson Daniels,2026
+22500030,498,MISS Dick 2' Driving Finger Roll Layup,1630700,1610612737,Dyson Daniels,2026
+22500030,626,Barrett 1' Running Reverse Layup (11 PTS) (Barnes 3 AST),1630700,1610612737,Dyson Daniels,2026
+22500030,638,MISS Barnes 7' Driving Floating Jump Shot,1630700,1610612737,Dyson Daniels,2026
+22500030,12,Risacher 3' Running Finger Roll Layup (2 PTS),1630193,1610612761,Immanuel Quickley,2026
+22500030,75,Johnson 15' Turnaround Bank Shot (6 PTS),1630193,1610612761,Immanuel Quickley,2026
+22500030,160,Wallace 24' 3PT Jump Shot (5 PTS) (Daniels 2 AST),1630193,1610612761,Immanuel Quickley,2026
+22500030,179,MISS Okongwu 7' Driving Floating Jump Shot,1630193,1610612761,Immanuel Quickley,2026
+22500030,181,MISS Okongwu Tip Layup Shot,1630193,1610612761,Immanuel Quickley,2026
+22500030,319,Alexander-Walker 2' Reverse Layup (11 PTS) (Porzingis 1 AST),1630193,1610612761,Immanuel Quickley,2026
+22500030,348,Alexander-Walker 25' 3PT Jump Shot (14 PTS) (Daniels 4 AST),1630193,1610612761,Immanuel Quickley,2026
+22500030,453,MISS Okongwu 25' 3PT Jump Shot,1630193,1610612761,Immanuel Quickley,2026
+22500030,460,MISS Gueye 3PT Jump Shot,1630193,1610612761,Immanuel Quickley,2026
+22500030,567,MISS Risacher 2' Running Layup,1630193,1610612761,Immanuel Quickley,2026
+22500030,705,MISS Daniels 26' 3PT Jump Shot,1630193,1610612761,Immanuel Quickley,2026
+22500030,137,Wallace 13' Driving Floating Jump Shot (2 PTS),1641711,1610612761,Gradey Dick,2026
+22500030,506,MISS Okongwu 8' Turnaround Hook Shot,1641711,1610612761,Gradey Dick,2026
+22500030,533,MISS Daniels 6' Driving Layup,1641711,1610612761,Gradey Dick,2026
+22500030,224,MISS Gueye 3PT Jump Shot,1642266,1610612761,Ja'Kobe Walter,2026
+22500030,235,Okongwu 2' Cutting Dunk Shot (7 PTS) (Krejci 2 AST),1642266,1610612761,Ja'Kobe Walter,2026
+22500030,580,MISS Gueye 11' Pullup Jump Shot,1642419,1610612761,Jamison Battle,2026
+22500030,640,Daniels 26' 3PT Jump Shot (7 PTS) (Johnson 4 AST),1642419,1610612761,Jamison Battle,2026
+22500030,143,MISS Shead 26' 3PT Running Jump Shot,1630811,1610612737,Keaton Wallace,2026
+22500030,166,Wallace BLOCK (1 BLK),1630811,1610612737,Keaton Wallace,2026
+22500030,175,Quickley 12' Turnaround Jump Shot (8 PTS),1630811,1610612737,Keaton Wallace,2026
+22500030,226,MISS Walter 24' 3PT Jump Shot,1630811,1610612737,Keaton Wallace,2026
+22500030,233,MISS Murray-Boyles 3PT Jump Shot,1630811,1610612737,Keaton Wallace,2026
+22500030,502,Dick 3PT Jump Shot (6 PTS) (Murray-Boyles 1 AST),1630811,1610612737,Keaton Wallace,2026
+22500030,551,Dick 24' 3PT Jump Shot (9 PTS) (Barnes 2 AST),1630811,1610612737,Keaton Wallace,2026
 22500139,11,Rollins 27' 3PT Jump Shot (5 PTS) (Turner 1 AST),1642366,1610612744,Quinten Post,2026
 22500139,37,MISS Trent Jr. 27' 3PT Running Jump Shot,1642366,1610612744,Quinten Post,2026
 22500139,43,MISS Kuzma 3PT Jump Shot,1642366,1610612744,Quinten Post,2026
@@ -3110,6 +3169,59 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500109,532,Whitmore 1' Running Layup (10 PTS) (George 4 AST),1630163,1610612766,LaMelo Ball,2026
 22500109,544,MISS George 30' 3PT Jump Shot,1630163,1610612766,LaMelo Ball,2026
 22500109,694,Carrington 12' Fadeaway Jumper (4 PTS),1630163,1610612766,LaMelo Ball,2026
+22500035,11,Buzelis 2' Running Reverse Layup (2 PTS) (Giddey 1 AST),1631260,1610612749,AJ Green,2026
+22500035,26,Buzelis 2' Driving Finger Roll Layup (4 PTS) (Jones 1 AST),1631260,1610612749,AJ Green,2026
+22500035,52,MISS Jones 25' 3PT Jump Shot,1631260,1610612749,AJ Green,2026
+22500035,232,MISS Phillips 24' 3PT Running Jump Shot,1631260,1610612749,AJ Green,2026
+22500035,243,MISS Phillips 2' Driving Reverse Layup,1631260,1610612749,AJ Green,2026
+22500035,285,Buzelis 4' Driving Finger Roll Layup (13 PTS) (Huerter 2 AST),1631260,1610612749,AJ Green,2026
+22500035,310,Huerter 1' Running Layup (7 PTS) (Giddey 7 AST),1631260,1610612749,AJ Green,2026
+22500035,354,MISS Buzelis 1' Running Layup,1631260,1610612749,AJ Green,2026
+22500035,363,MISS Jones 3' Running Layup,1631260,1610612749,AJ Green,2026
+22500035,579,MISS Buzelis 26' 3PT Jump Shot,1631260,1610612749,AJ Green,2026
+22500035,597,Terry 6' Driving Finger Roll Layup (2 PTS) (Giddey 13 AST),1631260,1610612749,AJ Green,2026
+22500035,642,MISS Huerter 29' 3PT Running Jump Shot,1631260,1610612749,AJ Green,2026
+22500035,651,Jones 2' Driving Layup (13 PTS),1631260,1610612749,AJ Green,2026
+22500035,677,Jones 3' Putback Layup (17 PTS),1631260,1610612749,AJ Green,2026
+22500035,117,Turner 26' 3PT Jump Shot (3 PTS) (Rollins 2 AST),1630245,1610612741,Ayo Dosunmu,2026
+22500035,169,MISS Portis 27' 3PT Jump Shot,1630245,1610612741,Ayo Dosunmu,2026
+22500035,259,MISS Trent Jr. 27' 3PT Running Jump Shot,1630245,1610612741,Ayo Dosunmu,2026
+22500035,493,Anthony 1' Driving Floating Jump Shot (9 PTS) (Portis 2 AST),1630245,1610612741,Ayo Dosunmu,2026
+22500035,539,G. Antetokounmpo Tip Layup Shot (27 PTS),1630245,1610612741,Ayo Dosunmu,2026
+22500035,115,Dosunmu 26' 3PT Jump Shot (3 PTS) (Smith 1 AST),1629599,1610612749,Amir Coffey,2026
+22500035,133,MISS Jones 25' 3PT Jump Shot,1629599,1610612749,Amir Coffey,2026
+22500035,329,Giddey 2' Driving Finger Roll Layup (14 PTS),1629599,1610612749,Amir Coffey,2026
+22500035,226,Kuzma 27' 3PT Jump Shot (5 PTS) (Anthony 3 AST),1631207,1610612741,Dalen Terry,2026
+22500035,230,MISS Anthony 6' Driving Hook Shot,1631207,1610612741,Dalen Terry,2026
+22500035,7,MISS Okoro 3PT Jump Shot,1629018,1610612749,Gary Trent Jr.,2026
+22500035,50,MISS Giddey 27' 3PT Jump Shot,1629018,1610612749,Gary Trent Jr.,2026
+22500035,64,MISS Giddey 3' Driving Layup,1629018,1610612749,Gary Trent Jr.,2026
+22500035,71,Vucevic 27' 3PT Jump Shot (5 PTS) (Giddey 4 AST),1629018,1610612749,Gary Trent Jr.,2026
+22500035,306,Giddey 26' 3PT Step Back Jump Shot (12 PTS) (Huerter 3 AST),1629018,1610612749,Gary Trent Jr.,2026
+22500035,329,Giddey 2' Driving Finger Roll Layup (14 PTS),1629018,1610612749,Gary Trent Jr.,2026
+22500035,368,MISS Jones 21' Jump Shot,1629018,1610612749,Gary Trent Jr.,2026
+22500035,445,Vucevic Cutting Layup Shot (12 PTS) (Giddey 11 AST),1629018,1610612749,Gary Trent Jr.,2026
+22500035,192,Williams 26' 3PT Jump Shot (3 PTS) (Smith 2 AST),203507,1610612749,Giannis Antetokounmpo,2026
+22500035,294,MISS Vucevic 18' Jump Shot,203507,1610612749,Giannis Antetokounmpo,2026
+22500035,302,MISS Huerter 26' 3PT Jump Shot,203507,1610612749,Giannis Antetokounmpo,2026
+22500035,504,G. Antetokounmpo BLOCK (2 BLK),203507,1610612749,Giannis Antetokounmpo,2026
+22500035,528,MISS Dosunmu 1' Driving Finger Roll Layup,203507,1610612749,Giannis Antetokounmpo,2026
+22500035,612,MISS Okoro 3PT Jump Shot,203507,1610612749,Giannis Antetokounmpo,2026
+22500035,630,Vucevic 3' Turnaround Hook Shot (14 PTS) (Huerter 4 AST),203507,1610612749,Giannis Antetokounmpo,2026
+22500035,34,MISS Trent Jr. 26' 3PT Step Back Jump Shot,1630581,1610612741,Josh Giddey,2026
+22500035,73,MISS Trent Jr. 28' 3PT Jump Shot,1630581,1610612741,Josh Giddey,2026
+22500035,88,MISS G. Antetokounmpo 3' Running Layup,1630581,1610612741,Josh Giddey,2026
+22500035,182,MISS Coffey 9' Pullup Jump Shot,1630581,1610612741,Josh Giddey,2026
+22500035,190,Kuzma 2' Running Layup (2 PTS) (G. Antetokounmpo 2 AST),1630581,1610612741,Josh Giddey,2026
+22500035,245,MISS Turner 24' 3PT Jump Shot,1630581,1610612741,Josh Giddey,2026
+22500035,358,G. Antetokounmpo 1' Driving Dunk (15 PTS),1630581,1610612741,Josh Giddey,2026
+22500035,401,Trent Jr. 7' Driving Floating Jump Shot (5 PTS),1630581,1610612741,Josh Giddey,2026
+22500035,591,G. Antetokounmpo 1' Dunk (32 PTS) (Rollins 3 AST),1630581,1610612741,Josh Giddey,2026
+22500035,600,Rollins 24' 3PT Jump Shot (15 PTS) (Green 4 AST),1630581,1610612741,Josh Giddey,2026
+22500035,614,G. Antetokounmpo 2' Alley Oop Dunk (37 PTS) (Rollins 4 AST),1630581,1610612741,Josh Giddey,2026
+22500035,618,MISS Rollins 1' Driving Finger Roll Layup,1630581,1610612741,Josh Giddey,2026
+22500035,649,G. Antetokounmpo 2' Cutting Layup Shot (39 PTS) (Green 5 AST),1630581,1610612741,Josh Giddey,2026
+22500035,661,MISS Green 27' 3PT Jump Shot,1630581,1610612741,Josh Giddey,2026
 22500147,7,MISS Flagg 8' Driving Layup,1629130,1610612765,Duncan Robinson,2026
 22500147,30,Thompson 24' 3PT Jump Shot (3 PTS) (Christie 1 AST),1629130,1610612765,Duncan Robinson,2026
 22500147,62,Christie 4' Driving Finger Roll Layup (5 PTS),1629130,1610612765,Duncan Robinson,2026
@@ -4620,6 +4732,37 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500115,648,Johnson 1' Layup (23 PTS) (Porzingis 1 AST),1641824,1610612741,Matas Buzelis,2026
 22500115,656,Porzingis 1' Cutting Dunk Shot (27 PTS) (Johnson 3 AST),1641824,1610612741,Matas Buzelis,2026
 22500115,679,Alexander-Walker 3PT Jump Shot (17 PTS) (Porzingis 2 AST),1641824,1610612741,Matas Buzelis,2026
+22500031,136,MISS Sharpe 25' 3PT Running Jump Shot,1630194,1610612765,Paul Reed,2026
+22500031,458,Powell 2' Driving Layup (4 PTS),1630194,1610612765,Paul Reed,2026
+22500031,591,MISS Claxton 5' Driving Layup,1630194,1610612765,Paul Reed,2026
+22500031,614,Liddell 8' Driving Floating Bank Jump Shot (2 PTS) (Sharpe 2 AST),1630194,1610612765,Paul Reed,2026
+22500031,86,MISS Porter Jr. 26' 3PT Pullup Jump Shot,1641842,1610612765,Ronald Holland II,2026
+22500031,92,Porter Jr. Cutting Dunk Shot (2 PTS) (Martin 1 AST),1641842,1610612765,Ronald Holland II,2026
+22500031,102,Porter Jr. 1' Cutting Dunk Shot (4 PTS) (Sharpe 1 AST),1641842,1610612765,Ronald Holland II,2026
+22500031,133,Martin 4' Running Layup (2 PTS),1641842,1610612765,Ronald Holland II,2026
+22500031,209,Powell 13' Driving Floating Jump Shot (2 PTS) (Mann 3 AST),1641842,1610612765,Ronald Holland II,2026
+22500031,323,MISS Demin 30' 3PT Pullup Jump Shot,1641842,1610612765,Ronald Holland II,2026
+22500031,547,MISS Porter Jr. 10' Pullup Jump Shot,1641842,1610612765,Ronald Holland II,2026
+22500031,18,MISS Cunningham 27' 3PT Running Pull-Up Jump Shot,1641730,1610612751,Noah Clowney,2026
+22500031,23,Duren 2' Cutting Layup Shot (2 PTS) (Cunningham 1 AST),1641730,1610612751,Noah Clowney,2026
+22500031,27,Duren 1' Driving Dunk (4 PTS) (Cunningham 2 AST),1641730,1610612751,Noah Clowney,2026
+22500031,35,Stewart 1' Running Dunk (2 PTS) (Robinson 1 AST),1641730,1610612751,Noah Clowney,2026
+22500031,55,Thompson Running Reverse Dunk Shot (2 PTS) (Stewart 1 AST),1641730,1610612751,Noah Clowney,2026
+22500031,68,Cunningham 1' Driving Finger Roll Layup (5 PTS) (Robinson 2 AST),1641730,1610612751,Noah Clowney,2026
+22500031,104,MISS Klintman 24' 3PT Jump Shot,1641730,1610612751,Noah Clowney,2026
+22500031,112,MISS Cunningham 3PT Jump Shot,1641730,1610612751,Noah Clowney,2026
+22500031,127,Klintman Cutting Dunk Shot (2 PTS) (Thompson 1 AST),1641730,1610612751,Noah Clowney,2026
+22500031,226,Duren 1' Alley Oop Dunk (10 PTS) (Cunningham 3 AST),1641730,1610612751,Noah Clowney,2026
+22500031,234,MISS Duren 4' Driving Layup,1641730,1610612751,Noah Clowney,2026
+22500031,293,LeVert 6' Pullup Jump Shot (2 PTS) (Thompson 3 AST),1641730,1610612751,Noah Clowney,2026
+22500031,301,MISS Thompson 1' Running Finger Roll Layup,1641730,1610612751,Noah Clowney,2026
+22500031,354,Holland II 3PT Running Jump Shot (5 PTS) (Cunningham 6 AST),1641730,1610612751,Noah Clowney,2026
+22500031,369,Thompson 2' Cutting Dunk Shot (10 PTS) (Cunningham 7 AST),1641730,1610612751,Noah Clowney,2026
+22500031,399,Claxton BLOCK (1 BLK),1641730,1610612751,Noah Clowney,2026
+22500031,536,MISS Holland II 25' 3PT Jump Shot,1641730,1610612751,Noah Clowney,2026
+22500031,593,Green 2' Running Layup (3 PTS) (Cunningham 10 AST),1641730,1610612751,Noah Clowney,2026
+22500031,626,Jenkins 2' Driving Finger Roll Layup (2 PTS) (Robinson 8 AST),1630623,1610612751,Tyson Etienne,2026
+22500031,633,Klintman 9' Driving Floating Jump Shot (4 PTS),1630623,1610612751,Tyson Etienne,2026
 22500007,18,MISS Hunter 28' 3PT Jump Shot,1630595,1610612765,Cade Cunningham,2026
 22500007,77,Merrill 26' 3PT Jump Shot (6 PTS) (Mobley 1 AST),1630595,1610612765,Cade Cunningham,2026
 22500007,235,Cunningham BLOCK (1 BLK),1630595,1610612765,Cade Cunningham,2026
@@ -5313,6 +5456,68 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500143,242,MISS Salaun 25' 3PT Jump Shot,201144,1610612750,Mike Conley,2026
 22500143,527,MISS Knueppel 9' Pullup Jump Shot,201144,1610612750,Mike Conley,2026
 22500143,597,James 3PT Jump Shot (5 PTS) (Mann 3 AST),201144,1610612750,Mike Conley,2026
+22500036,595,Dillingham 8' Turnaround Fadeaway (4 PTS),1642262,1610612762,Cody Williams,2026
+22500036,633,Beringer 1' Cutting Dunk Shot (2 PTS) (Ingles 1 AST),1642262,1610612762,Cody Williams,2026
+22500036,112,MISS Edwards 28' 3PT Pullup Jump Shot,1641729,1610612762,Brice Sensabaugh,2026
+22500036,208,MISS Dillingham 13' Turnaround Jump Shot,1641729,1610612762,Brice Sensabaugh,2026
+22500036,223,MISS DiVincenzo 26' 3PT Jump Shot,1641729,1610612762,Brice Sensabaugh,2026
+22500036,263,DiVincenzo 28' 3PT Jump Shot (3 PTS) (Edwards 1 AST),1641729,1610612762,Brice Sensabaugh,2026
+22500036,281,Edwards 26' 3PT Jump Shot (17 PTS) (Randle 6 AST),1641729,1610612762,Brice Sensabaugh,2026
+22500036,493,Clark 10' Driving Floating Bank Jump Shot (5 PTS),1641729,1610612762,Brice Sensabaugh,2026
+22500036,524,Randle 3' Driving Floating Bank Jump Shot (17 PTS),1641729,1610612762,Brice Sensabaugh,2026
+22500036,571,MISS Reid 25' 3PT Step Back Jump Shot,1641729,1610612762,Brice Sensabaugh,2026
+22500036,36,MISS Nurkic 30' 3PT Jump Shot,1628978,1610612750,Donte DiVincenzo,2026
+22500036,47,Mykhailiuk 3PT Running Pull-Up Jump Shot (3 PTS) (Collier 1 AST),1628978,1610612750,Donte DiVincenzo,2026
+22500036,76,MISS Mykhailiuk 7' Jump Shot,1628978,1610612750,Donte DiVincenzo,2026
+22500036,94,MISS Sensabaugh 3PT Step Back Jump Shot,1628978,1610612750,Donte DiVincenzo,2026
+22500036,292,George 20' Pullup Jump Shot (11 PTS) (Nurkic 3 AST),1628978,1610612750,Donte DiVincenzo,2026
+22500036,431,Markkanen 1' Running Dunk (12 PTS) (Mykhailiuk 2 AST),1628978,1610612750,Donte DiVincenzo,2026
+22500036,437,McDaniels BLOCK (1 BLK),1628978,1610612750,Donte DiVincenzo,2026
+22500036,466,MISS George 19' Step Back Jump Shot,1628978,1610612750,Donte DiVincenzo,2026
+22500036,484,MISS Hendricks 25' 3PT Jump Shot,1628978,1610612750,Donte DiVincenzo,2026
+22500036,652,Beringer 1' Alley Oop Dunk (4 PTS) (Hyland 1 AST),1641989,1610612762,Elijah Harkless,2026
+22500036,678,Hyland 27' 3PT Jump Shot (5 PTS) (Ingles 2 AST),1641989,1610612762,Elijah Harkless,2026
+22500036,703,Hyland 2' Driving Layup (10 PTS),1641989,1610612762,Elijah Harkless,2026
+22500036,149,MISS Sensabaugh 25' 3PT Jump Shot,1641740,1610612750,Jaylen Clark,2026
+22500036,374,Collier 3' Driving Layup (3 PTS),1641740,1610612750,Jaylen Clark,2026
+22500036,530,MISS Sensabaugh 3PT Jump Shot,1641740,1610612750,Jaylen Clark,2026
+22500036,591,MISS Williams 9' Driving Floating Jump Shot,1641740,1610612750,Jaylen Clark,2026
+22500036,596,Clark BLOCK (1 BLK),1641740,1610612750,Jaylen Clark,2026
+22500036,688,Gobert BLOCK (3 BLK),1641740,1610612750,Jaylen Clark,2026
+22500036,701,Bailey 1' Driving Dunk (12 PTS) (Anderson 3 AST),1630548,1610612750,Johnny Juzang,2026
+22500036,312,MISS Filipowski 25' 3PT Jump Shot,203944,1610612750,Julius Randle,2026
+22500036,390,Markkanen 2' Cutting Dunk Shot (8 PTS) (Nurkic 4 AST),203944,1610612750,Julius Randle,2026
+22500036,444,MISS Markkanen 26' 3PT Jump Shot,203944,1610612750,Julius Randle,2026
+22500036,534,McDaniels BLOCK (2 BLK),203944,1610612750,Julius Randle,2026
+22500036,556,MISS Sensabaugh 3PT Jump Shot,203944,1610612750,Julius Randle,2026
+22500037,553,MISS Braun 5' Driving Layup,1627780,1610612744,Gary Payton II,2026
+22500037,18,MISS Moody 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,54,Butler III 6' Turnaround Bank Shot (2 PTS) (Green 1 AST),1627750,1610612743,Jamal Murray,2026
+22500037,63,MISS Kuminga 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,190,MISS Moody 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,198,MISS Butler III 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,223,Podziemski 2' Driving Reverse Layup (2 PTS) (Jackson-Davis 2 AST),1627750,1610612743,Jamal Murray,2026
+22500037,235,Hield 27' 3PT Jump Shot (5 PTS) (Kuminga 1 AST),1627750,1610612743,Jamal Murray,2026
+22500037,253,MISS Kuminga 8' Pullup Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,265,MISS Richard 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,307,Murray BLOCK (1 BLK),1627750,1610612743,Jamal Murray,2026
+22500037,322,MISS Moody 27' 3PT Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,344,MISS Kuminga 3' Driving Layup,1627750,1610612743,Jamal Murray,2026
+22500037,421,Butler III 2' Layup (13 PTS) (Richard 1 AST),1627750,1610612743,Jamal Murray,2026
+22500037,481,MISS Spencer 3PT Step Back Jump Shot,1627750,1610612743,Jamal Murray,2026
+22500037,71,MISS Johnson 24' 3PT Step Back Jump Shot,202710,1610612744,Jimmy Butler III,2026
+22500037,75,Gordon 1' Driving Layup (5 PTS),202710,1610612744,Jimmy Butler III,2026
+22500037,129,Jokic 2' Putback Layup (11 PTS),202710,1610612744,Jimmy Butler III,2026
+22500037,163,MISS Hardaway Jr. 3PT Jump Shot,202710,1610612744,Jimmy Butler III,2026
+22500037,259,MISS Braun 26' 3PT Running Jump Shot,202710,1610612744,Jimmy Butler III,2026
+22500037,411,Watson 1' Cutting Layup Shot (4 PTS) (Jokic 9 AST),202710,1610612744,Jimmy Butler III,2026
+22500037,474,MISS Watson 7' Driving Floating Jump Shot,202710,1610612744,Jimmy Butler III,2026
+22500037,476,Valanciunas Tip Layup Shot (12 PTS),202710,1610612744,Jimmy Butler III,2026
+22500037,546,Richard 3' Running Layup (9 PTS) (Payton II 1 AST),1631124,1610612743,Julian Strawther,2026
+22500037,591,MISS Spencer 11' Fadeaway Jumper,1631124,1610612743,Julian Strawther,2026
+22500037,609,MISS Spencer 5' Pullup Jump Shot,1631124,1610612743,Julian Strawther,2026
+22500037,627,MISS Spencer 27' 3PT Jump Shot,1631124,1610612743,Julian Strawther,2026
+22500037,631,Strawther BLOCK (1 BLK),1631124,1610612743,Julian Strawther,2026
 22500158,511,MISS Mykhailiuk 24' 3PT Running Jump Shot,1628449,1610612738,Chris Boucher,2026
 22500158,527,Filipowski 4' Driving Reverse Layup (7 PTS) (George 4 AST),1628449,1610612738,Chris Boucher,2026
 22500158,653,George 13' Driving Floating Jump Shot (28 PTS) (Mykhailiuk 1 AST),1628449,1610612738,Chris Boucher,2026
@@ -5420,6 +5625,29 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500158,250,MISS Brown 16' Fadeaway Jumper,1628374,1610612762,Lauri Markkanen,2026
 22500158,409,MISS White 27' 3PT Pullup Jump Shot,1628374,1610612762,Lauri Markkanen,2026
 22500158,504,MISS Brown 26' 3PT Running Pull-Up Jump Shot,1628374,1610612762,Lauri Markkanen,2026
+22500034,456,MISS Wells 3' Driving Layup,1630619,1610612742,Moussa Cisse,2026
+22500034,481,MISS Jackson Jr. 25' 3PT Jump Shot,1630619,1610612742,Moussa Cisse,2026
+22500034,487,Jackson Jr. 11' Driving Floating Jump Shot (17 PTS),1630619,1610612742,Moussa Cisse,2026
+22500034,491,Coward 15' Pullup Jump Shot (16 PTS),1630619,1610612742,Moussa Cisse,2026
+22500034,535,MISS Morant 4' Driving Layup,1630619,1610612742,Moussa Cisse,2026
+22500034,545,MISS Morant 16' Step Back Jump Shot,1630619,1610612742,Moussa Cisse,2026
+22500034,691,MISS Landale 3PT Jump Shot,1630619,1610612742,Moussa Cisse,2026
+22500034,514,MISS Landale 26' 3PT Jump Shot,1642948,1610612742,Ryan Nembhard,2026
+22500034,526,MISS Morant 9' Driving Floating Jump Shot,1642948,1610612742,Ryan Nembhard,2026
+22500034,589,MISS Spencer 26' 3PT Step Back Jump Shot,1642948,1610612742,Ryan Nembhard,2026
+22500034,599,MISS Caldwell-Pope 26' 3PT Running Jump Shot,1642948,1610612742,Ryan Nembhard,2026
+22500034,603,Spencer 4' Fadeaway Jumper (12 PTS) (Aldama 2 AST),1642948,1610612742,Ryan Nembhard,2026
+22500034,83,MISS Washington 16' Pullup Jump Shot,1630583,1610612763,Santi Aldama,2026
+22500034,85,Washington 8' Hook Shot (6 PTS),1630583,1610612763,Santi Aldama,2026
+22500034,89,Washington 10' Driving Floating Jump Shot (8 PTS) (Powell 2 AST),1630583,1610612763,Santi Aldama,2026
+22500034,114,MISS Washington 3' Running Dunk,1630583,1610612763,Santi Aldama,2026
+22500034,232,Flagg 27' 3PT Jump Shot (6 PTS) (Marshall 2 AST),1630583,1610612763,Santi Aldama,2026
+22500034,252,Russell 16' Pullup Jump Shot (6 PTS) (Marshall 3 AST),1630583,1610612763,Santi Aldama,2026
+22500034,281,MISS Washington 2' Driving Reverse Layup,1630583,1610612763,Santi Aldama,2026
+22500034,430,MISS Marshall 3PT Jump Shot,1630583,1610612763,Santi Aldama,2026
+22500034,492,Marshall 6' Pullup Jump Shot (9 PTS) (Nembhard 1 AST),1630583,1610612763,Santi Aldama,2026
+22500034,605,MISS Nembhard 27' 3PT Jump Shot,1630583,1610612763,Santi Aldama,2026
+22500034,642,MISS Marshall 3PT Jump Shot,1630583,1610612763,Santi Aldama,2026
 22500125,164,Coffey 27' 3PT Jump Shot (5 PTS) (Rollins 2 AST),1642278,1610612752,Tyler Kolek,2026
 22500125,182,Rollins 1' Running Layup (10 PTS),1642278,1610612752,Tyler Kolek,2026
 22500126,42,MISS Sabonis 26' 3PT Jump Shot,1630598,1610612760,Aaron Wiggins,2026
@@ -6339,6 +6567,73 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500081,662,MISS Bane 21' Pullup Jump Shot,1630558,1610612748,Davion Mitchell,2026
 22500081,693,MISS Banchero 11' Pullup Jump Shot,1630558,1610612748,Davion Mitchell,2026
 22500081,698,Banchero 2' Running Dunk (24 PTS) (Bane 3 AST),1630558,1610612748,Davion Mitchell,2026
+22500029,125,MISS Mitchell 2' Driving Layup,1630551,1610612764,Justin Champagnie,2026
+22500029,295,MISS Merrill 3PT Jump Shot,1630551,1610612764,Justin Champagnie,2026
+22500029,382,Garland 8' Driving Floating Jump Shot (14 PTS) (Mitchell 4 AST),1630551,1610612764,Justin Champagnie,2026
+22500029,510,Tyson 26' 3PT Jump Shot (8 PTS) (Merrill 2 AST),1630551,1610612764,Justin Champagnie,2026
+22500029,528,MISS Tyson 6' Driving Floating Jump Shot,1630551,1610612764,Justin Champagnie,2026
+22500029,546,Allen 2' Dunk (16 PTS) (Porter Jr. 1 AST),1630551,1610612764,Justin Champagnie,2026
+22500029,562,MISS Mitchell 4' Driving Layup,1630551,1610612764,Justin Champagnie,2026
+22500029,24,MISS Mobley 26' 3PT Jump Shot,203114,1610612764,Khris Middleton,2026
+22500029,33,Sarr BLOCK (1 BLK),203114,1610612764,Khris Middleton,2026
+22500029,54,Mobley 1' Driving Dunk (2 PTS) (Allen 1 AST),203114,1610612764,Khris Middleton,2026
+22500029,368,MISS Allen 4' Hook Shot,203114,1610612764,Khris Middleton,2026
+22500029,407,MISS Garland 3PT Step Back Jump Shot,203114,1610612764,Khris Middleton,2026
+22500029,429,Mitchell 29' 3PT Pullup Jump Shot (17 PTS) (Hunter 2 AST),203114,1610612764,Khris Middleton,2026
+22500029,456,Mobley 2' Driving Dunk (13 PTS),203114,1610612764,Khris Middleton,2026
+22500029,476,MISS Tyson 7' Driving Floating Jump Shot,203114,1610612764,Khris Middleton,2026
+22500029,478,Mobley Tip Layup Shot (15 PTS),203114,1610612764,Khris Middleton,2026
+22500029,481,MISS Hunter 27' 3PT Jump Shot,203114,1610612764,Khris Middleton,2026
+22500029,485,Sarr BLOCK (3 BLK),203114,1610612764,Khris Middleton,2026
+22500029,190,MISS Watkins 24' 3PT Jump Shot,1626204,1610612739,Larry Nance Jr.,2026
+22500029,618,MISS Bagley III 3' Putback Layup,1626204,1610612739,Larry Nance Jr.,2026
+22500029,672,MISS Carrington 10' Driving Floating Jump Shot,1626204,1610612739,Larry Nance Jr.,2026
+22500029,689,T. Johnson 1' Running Dunk (14 PTS) (Carrington 11 AST),1626204,1610612739,Larry Nance Jr.,2026
+22500033,156,Connaughton 9' Turnaround Fadeaway (4 PTS) (Simpson 1 AST),1631107,1610612748,Nikola Jović,2026
+22500033,179,MISS Knueppel 6' Pullup Jump Shot,1631107,1610612748,Nikola Jović,2026
+22500033,224,MISS Knueppel 25' 3PT Running Jump Shot,1631107,1610612748,Nikola Jović,2026
+22500033,229,MISS Mann 29' 3PT Pullup Jump Shot,1631107,1610612748,Nikola Jović,2026
+22500033,304,Knueppel 26' 3PT Jump Shot (16 PTS) (McNeeley 1 AST),1631107,1610612748,Nikola Jović,2026
+22500033,329,Diabate 2' Putback Layup (4 PTS),1631107,1610612748,Nikola Jović,2026
+22500033,458,MISS Bridges 2' Driving Layup,1631107,1610612748,Nikola Jović,2026
+22500033,470,MISS James 3PT Running Jump Shot,1631107,1610612748,Nikola Jović,2026
+22500033,476,Jaquez Jr. BLOCK (2 BLK),1631107,1610612748,Nikola Jović,2026
+22500033,499,Mann 5' Driving Layup (20 PTS) (Bridges 7 AST),1631107,1610612748,Nikola Jović,2026
+22500033,502,Jovic BLOCK (1 BLK),1631107,1610612748,Nikola Jović,2026
+22500033,150,Smith 3PT Jump Shot (3 PTS) (Jaquez Jr. 2 AST),1626192,1610612766,Pat Connaughton,2026
+22500033,541,Wiggins 9' Turnaround Jump Shot (17 PTS),1626192,1610612766,Pat Connaughton,2026
+22500033,13,MISS Mann 5' Driving Layup,1641796,1610612748,Pelle Larsson,2026
+22500033,55,Mann 1' Putback Layup (4 PTS),1641796,1610612748,Pelle Larsson,2026
+22500033,74,Mann 14' Pullup Jump Shot (11 PTS),1641796,1610612748,Pelle Larsson,2026
+22500033,117,Bridges 4' Driving Layup (2 PTS),1641796,1610612748,Pelle Larsson,2026
+22500033,258,Knueppel 25' 3PT Running Jump Shot (10 PTS) (Bridges 5 AST),1641796,1610612748,Pelle Larsson,2026
+22500033,332,MISS Knueppel 26' 3PT Jump Shot,1641796,1610612748,Pelle Larsson,2026
+22500033,375,MISS Knueppel 14' Pullup Jump Shot,1641796,1610612748,Pelle Larsson,2026
+22500033,427,MISS Bridges 7' Driving Layup,1641796,1610612748,Pelle Larsson,2026
+22500033,700,MISS Diabate 1' Putback Layup,1641796,1610612748,Pelle Larsson,2026
+22500033,173,Connaughton 5' Driving Finger Roll Layup (6 PTS) (Knueppel 2 AST),1631323,1610612748,Simone Fontecchio,2026
+22500033,206,MISS McNeeley 3PT Jump Shot,1631323,1610612748,Simone Fontecchio,2026
+22500033,216,McNeeley 28' 3PT Jump Shot (5 PTS) (Bridges 3 AST),1631323,1610612748,Simone Fontecchio,2026
+22500033,226,Bridges 1' Putback Layup (4 PTS),1631323,1610612748,Simone Fontecchio,2026
+22500033,499,Mann 5' Driving Layup (20 PTS) (Bridges 7 AST),1631323,1610612748,Simone Fontecchio,2026
+22500033,515,MISS Mann 26' 3PT Jump Shot,1631323,1610612748,Simone Fontecchio,2026
+22500033,534,MISS Knueppel 4' Driving Layup,1631323,1610612748,Simone Fontecchio,2026
+22500033,548,MISS Knueppel 40' 3PT Pullup Jump Shot,1631323,1610612748,Simone Fontecchio,2026
+22500033,558,Ware BLOCK (2 BLK),1631323,1610612748,Simone Fontecchio,2026
+22500033,37,MISS Ware 24' 3PT Jump Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,56,Ware 3' Cutting Layup Shot (5 PTS) (Mitchell 4 AST),1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,59,Powell Driving Layup (11 PTS),1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,218,MISS Jaquez Jr. 2' Driving Layup,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,222,MISS Fontecchio 3PT Running Pull-Up Jump Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,353,MISS Wiggins 2' Driving Layup,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,382,MISS Ware 1' Dunk,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,395,Larsson 2' Driving Layup (13 PTS),1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,413,MISS Ware 25' 3PT Jump Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,532,MISS Ware 5' Driving Hook Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,562,MISS Smith 9' Floating Jump Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,566,MISS Fontecchio 2' Cutting Dunk Shot,1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,574,Jaquez Jr. 2' Driving Layup (12 PTS) (Smith 3 AST),1641750,1610612766,Ryan Kalkbrenner,2026
+22500033,604,MISS Ware 25' 3PT Jump Shot,1641750,1610612766,Ryan Kalkbrenner,2026
 22500162,20,MISS DeRozan 13' Turnaround Fadeaway Shot,1627750,1610612743,Jamal Murray,2026
 22500162,52,MISS Westbrook 4' Driving Layup,1627750,1610612743,Jamal Murray,2026
 22500162,60,DeRozan 13' Turnaround Jump Shot (4 PTS) (Schroder 2 AST),1627750,1610612743,Jamal Murray,2026
@@ -7053,6 +7348,22 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500170,345,Zubac 1' Alley Oop Dunk (5 PTS) (Collins 1 AST),1631096,1610612760,Chet Holmgren,2026
 22500170,382,Batum 3PT Jump Shot (3 PTS) (Jones Jr. 2 AST),1631096,1610612760,Chet Holmgren,2026
 22500170,413,MISS Zubac 3' Putback Layup,1631096,1610612760,Chet Holmgren,2026
+22500033,12,Wiggins 24' 3PT Jump Shot (3 PTS),1628970,1610612766,Miles Bridges,2026
+22500033,95,MISS Jovic 4' Running Layup,1628970,1610612766,Miles Bridges,2026
+22500033,115,MISS Jovic 1' Driving Layup,1628970,1610612766,Miles Bridges,2026
+22500033,227,MISS Wiggins 25' 3PT Pullup Jump Shot,1628970,1610612766,Miles Bridges,2026
+22500033,276,MISS Ware 25' 3PT Jump Shot,1628970,1610612766,Miles Bridges,2026
+22500033,306,MISS Wiggins 25' 3PT Jump Shot,1628970,1610612766,Miles Bridges,2026
+22500033,319,MISS Wiggins 5' Driving Floating Jump Shot,1628970,1610612766,Miles Bridges,2026
+22500033,340,Jovic 6' Hook Shot (8 PTS) (Wiggins 3 AST),1628970,1610612766,Miles Bridges,2026
+22500033,361,Powell 1' Running Reverse Layup (13 PTS) (Mitchell 5 AST),1628970,1610612766,Miles Bridges,2026
+22500033,379,MISS Wiggins 2' Driving Layup,1628970,1610612766,Miles Bridges,2026
+22500033,401,MISS Wiggins 7' Driving Finger Roll Layup,1628970,1610612766,Miles Bridges,2026
+22500033,472,Powell 1' Driving Finger Roll Layup (19 PTS) (Jovic 3 AST),1628970,1610612766,Miles Bridges,2026
+22500033,583,MISS Wiggins 4' Driving Layup,1628970,1610612766,Miles Bridges,2026
+22500033,647,MISS Ware 11' Floating Jump Shot,1628970,1610612766,Miles Bridges,2026
+22500033,649,MISS Ware 6' Fadeaway Jumper,1628970,1610612766,Miles Bridges,2026
+22500033,665,Powell 6' Floating Jump Shot (23 PTS) (Jaquez Jr. 8 AST),1628970,1610612766,Miles Bridges,2026
 22500082,107,Okongwu 1' Dunk (2 PTS) (Johnson 2 AST),1630572,1610612761,Sandro Mamukelashvili,2026
 22500082,112,MISS Kennard 26' 3PT Step Back Jump Shot,1630572,1610612761,Sandro Mamukelashvili,2026
 22500082,145,Johnson 3' Driving Finger Roll Layup (11 PTS) (Young 1 AST),1630572,1610612761,Sandro Mamukelashvili,2026
@@ -7774,6 +8085,71 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500145,646,Sarr 2' Dunk (10 PTS),1641710,1610612753,Anthony Black,2026
 22500145,662,Bitadze 6' Layup (8 PTS) (Penda 1 AST),1642358,1610612764,AJ Johnson,2026
 22500145,701,MISS Richardson 4' Driving Floating Jump Shot,1642358,1610612764,AJ Johnson,2026
+22500037,20,Braun 3' Cutting Layup Shot (2 PTS) (Jokic 2 AST),1641764,1610612744,Brandin Podziemski,2026
+22500037,65,MISS Gordon 4' Driving Layup,1641764,1610612744,Brandin Podziemski,2026
+22500037,67,Jokic 2' Driving Finger Roll Layup (4 PTS) (Johnson 2 AST),1641764,1610612744,Brandin Podziemski,2026
+22500037,75,Gordon 1' Driving Layup (5 PTS),1641764,1610612744,Brandin Podziemski,2026
+22500037,243,MISS Jokic 5' Cutting Layup Shot,1641764,1610612744,Brandin Podziemski,2026
+22500037,255,Braun 10' Running Layup (11 PTS) (Jokic 7 AST),1641764,1610612744,Brandin Podziemski,2026
+22500037,263,Murray 25' 3PT Fadeaway Jumper (19 PTS) (Gordon 1 AST),1641764,1610612744,Brandin Podziemski,2026
+22500037,332,Gordon 3PT Jump Shot (15 PTS) (Murray 4 AST),1641764,1610612744,Brandin Podziemski,2026
+22500037,509,MISS Brown 4' Driving Layup,1641764,1610612744,Brandin Podziemski,2026
+22500037,61,Jokic 2' Cutting Layup Shot (2 PTS) (Johnson 1 AST),1627741,1610612744,Buddy Hield,2026
+22500037,67,Jokic 2' Driving Finger Roll Layup (4 PTS) (Johnson 2 AST),1627741,1610612744,Buddy Hield,2026
+22500037,122,Jokic 25' 3PT Jump Shot (9 PTS) (Brown 1 AST),1627741,1610612744,Buddy Hield,2026
+22500037,376,Gordon 3' Driving Dunk (18 PTS),1627741,1610612744,Buddy Hield,2026
+22500037,426,Murray 2' Driving Finger Roll Layup (21 PTS),1627741,1610612744,Buddy Hield,2026
+22500037,429,Brown 2' Running Finger Roll Layup (2 PTS) (Hardaway Jr. 2 AST),1627741,1610612744,Buddy Hield,2026
+22500038,120,MISS Clifford 24' 3PT Jump Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,290,MISS Raynaud 6' Floating Jump Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,292,MISS Raynaud Tip Layup Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,307,Eubanks 3' Cutting Dunk Shot (10 PTS) (Westbrook 7 AST),1631119,1610612760,Jaylin Williams,2026
+22500038,316,MISS Eubanks 3' Layup,1631119,1610612760,Jaylin Williams,2026
+22500038,428,Eubanks 3' Hook Shot (16 PTS) (Westbrook 8 AST),1631119,1610612760,Jaylin Williams,2026
+22500038,439,Monk 15' Step Back Jump Shot (11 PTS),1631119,1610612760,Jaylin Williams,2026
+22500038,454,MISS Clifford 26' 3PT Jump Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,675,MISS Raynaud 26' 3PT Jump Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,687,Raynaud 9' Hook Shot (8 PTS) (Carter 1 AST),1631119,1610612760,Jaylin Williams,2026
+22500038,701,MISS Carter 27' 3PT Jump Shot,1631119,1610612760,Jaylin Williams,2026
+22500038,708,MISS Carter 10' Layup,1631119,1610612760,Jaylin Williams,2026
+22500038,9,MISS Schroder 15' Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,17,Eubanks 6' Layup (2 PTS) (Schroder 1 AST),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,61,MISS Schroder 18' Pullup Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,71,MISS Eubanks 14' Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,203,Westbrook 15' Jump Shot (13 PTS),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,236,MISS Westbrook 11' Fadeaway Jumper,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,240,Eubanks 6' Running Dunk (8 PTS) (Westbrook 4 AST),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,382,MISS Eubanks 19' Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,410,Eubanks 10' Hook Bank Shot (14 PTS) (Schroder 8 AST),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,462,Monk 6' Driving Layup (13 PTS),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,480,MISS Schroder 8' Driving Layup,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,491,MISS Monk 1' Hook Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,502,MISS Westbrook 4' Layup,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,532,MISS DeRozan 14' Pullup Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,599,Raynaud 3' Jump Shot (4 PTS),1628392,1610612760,Isaiah Hartenstein,2026
+22500038,602,MISS Raynaud 10' Floating Jump Shot,1628392,1610612760,Isaiah Hartenstein,2026
+22500038,588,MISS Ellis 27' 3PT Jump Shot,1631172,1610612760,Ousmane Dieng,2026
+22500038,590,Westbrook 26' 3PT Jump Shot (24 PTS) (Raynaud 1 AST),1631172,1610612760,Ousmane Dieng,2026
+22500038,599,Raynaud 3' Jump Shot (4 PTS),1631172,1610612760,Ousmane Dieng,2026
+22500038,257,MISS Mitchell 3' Driving Layup,201566,1610612758,Russell Westbrook,2026
+22500038,294,Joe 25' 3PT Step Back Jump Shot (5 PTS),201566,1610612758,Russell Westbrook,2026
+22500038,309,Gilgeous-Alexander 26' 3PT Jump Shot (13 PTS) (Williams 1 AST),201566,1610612758,Russell Westbrook,2026
+22500038,314,MISS Gilgeous-Alexander 26' 3PT Jump Shot,201566,1610612758,Russell Westbrook,2026
+22500038,333,MISS Gilgeous-Alexander 26' 3PT Jump Shot,201566,1610612758,Russell Westbrook,2026
+22500038,401,MISS Wallace 28' 3PT Jump Shot,201566,1610612758,Russell Westbrook,2026
+22500038,409,Gilgeous-Alexander 20' Pullup Jump Shot (22 PTS),201566,1610612758,Russell Westbrook,2026
+22500038,558,MISS Caruso 27' 3PT Jump Shot,201566,1610612758,Russell Westbrook,2026
+22500038,571,MISS Holmgren 26' 3PT Jump Shot,201566,1610612758,Russell Westbrook,2026
+22500038,9,MISS Schroder 15' Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,21,Eubanks 14' Floating Jump Shot (4 PTS) (LaVine 1 AST),1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,46,MISS Schroder 27' 3PT Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,142,MISS Monk 12' Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,290,MISS Raynaud 6' Floating Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,331,MISS Schroder 5' Driving Layup,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,364,DeRozan 4' Layup (16 PTS),1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,405,Eubanks Putback Layup (12 PTS),1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,474,MISS DeRozan 13' Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
+22500038,477,MISS Schroder 26' 3PT Jump Shot,1628983,1610612760,Shai Gilgeous-Alexander,2026
 22500084,101,Stewart 1' Alley Oop Layup (4 PTS) (LeVert 1 AST),1628989,1610612741,Kevin Huerter,2026
 22500084,124,Huerter BLOCK (1 BLK),1628989,1610612741,Kevin Huerter,2026
 22500084,288,MISS Robinson 26' 3PT Jump Shot,1628989,1610612741,Kevin Huerter,2026
@@ -9336,6 +9712,14 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500022,207,MISS Travers 24' 3PT Jump Shot,1642266,1610612761,Ja'Kobe Walter,2026
 22500022,262,Hunter 3PT Jump Shot (11 PTS) (Ball 2 AST),1642266,1610612761,Ja'Kobe Walter,2026
 22500022,529,MISS Mobley 26' 3PT Jump Shot,1642266,1610612761,Ja'Kobe Walter,2026
+22500029,144,MISS Champagnie 7' Layup,1630241,1610612739,Sam Merrill,2026
+22500029,146,MISS Champagnie 6' Layup,1630241,1610612739,Sam Merrill,2026
+22500029,156,Champagnie Tip Dunk Shot (2 PTS),1630241,1610612739,Sam Merrill,2026
+22500029,260,MISS Kispert 29' 3PT Pullup Jump Shot,1630241,1610612739,Sam Merrill,2026
+22500029,278,MISS Sarr 10' Hook Shot,1630241,1610612739,Sam Merrill,2026
+22500029,307,MISS Champagnie 26' 3PT Jump Shot,1630241,1610612739,Sam Merrill,2026
+22500029,732,Watkins 2' Running Layup (6 PTS),1628418,1610612739,Thomas Bryant,2026
+22500029,745,Vukcevic 29' 3PT Jump Shot (4 PTS) (A. Johnson 1 AST),1628418,1610612739,Thomas Bryant,2026
 22500148,124,MISS Murphy III 25' 3PT Jump Shot,1642349,1610612760,Ajay Mitchell,2026
 22500148,128,MISS Poole 25' 3PT Pullup Jump Shot,1642349,1610612760,Ajay Mitchell,2026
 22500148,237,MISS Bey 25' 3PT Jump Shot,1642349,1610612760,Ajay Mitchell,2026
@@ -10038,6 +10422,8 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500092,353,MISS Barrett 11' Driving Floating Jump Shot,1631260,1610612749,AJ Green,2026
 22500092,380,MISS Barrett 27' 3PT Jump Shot,1631260,1610612749,AJ Green,2026
 22500092,388,Barrett 4' Driving Finger Roll Layup (11 PTS),1631260,1610612749,AJ Green,2026
+22500031,616,MISS Thompson 15' Pullup Jump Shot,1630592,1610612751,Jalen Wilson,2026
+22500031,668,MISS Jenkins 26' 3PT Jump Shot,1630592,1610612751,Jalen Wilson,2026
 22500085,9,Poole 10' Driving Floating Jump Shot (2 PTS),1629111,1610612763,Jock Landale,2026
 22500085,13,MISS Williamson 13' Step Back Jump Shot,1629111,1610612763,Jock Landale,2026
 22500085,38,Landale BLOCK (1 BLK),1629111,1610612763,Jock Landale,2026
@@ -10783,6 +11169,61 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500140,674,Vukcevic 1' Running Layup (2 PTS) (Riley 1 AST),1631119,1610612760,Jaylin Williams,2026
 22500140,690,MISS Riley 15' Pullup Jump Shot,1631119,1610612760,Jaylin Williams,2026
 22500140,692,Williams 26' 3PT Jump Shot (7 PTS) (Carlson 1 AST),1630551,1610612764,Justin Champagnie,2026
+22500036,82,MISS DiVincenzo 26' 3PT Running Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,133,Randle 3' Running Layup (7 PTS) (Clark 2 AST),1642271,1610612762,Kyle Filipowski,2026
+22500036,137,MISS Clark 10' Driving Floating Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,168,MISS McDaniels Tip Layup Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,170,McDaniels 2' Putback Layup (11 PTS),1642271,1610612762,Kyle Filipowski,2026
+22500036,311,Gobert 2' Putback Layup (6 PTS),1642271,1610612762,Kyle Filipowski,2026
+22500036,331,Randle 3' Driving Layup (15 PTS) (Conley 2 AST),1642271,1610612762,Kyle Filipowski,2026
+22500036,464,MISS Reid 25' 3PT Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,476,MISS Edwards 2' Driving Reverse Layup,1642271,1610612762,Kyle Filipowski,2026
+22500036,480,MISS Reid 3PT Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,493,Clark 10' Driving Floating Bank Jump Shot (5 PTS),1642271,1610612762,Kyle Filipowski,2026
+22500036,496,MISS Edwards 6' Driving Floating Bank Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,524,Randle 3' Driving Floating Bank Jump Shot (17 PTS),1642271,1610612762,Kyle Filipowski,2026
+22500036,537,Reid 10' Driving Floating Jump Shot (5 PTS),1642271,1610612762,Kyle Filipowski,2026
+22500036,540,MISS Randle 24' 3PT Jump Shot,1642271,1610612762,Kyle Filipowski,2026
+22500036,650,Filipowski 7' Cutting Layup Shot (8 PTS) (Collier 2 AST),1631159,1610612750,Leonard Miller,2026
+22500036,693,Beringer BLOCK (1 BLK),1631159,1610612750,Leonard Miller,2026
+22500036,704,MISS Williams 3PT Jump Shot,1631159,1610612750,Leonard Miller,2026
+22500036,14,Nurkic 11' Floating Jump Shot (2 PTS) (George 1 AST),203497,1610612750,Rudy Gobert,2026
+22500036,26,Gobert BLOCK (1 BLK),203497,1610612750,Rudy Gobert,2026
+22500036,42,MISS Markkanen 24' 3PT Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,55,Gobert BLOCK (2 BLK),203497,1610612750,Rudy Gobert,2026
+22500036,76,MISS Mykhailiuk 7' Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,120,MISS Sensabaugh 24' 3PT Running Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,210,MISS Sensabaugh 24' 3PT Running Pull-Up Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,243,MISS Nurkic Tip Layup Shot,203497,1610612750,Rudy Gobert,2026
+22500036,265,Mykhailiuk 24' 3PT Pullup Jump Shot (6 PTS) (Nurkic 2 AST),203497,1610612750,Rudy Gobert,2026
+22500036,289,George 20' Pullup Jump Shot (9 PTS) (Markkanen 1 AST),203497,1610612750,Rudy Gobert,2026
+22500036,417,MISS Markkanen 27' 3PT Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,421,MISS Markkanen 5' Driving Hook Shot,203497,1610612750,Rudy Gobert,2026
+22500036,569,MISS Anderson 14' Pullup Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,591,MISS Williams 9' Driving Floating Jump Shot,203497,1610612750,Rudy Gobert,2026
+22500036,593,MISS Hendricks 4' Putback Layup,203497,1610612750,Rudy Gobert,2026
+22500036,600,Anderson 10' Floating Jump Shot (2 PTS),203497,1610612750,Rudy Gobert,2026
+22500036,688,Gobert BLOCK (3 BLK),203497,1610612750,Rudy Gobert,2026
+22500036,110,Filipowski 24' 3PT Jump Shot (3 PTS) (Sensabaugh 1 AST),201144,1610612750,Mike Conley,2026
+22500036,164,MISS Bailey 3' Running Layup,201144,1610612750,Mike Conley,2026
+22500036,248,George 3' Pullup Jump Shot (2 PTS),201144,1610612750,Mike Conley,2026
+22500036,254,George 12' Driving Floating Jump Shot (5 PTS) (Mykhailiuk 1 AST),201144,1610612750,Mike Conley,2026
+22500036,262,George 8' Pullup Jump Shot (7 PTS),201144,1610612750,Mike Conley,2026
+22500036,307,MISS Markkanen 3PT Jump Shot,201144,1610612750,Mike Conley,2026
+22500036,507,MISS Filipowski 25' 3PT Jump Shot,201144,1610612750,Mike Conley,2026
+22500036,512,Bailey 1' Cutting Dunk Shot (7 PTS) (Hendricks 1 AST),201144,1610612750,Mike Conley,2026
+22500036,517,MISS Sensabaugh 26' 3PT Jump Shot,201144,1610612750,Mike Conley,2026
+22500036,519,Sensabaugh 11' Driving Floating Jump Shot (5 PTS) (Filipowski 2 AST),201144,1610612750,Mike Conley,2026
+22500036,538,Bailey 24' 3PT Jump Shot (10 PTS) (Sensabaugh 3 AST),201144,1610612750,Mike Conley,2026
+22500036,206,Markkanen 1' Driving Dunk (6 PTS) (Nurkic 1 AST),1642265,1610612750,Rob Dillingham,2026
+22500036,593,MISS Hendricks 4' Putback Layup,1642265,1610612750,Rob Dillingham,2026
+22500036,629,MISS Sensabaugh 12' Turnaround Fadeaway Shot,1642265,1610612750,Rob Dillingham,2026
+22500036,654,MISS Collier 10' Driving Floating Bank Jump Shot,1642265,1610612750,Rob Dillingham,2026
+22500036,277,MISS Randle Tip Layup Shot,1629004,1610612762,Svi Mykhailiuk,2026
+22500036,389,Edwards 7' Turnaround Fadeaway (31 PTS),1629004,1610612762,Svi Mykhailiuk,2026
+22500036,396,MISS Edwards 24' 3PT Step Back Jump Shot,1629004,1610612762,Svi Mykhailiuk,2026
+22500036,411,MISS McDaniels 5' Driving Layup,1629004,1610612762,Svi Mykhailiuk,2026
+22500036,433,MISS Randle 24' 3PT Jump Shot,1629004,1610612762,Svi Mykhailiuk,2026
 22500097,27,Curry 26' 3PT Pullup Jump Shot (5 PTS) (Green 2 AST),1631101,1610612757,Shaedon Sharpe,2026
 22500097,37,MISS Post 21' Pullup Jump Shot,1631101,1610612757,Shaedon Sharpe,2026
 22500097,41,Butler III 3' Driving Layup (2 PTS) (Green 3 AST),1631101,1610612757,Shaedon Sharpe,2026
@@ -12061,6 +12502,19 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500114,663,MISS Bane 25' 3PT Pullup Jump Shot,1641737,1610612755,Adem Bona,2026
 22500114,696,MISS Suggs 28' 3PT Jump Shot,1641737,1610612755,Adem Bona,2026
 22500114,731,MISS Banchero 26' 3PT Step Back Jump Shot,1641737,1610612755,Adem Bona,2026
+22500029,43,Mitchell 1' Running Layup (2 PTS) (Garland 2 AST),1642848,1610612764,Tre Johnson,2026
+22500029,46,MISS Hunter 25' 3PT Jump Shot,1642848,1610612764,Tre Johnson,2026
+22500029,54,Mobley 1' Driving Dunk (2 PTS) (Allen 1 AST),1642848,1610612764,Tre Johnson,2026
+22500029,72,Garland 27' 3PT Running Jump Shot (5 PTS) (Tyson 1 AST),1642848,1610612764,Tre Johnson,2026
+22500029,305,Hunter 9' Pullup Jump Shot (4 PTS) (Garland 6 AST),1642848,1610612764,Tre Johnson,2026
+22500029,409,MISS Hunter 8' Floating Jump Shot,1642848,1610612764,Tre Johnson,2026
+22500029,434,Mitchell 27' 3PT Jump Shot (20 PTS),1642848,1610612764,Tre Johnson,2026
+22500029,444,MISS Mitchell 2' Driving Layup,1642848,1610612764,Tre Johnson,2026
+22500029,458,Mitchell 30' 3PT Pullup Jump Shot (23 PTS),1642848,1610612764,Tre Johnson,2026
+22500029,648,Proctor 29' 3PT Jump Shot (8 PTS) (Mobley 3 AST),1642848,1610612764,Tre Johnson,2026
+22500029,677,Nance Jr. 2' Floating Jump Shot (5 PTS) (Garland 9 AST),1642848,1610612764,Tre Johnson,2026
+22500029,743,Proctor 26' 3PT Jump Shot (17 PTS) (Porter Jr. 2 AST),1642848,1610612764,Tre Johnson,2026
+22500029,728,T. Johnson 7' Jump Shot (19 PTS) (Riley 1 AST),1641772,1610612739,Nae'Qwan Tomlin,2026
 22500098,60,MISS Mykhailiuk 2' Putback Layup,1627734,1610612758,Domantas Sabonis,2026
 22500098,65,George 8' Driving Floating Bank Jump Shot (2 PTS),1627734,1610612758,Domantas Sabonis,2026
 22500098,143,Nurkic 3' Cutting Layup Shot (2 PTS) (Sensabaugh 1 AST),1627734,1610612758,Domantas Sabonis,2026
@@ -13001,6 +13455,138 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500174,630,Walsh Tip Layup Shot (7 PTS),1641774,1610612764,Tristan Vukcevic,2026
 22500174,644,Simons 30' 3PT Pullup Jump Shot (16 PTS) (Hauser 3 AST),1641774,1610612764,Tristan Vukcevic,2026
 22500174,653,MISS Hauser 30' 3PT Jump Shot,1641774,1610612764,Tristan Vukcevic,2026
+22500031,110,MISS Williams 24' 3PT Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,236,MISS Clowney 27' 3PT Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,247,Clowney 8' Driving Floating Jump Shot (17 PTS),1630595,1610612765,Cade Cunningham,2026
+22500031,299,MISS Powell 26' 3PT Running Pull-Up Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,341,MISS Porter Jr. 25' 3PT Pullup Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,380,MISS Demin 24' 3PT Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,460,MISS Martin 26' 3PT Jump Shot,1630595,1610612765,Cade Cunningham,2026
+22500031,477,Williams 25' 3PT Jump Shot (6 PTS) (Martin 3 AST),1630595,1610612765,Cade Cunningham,2026
+22500031,585,Claxton 2' Dunk (17 PTS) (Porter Jr. 2 AST),1630595,1610612765,Cade Cunningham,2026
+22500031,591,MISS Claxton 5' Driving Layup,1630595,1610612765,Cade Cunningham,2026
+22500031,12,Demin 3PT Running Jump Shot (3 PTS) (Mann 2 AST),1629130,1610612765,Duncan Robinson,2026
+22500031,16,MISS Porter Jr. 11' Pullup Jump Shot,1629130,1610612765,Duncan Robinson,2026
+22500031,20,Demin 4' Driving Finger Roll Layup (5 PTS),1629130,1610612765,Duncan Robinson,2026
+22500031,51,MISS Mann 10' Turnaround Jump Shot,1629130,1610612765,Duncan Robinson,2026
+22500031,64,MISS Porter Jr. 26' 3PT Jump Shot,1629130,1610612765,Duncan Robinson,2026
+22500031,256,Demin 26' 3PT Jump Shot (8 PTS) (Claxton 1 AST),1629130,1610612765,Duncan Robinson,2026
+22500031,318,MISS Powell 3' Driving Layup,1629130,1610612765,Duncan Robinson,2026
+22500031,326,MISS Demin 18' Pullup Jump Shot,1629130,1610612765,Duncan Robinson,2026
+22500031,363,MISS Porter Jr. 25' 3PT Jump Shot,1629130,1610612765,Duncan Robinson,2026
+22500031,388,MISS Clowney 4' Driving Finger Roll Layup,1629130,1610612765,Duncan Robinson,2026
+22500031,402,MISS Demin 2' Driving Finger Roll Layup,1629130,1610612765,Duncan Robinson,2026
+22500031,559,Porter Jr. 2' Driving Finger Roll Layup (25 PTS),1629130,1610612765,Duncan Robinson,2026
+22500031,608,Wilson 25' 3PT Jump Shot (3 PTS) (Powell 1 AST),1629130,1610612765,Duncan Robinson,2026
+22500031,14,MISS Thompson 1' Driving Reverse Layup,1642856,1610612751,Egor Dëmin,2026
+22500031,72,MISS Thompson 8' Turnaround Jump Shot,1642856,1610612751,Egor Dëmin,2026
+22500031,252,Robinson 8' Floating Jump Shot (4 PTS) (LeVert 3 AST),1642856,1610612751,Egor Dëmin,2026
+22500031,258,MISS Thompson 6' Driving Floating Bank Jump Shot,1642856,1610612751,Egor Dëmin,2026
+22500031,320,Duren 1' Running Alley Oop Dunk Shot (18 PTS) (Cunningham 5 AST),1642856,1610612751,Egor Dëmin,2026
+22500031,339,Duren 3' Driving Layup (20 PTS) (Robinson 4 AST),1642856,1610612751,Egor Dëmin,2026
+22500031,358,Cunningham 2' Running Layup (16 PTS) (Robinson 5 AST),1642856,1610612751,Egor Dëmin,2026
+22500031,365,Cunningham 1' Running Dunk (19 PTS),1642856,1610612751,Egor Dëmin,2026
+22500031,556,Cunningham 9' Floating Jump Shot (30 PTS),1642856,1610612751,Egor Dëmin,2026
+22500031,572,Cunningham 10' Fadeaway Jumper (32 PTS) (Holland II 1 AST),1642856,1610612751,Egor Dëmin,2026
+22500031,201,MISS Cunningham 11' Pullup Jump Shot,1642962,1610612751,Drake Powell,2026
+22500031,271,Thompson 6' Driving Floating Jump Shot (8 PTS) (LeVert 4 AST),1642962,1610612751,Drake Powell,2026
+22500031,301,MISS Thompson 1' Running Finger Roll Layup,1642962,1610612751,Drake Powell,2026
+22500031,420,MISS Cunningham 26' 3PT Jump Shot,1642962,1610612751,Drake Powell,2026
+22500031,447,MISS Robinson 25' 3PT Jump Shot,1642962,1610612751,Drake Powell,2026
+22500031,491,LeVert 2' Driving Dunk (10 PTS) (Thompson 4 AST),1642962,1610612751,Drake Powell,2026
+22500031,508,MISS Holland II 25' 3PT Jump Shot,1642962,1610612751,Drake Powell,2026
+22500031,510,MISS Green 26' 3PT Jump Shot,1642962,1610612751,Drake Powell,2026
+22500031,618,Reed 1' Driving Dunk (6 PTS),1642962,1610612751,Drake Powell,2026
+22500031,670,Green 3PT Jump Shot (8 PTS) (Reed 2 AST),1642962,1610612751,Drake Powell,2026
+22500032,141,MISS Sengun 28' 3PT Jump Shot,203482,1610612759,Kelly Olynyk,2026
+22500032,126,MISS Thompson 6' Floating Jump Shot,1630322,1610612759,Lindy Waters III,2026
+22500032,20,Wembanyama 1' Driving Reverse Layup (2 PTS),201142,1610612745,Kevin Durant,2026
+22500032,82,Barnes 3PT Jump Shot (6 PTS) (Johnson 1 AST),201142,1610612745,Kevin Durant,2026
+22500032,86,Barnes 25' 3PT Jump Shot (9 PTS) (Castle 1 AST),201142,1610612745,Kevin Durant,2026
+22500032,233,McLaughlin 25' 3PT Jump Shot (5 PTS) (Vassell 1 AST),201142,1610612745,Kevin Durant,2026
+22500032,292,Barnes 5' Driving Floating Jump Shot (11 PTS) (Castle 3 AST),201142,1610612745,Kevin Durant,2026
+22500032,313,MISS Vassell Tip Layup Shot,201142,1610612745,Kevin Durant,2026
+22500032,377,Wembanyama 1' Cutting Dunk Shot (6 PTS) (Vassell 3 AST),201142,1610612745,Kevin Durant,2026
+22500032,497,Barnes 3PT Jump Shot (17 PTS) (Johnson 2 AST),201142,1610612745,Kevin Durant,2026
+22500032,516,MISS Wembanyama 12' Fadeaway Jumper,201142,1610612745,Kevin Durant,2026
+22500032,641,Champagnie 25' 3PT Jump Shot (22 PTS) (Castle 12 AST),201142,1610612745,Kevin Durant,2026
+22500032,667,MISS Champagnie 25' 3PT Jump Shot,201142,1610612745,Kevin Durant,2026
+22500032,105,Johnson 1' Putback Layup (6 PTS),1642263,1610612745,Reed Sheppard,2026
+22500032,130,MISS Wembanyama 22' Pullup Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,189,McLaughlin 1' Driving Layup (2 PTS) (Wembanyama 2 AST),1642263,1610612745,Reed Sheppard,2026
+22500032,337,MISS Wembanyama 18' Turnaround Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,471,MISS Vassell 24' 3PT Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,482,McLaughlin Running Finger Roll Layup (7 PTS),1642263,1610612745,Reed Sheppard,2026
+22500032,516,MISS Wembanyama 12' Fadeaway Jumper,1642263,1610612745,Reed Sheppard,2026
+22500032,540,MISS Castle 27' 3PT Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,546,MISS Champagnie 24' 3PT Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,548,MISS Champagnie 27' 3PT Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,566,Wembanyama 2' Driving Finger Roll Layup (16 PTS) (Castle 7 AST),1642263,1610612745,Reed Sheppard,2026
+22500032,623,MISS Castle 26' 3PT Jump Shot,1642263,1610612745,Reed Sheppard,2026
+22500032,630,Champagnie 3PT Jump Shot (19 PTS) (Castle 11 AST),1642263,1610612745,Reed Sheppard,2026
+22500032,633,Castle 1' Cutting Dunk Shot (12 PTS) (Wembanyama 4 AST),1642263,1610612745,Reed Sheppard,2026
+22500032,103,MISS Sochan 25' 3PT Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,109,MISS Sochan 2' Alley Oop Dunk,203500,1610612745,Steven Adams,2026
+22500032,143,MISS Johnson 2' Driving Finger Roll Layup,203500,1610612745,Steven Adams,2026
+22500032,266,MISS Sochan 24' 3PT Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,276,MISS Champagnie 24' 3PT Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,283,MISS Wembanyama 27' 3PT Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,316,Wembanyama 14' Jump Shot (4 PTS) (Castle 4 AST),203500,1610612745,Steven Adams,2026
+22500032,337,MISS Wembanyama 18' Turnaround Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,460,MISS Sochan 4' Alley Oop Layup,203500,1610612745,Steven Adams,2026
+22500032,542,Champagnie 26' 3PT Jump Shot (16 PTS) (Barnes 2 AST),203500,1610612745,Steven Adams,2026
+22500032,555,MISS Wembanyama 18' Jump Shot,203500,1610612745,Steven Adams,2026
+22500032,566,Wembanyama 2' Driving Finger Roll Layup (16 PTS) (Castle 7 AST),203500,1610612745,Steven Adams,2026
+22500032,571,Castle 1' Cutting Layup Shot (10 PTS) (Johnson 4 AST),203500,1610612745,Steven Adams,2026
+22500032,25,Thompson 26' 3PT Jump Shot (3 PTS) (Sengun 1 AST),1642264,1610612759,Stephon Castle,2026
+22500032,217,Durant 14' Turnaround Jump Shot (6 PTS),1642264,1610612759,Stephon Castle,2026
+22500032,220,Sheppard 25' 3PT Running Pull-Up Jump Shot (7 PTS) (Eason 1 AST),1642264,1610612759,Stephon Castle,2026
+22500032,279,MISS Durant 15' Pullup Jump Shot,1642264,1610612759,Stephon Castle,2026
+22500032,375,MISS Thompson 9' Turnaround Jump Shot,1642264,1610612759,Stephon Castle,2026
+22500032,408,Wembanyama BLOCK (1 BLK),1642264,1610612759,Stephon Castle,2026
+22500032,554,Sheppard 26' 3PT Pullup Jump Shot (13 PTS),1642264,1610612759,Stephon Castle,2026
+22500032,622,Sengun 1' Driving Dunk (22 PTS),1642264,1610612759,Stephon Castle,2026
+22500032,694,MISS Thompson 22' Jump Shot,1642264,1610612759,Stephon Castle,2026
+22500033,30,MISS Bridges 11' Driving Floating Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,134,MISS Bridges 26' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,342,MISS Bridges 33' 3PT Pullup Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,355,MISS Mann 27' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,363,MISS Bridges 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,377,MISS James 25' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,387,Knueppel 26' 3PT Pullup Jump Shot (19 PTS),203952,1610612748,Andrew Wiggins,2026
+22500033,513,MISS Knueppel 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,542,Wiggins BLOCK (1 BLK),203952,1610612748,Andrew Wiggins,2026
+22500033,667,MISS Bridges 24' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500033,685,McNeeley 24' 3PT Jump Shot (8 PTS) (Simpson 3 AST),203952,1610612748,Andrew Wiggins,2026
+22500033,700,MISS Diabate 1' Putback Layup,203952,1610612748,Andrew Wiggins,2026
+22500033,147,MISS Bridges 3' Driving Layup,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,160,MISS Simpson 1' Driving Floating Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,181,MISS Mann 5' Driving Layup,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,188,MISS Kalkbrenner 2' Reverse Layup,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,220,MISS McNeeley 2' Driving Layup,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,270,MISS Knueppel 22' Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,278,Ware BLOCK (1 BLK),1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,284,MISS Knueppel 3PT Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,286,MISS Mann 7' Pullup Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,337,Jaquez Jr. BLOCK (1 BLK),1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,443,MISS Simpson 5' Driving Layup,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,474,MISS Bridges 26' 3PT Pullup Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,497,MISS James 3PT Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,515,MISS Mann 26' 3PT Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,545,Kalkbrenner 2' Putback Layup (10 PTS),1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,564,James 2' Driving Dunk (10 PTS) (Mann 4 AST),1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,576,Ware BLOCK (3 BLK),1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,599,MISS Mann 15' Pullup Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,651,MISS Mann 12' Pullup Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,663,MISS Mann 26' 3PT Running Jump Shot,1631170,1610612748,Jaime Jaquez Jr.,2026
+22500033,147,MISS Bridges 3' Driving Layup,1630696,1610612748,Dru Smith,2026
+22500033,152,MISS Simpson 10' Turnaround Fadeaway Shot,1630696,1610612748,Dru Smith,2026
+22500033,184,MISS Connaughton 26' 3PT Jump Shot,1630696,1610612748,Dru Smith,2026
+22500033,188,MISS Kalkbrenner 2' Reverse Layup,1630696,1610612748,Dru Smith,2026
+22500033,196,Knueppel 5' Driving Layup (4 PTS) (Mann 2 AST),1630696,1610612748,Dru Smith,2026
+22500033,521,MISS Mann 11' Driving Floating Jump Shot,1630696,1610612748,Dru Smith,2026
+22500033,523,Diabate Tip Layup Shot (8 PTS),1630696,1610612748,Dru Smith,2026
+22500033,545,Kalkbrenner 2' Putback Layup (10 PTS),1630696,1610612748,Dru Smith,2026
 22500161,140,Morant 8' Driving Floating Jump Shot (2 PTS),1629750,1610612765,Javonte Green,2026
 22500161,159,MISS Morant 10' Pullup Jump Shot,1629750,1610612765,Javonte Green,2026
 22500161,191,Jackson Jr. 2' Driving Layup (4 PTS) (Morant 4 AST),1629750,1610612765,Javonte Green,2026
@@ -13750,6 +14336,77 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500095,689,MISS Castle 3PT Jump Shot,1642852,1610612740,Derik Queen,2026
 22500095,728,MISS Wembanyama 16' Fadeaway Jumper,1642852,1610612740,Derik Queen,2026
 22500095,742,Wembanyama 1' Driving Dunk (29 PTS),1642852,1610612740,Derik Queen,2026
+22500028,94,MISS Bitadze 3' Cutting Layup Shot,1630568,1610612738,Luka Garza,2026
+22500028,155,MISS Carter Jr. 26' 3PT Jump Shot,1630568,1610612738,Luka Garza,2026
+22500028,160,MISS da Silva 25' 3PT Step Back Jump Shot,1630568,1610612738,Luka Garza,2026
+22500028,181,MISS Black 25' 3PT Pullup Jump Shot,1630568,1610612738,Luka Garza,2026
+22500028,278,MISS da Silva 14' Driving Floating Jump Shot,1630568,1610612738,Luka Garza,2026
+22500028,292,Banchero 5' Turnaround Bank Shot (6 PTS) (Suggs 3 AST),1630568,1610612738,Luka Garza,2026
+22500028,325,MISS Bane 14' Pullup Jump Shot,1630568,1610612738,Luka Garza,2026
+22500028,486,Bane 11' Driving Floating Jump Shot (14 PTS),1630568,1610612738,Luka Garza,2026
+22500028,205,Wagner 19' Pullup Jump Shot (11 PTS),1631169,1610612738,Josh Minott,2026
+22500028,242,MISS Bane 18' Pullup Jump Shot,1631169,1610612738,Josh Minott,2026
+22500028,381,MISS Bane 26' 3PT Step Back Jump Shot,1631169,1610612738,Josh Minott,2026
+22500028,433,Bane 11' Driving Floating Bank Jump Shot (10 PTS) (Suggs 5 AST),1631169,1610612738,Josh Minott,2026
+22500028,449,MISS Black 26' 3PT Jump Shot,1631169,1610612738,Josh Minott,2026
+22500028,565,Wagner 8' Driving Floating Jump Shot (20 PTS) (Black 3 AST),1631169,1610612738,Josh Minott,2026
+22500028,677,MISS Bane 9' Driving Finger Roll Layup,1631169,1610612738,Josh Minott,2026
+22500028,7,MISS Carter Jr. 14' Jump Shot,1629674,1610612738,Neemias Queta,2026
+22500028,35,MISS Wagner 11' Driving Floating Jump Shot,1629674,1610612738,Neemias Queta,2026
+22500028,67,Banchero 1' Driving Layup (4 PTS),1629674,1610612738,Neemias Queta,2026
+22500028,208,MISS Black 1' Driving Layup,1629674,1610612738,Neemias Queta,2026
+22500028,262,MISS da Silva 25' 3PT Running Jump Shot,1629674,1610612738,Neemias Queta,2026
+22500028,340,Carter Jr. 2' Cutting Dunk Shot (9 PTS) (Wagner 3 AST),1629674,1610612738,Neemias Queta,2026
+22500028,511,MISS Wagner 4' Driving Layup,1629674,1610612738,Neemias Queta,2026
+22500028,520,MISS Carter Jr. 27' 3PT Jump Shot,1629674,1610612738,Neemias Queta,2026
+22500028,536,MISS Wagner 18' Driving Floating Jump Shot,1629674,1610612738,Neemias Queta,2026
+22500028,663,Carter Jr. 26' 3PT Jump Shot (13 PTS) (Black 4 AST),1629674,1610612738,Neemias Queta,2026
+22500028,152,MISS Carter Jr. 4' Driving Layup,1641775,1610612738,Jordan Walsh,2026
+22500028,176,Suggs 25' 3PT Jump Shot (3 PTS) (Black 1 AST),1641775,1610612738,Jordan Walsh,2026
+22500028,203,MISS Black 3' Cutting Dunk Shot,1641775,1610612738,Jordan Walsh,2026
+22500028,224,MISS Wagner 5' Driving Layup,1641775,1610612738,Jordan Walsh,2026
+22500028,306,MISS Wagner 24' 3PT Step Back Jump Shot,1641775,1610612738,Jordan Walsh,2026
+22500028,505,MISS Suggs 14' Driving Floating Jump Shot,1641775,1610612738,Jordan Walsh,2026
+22500028,545,MISS Wagner 26' 3PT Jump Shot,1641775,1610612738,Jordan Walsh,2026
+22500028,587,Bane 3' Driving Finger Roll Layup (16 PTS) (Wagner 5 AST),1641775,1610612738,Jordan Walsh,2026
+22500028,16,Queta 2' Cutting Layup Shot (2 PTS) (White 1 AST),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,21,MISS Brown 23' Step Back Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,41,Pritchard 27' 3PT Step Back Jump Shot (3 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,51,MISS Queta 9' Floating Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,65,MISS Queta 15' Turnaround Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,179,MISS Garza 10' Turnaround Hook Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,282,MISS Garza 24' 3PT Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,305,White 8' Pullup Jump Shot (5 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,335,Pritchard 28' 3PT Pullup Jump Shot (11 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,362,White 2' Driving Finger Roll Layup (7 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,404,MISS Brown 7' Driving Floating Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,432,Brown 16' Step Back Jump Shot (20 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,522,MISS Simons 27' 3PT Step Back Jump Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,564,White 26' 3PT Pullup Jump Shot (12 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,567,Simons 17' Step Back Jump Shot (8 PTS),1628976,1610612753,Wendell Carter Jr.,2026
+22500028,650,MISS Queta Tip Layup Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,652,MISS Queta Tip Layup Shot,1628976,1610612753,Wendell Carter Jr.,2026
+22500028,659,Queta 2' Layup (5 PTS) (Pritchard 4 AST),1628976,1610612753,Wendell Carter Jr.,2026
+22500031,8,Clowney 3PT Jump Shot (3 PTS) (Mann 1 AST),1641709,1610612765,Ausar Thompson,2026
+22500031,33,MISS Clowney 24' 3PT Running Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,41,Clowney 24' 3PT Running Pull-Up Jump Shot (12 PTS) (Demin 3 AST),1641709,1610612765,Ausar Thompson,2026
+22500031,70,Mann 24' 3PT Jump Shot (3 PTS) (Demin 4 AST),1641709,1610612765,Ausar Thompson,2026
+22500031,163,MISS Martin 9' Floating Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,176,Sharpe 2' Driving Finger Roll Layup (2 PTS) (Martin 2 AST),1641709,1610612765,Ausar Thompson,2026
+22500031,191,MISS Martin 25' 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,195,MISS Martin 29' 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,254,MISS Porter Jr. 24' 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,260,MISS Demin 26' 3PT Pullup Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,356,MISS Clowney 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,367,Porter Jr. 24' 3PT Jump Shot (14 PTS) (Demin 6 AST),1641709,1610612765,Ausar Thompson,2026
+22500031,386,MISS Mann 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,518,MISS Clowney 26' 3PT Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500031,619,MISS Liddell 5' Pullup Jump Shot,1641709,1610612765,Ausar Thompson,2026
+22500028,135,Hauser 27' 3PT Step Back Jump Shot (3 PTS),1641783,1610612753,Tristan da Silva,2026
+22500028,298,MISS Brown 3' Running Layup,1641783,1610612753,Tristan da Silva,2026
+22500028,484,MISS Simons 29' 3PT Running Jump Shot,1641783,1610612753,Tristan da Silva,2026
+22500028,487,MISS Brown 27' 3PT Pullup Jump Shot,1641783,1610612753,Tristan da Silva,2026
+22500028,547,MISS White 27' 3PT Pullup Jump Shot,1641783,1610612753,Tristan da Silva,2026
 22500104,730,Pickett 17' Pullup Jump Shot (2 PTS),1642853,1610612756,Rasheer Fleming,2026
 22500104,155,MISS O'Neale 3PT Jump Shot,1631212,1610612743,Peyton Watson,2026
 22500104,196,MISS Gillespie 27' 3PT Jump Shot,1631212,1610612743,Peyton Watson,2026
@@ -14933,6 +15590,78 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500003,494,MISS McBride 23' Step Back Jump Shot,1642878,1610612739,Tyrese Proctor,2026
 22500003,504,MISS Kolek 1' Driving Layup,1642878,1610612739,Tyrese Proctor,2026
 22500003,523,MISS Clarkson 3PT Jump Shot,1642878,1610612739,Tyrese Proctor,2026
+22500035,109,MISS Williams 26' 3PT Jump Shot,1628398,1610612749,Kyle Kuzma,2026
+22500035,126,Smith 4' Running Reverse Layup (2 PTS) (Huerter 1 AST),1628398,1610612749,Kyle Kuzma,2026
+22500035,196,Buzelis 2' Driving Layup (8 PTS),1628398,1610612749,Kyle Kuzma,2026
+22500035,219,MISS Smith 27' 3PT Jump Shot,1628398,1610612749,Kyle Kuzma,2026
+22500035,453,Kuzma BLOCK (1 BLK),1628398,1610612749,Kyle Kuzma,2026
+22500035,517,MISS Dosunmu 3PT Jump Shot,1628398,1610612749,Kyle Kuzma,2026
+22500035,521,Dosunmu 9' Driving Floating Jump Shot (5 PTS) (Jones 2 AST),1628398,1610612749,Kyle Kuzma,2026
+22500035,530,Smith Tip Layup Shot (7 PTS),1628398,1610612749,Kyle Kuzma,2026
+22500035,540,Okoro 2' Cutting Layup Shot (4 PTS) (Smith 3 AST),1628398,1610612749,Kyle Kuzma,2026
+22500035,593,MISS Buzelis 25' 3PT Jump Shot,1628398,1610612749,Kyle Kuzma,2026
+22500035,616,MISS Giddey 27' 3PT Step Back Jump Shot,1628398,1610612749,Kyle Kuzma,2026
+22500035,60,Rollins 13' Pullup Jump Shot (2 PTS),1628989,1610612741,Kevin Huerter,2026
+22500035,62,MISS Rollins 27' 3PT Jump Shot,1628989,1610612741,Kevin Huerter,2026
+22500035,84,Rollins 25' 3PT Jump Shot (5 PTS) (Green 1 AST),1628989,1610612741,Kevin Huerter,2026
+22500035,111,Coffey 3' Running Dunk (2 PTS) (Anthony 1 AST),1628989,1610612741,Kevin Huerter,2026
+22500035,284,Turner Putback Layup (13 PTS),1628989,1610612741,Kevin Huerter,2026
+22500035,296,MISS Rollins 3' Driving Layup,1628989,1610612741,Kevin Huerter,2026
+22500035,304,MISS Trent Jr. 7' Driving Floating Jump Shot,1628989,1610612741,Kevin Huerter,2026
+22500035,408,G. Antetokounmpo 2' Running Finger Roll Layup (19 PTS) (Green 3 AST),1628989,1610612741,Kevin Huerter,2026
+22500035,447,MISS Trent Jr. 26' 3PT Jump Shot,1628989,1610612741,Kevin Huerter,2026
+22500035,456,MISS Rollins 1' Running Layup,1628989,1610612741,Kevin Huerter,2026
+22500035,41,MISS Trent Jr. 5' Driving Layup,1641824,1610612741,Matas Buzelis,2026
+22500035,43,MISS Trent Jr. 4' Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,48,Green 26' 3PT Jump Shot (3 PTS) (Rollins 1 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,84,Rollins 25' 3PT Jump Shot (5 PTS) (Green 1 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,186,MISS Anthony 3PT Running Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,218,Anthony 8' Driving Hook Shot (5 PTS),1641824,1610612741,Matas Buzelis,2026
+22500035,234,Turner 4' Driving Finger Roll Layup (8 PTS) (Green 2 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,282,MISS Green 28' 3PT Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,340,MISS Green 26' 3PT Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,418,G. Antetokounmpo 2' Driving Dunk (22 PTS),1641824,1610612741,Matas Buzelis,2026
+22500035,431,MISS Turner 3' Driving Layup,1641824,1610612741,Matas Buzelis,2026
+22500035,497,MISS G. Antetokounmpo 8' Turnaround Fadeaway Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,519,Green 26' 3PT Jump Shot (6 PTS) (G. Antetokounmpo 7 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,537,MISS G. Antetokounmpo 2' Driving Finger Roll Layup,1641824,1610612741,Matas Buzelis,2026
+22500035,539,G. Antetokounmpo Tip Layup Shot (27 PTS),1641824,1610612741,Matas Buzelis,2026
+22500035,581,MISS Green 24' 3PT Running Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,591,G. Antetokounmpo 1' Dunk (32 PTS) (Rollins 3 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,640,MISS Turner 26' 3PT Jump Shot,1641824,1610612741,Matas Buzelis,2026
+22500035,649,G. Antetokounmpo 2' Cutting Layup Shot (39 PTS) (Green 5 AST),1641824,1610612741,Matas Buzelis,2026
+22500035,19,Turner BLOCK (1 BLK),1631157,1610612749,Ryan Rollins,2026
+22500035,36,Giddey 9' Turnaround Bank Shot (2 PTS),1631157,1610612749,Ryan Rollins,2026
+22500035,45,Buzelis 2' Cutting Finger Roll Layup Shot (6 PTS) (Giddey 2 AST),1631157,1610612749,Ryan Rollins,2026
+22500035,83,Giddey 12' Driving Floating Jump Shot (4 PTS),1631157,1610612749,Ryan Rollins,2026
+22500035,325,MISS Williams 3' Driving Floating Jump Shot,1631157,1610612749,Ryan Rollins,2026
+22500035,356,Jones Tip Layup Shot (7 PTS),1631157,1610612749,Ryan Rollins,2026
+22500035,380,MISS Giddey 26' 3PT Pullup Jump Shot,1631157,1610612749,Ryan Rollins,2026
+22500035,396,Huerter 2' Running Dunk (9 PTS) (Giddey 8 AST),1631157,1610612749,Ryan Rollins,2026
+22500035,416,MISS Giddey 3' Driving Finger Roll Layup,1631157,1610612749,Ryan Rollins,2026
+22500035,453,Kuzma BLOCK (1 BLK),1631157,1610612749,Ryan Rollins,2026
+22500035,602,Buzelis 7' Cutting Finger Roll Layup Shot (20 PTS) (Giddey 14 AST),1631157,1610612749,Ryan Rollins,2026
+22500035,663,Jones 3' Running Finger Roll Layup (15 PTS),1631157,1610612749,Ryan Rollins,2026
+22500035,689,Rollins BLOCK (1 BLK),1631157,1610612749,Ryan Rollins,2026
+22500035,135,MISS Anthony 24' 3PT Running Jump Shot,1630200,1610612741,Tre Jones,2026
+22500035,137,MISS G. Antetokounmpo 2' Turnaround Hook Shot,1630200,1610612741,Tre Jones,2026
+22500035,140,MISS G. Antetokounmpo 5' Driving Finger Roll Layup,1630200,1610612741,Tre Jones,2026
+22500035,142,G. Antetokounmpo Tip Layup Shot (5 PTS),1630200,1610612741,Tre Jones,2026
+22500035,147,G. Antetokounmpo 1' Cutting Dunk Shot (7 PTS) (Anthony 2 AST),1630200,1610612741,Tre Jones,2026
+22500035,152,Anthony 28' 3PT Pullup Jump Shot (3 PTS) (Coffey 1 AST),1630200,1610612741,Tre Jones,2026
+22500035,161,MISS Anthony 16' Pullup Jump Shot,1630200,1610612741,Tre Jones,2026
+22500035,276,MISS Rollins 3' Running Layup,1630200,1610612741,Tre Jones,2026
+22500035,278,Rollins Tip Layup Shot (9 PTS),1630200,1610612741,Tre Jones,2026
+22500035,344,MISS G. Antetokounmpo 2' Driving Finger Roll Layup,1630200,1610612741,Tre Jones,2026
+22500035,382,Trent Jr. 27' 3PT Jump Shot (3 PTS) (G. Antetokounmpo 5 AST),1630200,1610612741,Tre Jones,2026
+22500035,537,MISS G. Antetokounmpo 2' Driving Finger Roll Layup,1630200,1610612741,Tre Jones,2026
+22500035,632,Rollins 3PT Jump Shot (18 PTS) (G. Antetokounmpo 8 AST),1630200,1610612741,Tre Jones,2026
+22500029,662,MISS Tyson 25' 3PT Jump Shot,1642358,1610612764,AJ Johnson,2026
+22500029,681,Tyson 1' Cutting Layup Shot (10 PTS) (Nance Jr. 1 AST),1642358,1610612764,AJ Johnson,2026
+22500029,701,Travers 4' Driving Layup (2 PTS) (Proctor 1 AST),1642358,1610612764,AJ Johnson,2026
+22500029,721,MISS Tomlin 3' Putback Layup,1642358,1610612764,AJ Johnson,2026
+22500029,741,MISS Travers 16' Step Back Jump Shot,1642358,1610612764,AJ Johnson,2026
+22500029,779,MISS Tomlin 26' 3PT Jump Shot,1630264,1610612764,Anthony Gill,2026
 22500008,149,Murray 13' Pullup Jump Shot (6 PTS),1642265,1610612750,Rob Dillingham,2026
 22500008,176,MISS Hardaway Jr. 9' Driving Floating Jump Shot,1642265,1610612750,Rob Dillingham,2026
 22500008,208,Randle BLOCK (1 BLK),1642265,1610612750,Rob Dillingham,2026
@@ -15239,6 +15968,17 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500142,73,Sabonis 2' Layup (5 PTS) (Westbrook 1 AST),203507,1610612749,Giannis Antetokounmpo,2026
 22500142,260,DeRozan 2' Driving Layup (15 PTS),203507,1610612749,Giannis Antetokounmpo,2026
 22500142,575,MISS LaVine 25' 3PT Jump Shot,203507,1610612749,Giannis Antetokounmpo,2026
+22500037,96,Jokic 6' Turnaround Hook Shot (6 PTS) (Braun 1 AST),1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,112,MISS Brown 25' 3PT Jump Shot,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,116,MISS Gordon 2' Cutting Layup Shot,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,504,MISS Brown 3' Layup,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,515,Valanciunas 2' Hook Shot (14 PTS),1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,537,MISS Braun 20' Step Back Jump Shot,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,555,Valanciunas Tip Dunk Shot (16 PTS),1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,584,Nnaji 26' 3PT Jump Shot (3 PTS) (Pickett 1 AST),1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,599,MISS Tyson 3PT Jump Shot,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,625,MISS Strawther 27' 3PT Pullup Jump Shot,1631218,1610612744,Trayce Jackson-Davis,2026
+22500037,629,Jones 2' Driving Layup (2 PTS) (Pickett 3 AST),1631218,1610612744,Trayce Jackson-Davis,2026
 22500121,393,MISS Aldama 28' 3PT Jump Shot,1627780,1610612744,Gary Payton II,2026
 22500121,630,MISS Konchar 27' 3PT Jump Shot,1627780,1610612744,Gary Payton II,2026
 22500121,632,MISS Konchar 26' 3PT Jump Shot,1627780,1610612744,Gary Payton II,2026
@@ -15847,6 +16587,54 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500152,617,Murray-Boyles Putback Dunk (15 PTS),1642907,1610612763,Cedric Coward,2026
 22500152,688,MISS Barrett 27' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
 22500152,709,MISS Barrett 26' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500032,21,MISS Durant 12' Pullup Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,68,MISS Durant 12' Pullup Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,78,MISS Durant 17' Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,84,Durant 14' Jump Shot (4 PTS) (Sengun 3 AST),203084,1610612759,Harrison Barnes,2026
+22500032,107,MISS Durant 14' Turnaround Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,279,MISS Durant 15' Pullup Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,341,MISS Eason 3PT Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,367,Smith Jr. 2' Running Finger Roll Layup (5 PTS) (Thompson 1 AST),203084,1610612759,Harrison Barnes,2026
+22500032,379,Durant 15' Pullup Jump Shot (11 PTS) (Sengun 6 AST),203084,1610612759,Harrison Barnes,2026
+22500032,526,Durant 4' Driving Floating Jump Shot (20 PTS) (Sengun 7 AST),203084,1610612759,Harrison Barnes,2026
+22500032,550,MISS Sengun 26' 3PT Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,559,MISS Thompson 3PT Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,563,Sengun 13' Turnaround Jump Shot (13 PTS),203084,1610612759,Harrison Barnes,2026
+22500032,591,MISS Durant 12' Fadeaway Jumper,203084,1610612759,Harrison Barnes,2026
+22500032,596,MISS Durant 15' Pullup Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,605,MISS Durant 28' 3PT Jump Shot,203084,1610612759,Harrison Barnes,2026
+22500032,632,Sheppard 26' 3PT Pullup Jump Shot (16 PTS),203084,1610612759,Harrison Barnes,2026
+22500032,659,MISS Durant 17' Fadeaway Jumper,203084,1610612759,Harrison Barnes,2026
+22500032,38,MISS Smith Jr. 16' Jump Shot,1630170,1610612759,Devin Vassell,2026
+22500032,65,Smith Jr. Tip Layup Shot (2 PTS),1630170,1610612759,Devin Vassell,2026
+22500032,237,MISS Eason 9' Floating Jump Shot,1630170,1610612759,Devin Vassell,2026
+22500032,256,MISS Okogie 1' Driving Layup,1630170,1610612759,Devin Vassell,2026
+22500032,419,Okogie 3PT Jump Shot (12 PTS) (Smith Jr. 1 AST),1630170,1610612759,Devin Vassell,2026
+22500032,448,MISS Smith Jr. 9' Fadeaway Jumper,1630170,1610612759,Devin Vassell,2026
+22500032,616,Durant 1' Running Dunk (22 PTS) (Sheppard 6 AST),1630170,1610612759,Devin Vassell,2026
+22500032,700,Sengun 2' Putback Layup (25 PTS),1630170,1610612759,Devin Vassell,2026
+22500032,158,MISS Waters III 29' 3PT Pullup Jump Shot,1630256,1610612745,Jae'Sean Tate,2026
+22500032,73,MISS Sengun 6' Hook Shot,1631110,1610612759,Jeremy Sochan,2026
+22500032,101,MISS Adams 1' Alley Oop Dunk,1631110,1610612759,Jeremy Sochan,2026
+22500032,252,MISS Durant 14' Pullup Jump Shot,1631110,1610612759,Jeremy Sochan,2026
+22500032,260,Okogie 1' Running Dunk (7 PTS) (Sheppard 2 AST),1631110,1610612759,Jeremy Sochan,2026
+22500032,446,MISS Thompson 9' Fadeaway Jumper,1631110,1610612759,Jeremy Sochan,2026
+22500032,454,Eason 24' 3PT Jump Shot (11 PTS) (Smith Jr. 2 AST),1631110,1610612759,Jeremy Sochan,2026
+22500032,492,Durant 18' Pullup Jump Shot (17 PTS) (Thompson 3 AST),1631110,1610612759,Jeremy Sochan,2026
+22500032,499,MISS Sengun 17' Step Back Jump Shot,1631110,1610612759,Jeremy Sochan,2026
+22500032,510,MISS Sengun Putback Layup,1631110,1610612759,Jeremy Sochan,2026
+22500032,170,MISS Sheppard 26' 3PT Pullup Jump Shot,1629162,1610612759,Jordan McLaughlin,2026
+22500032,184,Thompson 25' 3PT Jump Shot (6 PTS) (Sheppard 1 AST),1629162,1610612759,Jordan McLaughlin,2026
+22500032,196,Sheppard 5' Driving Floating Jump Shot (4 PTS) (Sengun 5 AST),1629162,1610612759,Jordan McLaughlin,2026
+22500032,229,MISS Sheppard 15' Pullup Jump Shot,1629162,1610612759,Jordan McLaughlin,2026
+22500032,231,Sheppard 27' 3PT Jump Shot (10 PTS) (Capela 1 AST),1629162,1610612759,Jordan McLaughlin,2026
+22500032,514,Sengun 14' Jump Shot (8 PTS) (Sheppard 3 AST),1629162,1610612759,Jordan McLaughlin,2026
+22500032,518,Adams 3' Cutting Layup Shot (2 PTS) (Sheppard 4 AST),1629162,1610612759,Jordan McLaughlin,2026
+22500032,30,MISS Castle 2' Driving Finger Roll Layup,1629006,1610612745,Josh Okogie,2026
+22500032,414,Wembanyama 13' Fadeaway Jumper (10 PTS),1629006,1610612745,Josh Okogie,2026
+22500032,612,MISS Castle 26' 3PT Jump Shot,1629006,1610612745,Josh Okogie,2026
+22500032,651,Castle Tip Layup Shot (14 PTS),1629006,1610612745,Josh Okogie,2026
+22500032,682,MISS Vassell 27' 3PT Jump Shot,1629006,1610612745,Josh Okogie,2026
 22500149,557,MISS Martin 25' 3PT Jump Shot,1642348,1610612755,Justin Edwards,2026
 22500149,617,Thomas 26' 3PT Jump Shot (19 PTS) (Claxton 5 AST),1642348,1610612755,Justin Edwards,2026
 22500149,662,Thomas 3PT Jump Shot (24 PTS) (Mann 4 AST),1642348,1610612755,Justin Edwards,2026
@@ -16103,6 +16891,149 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500132,599,MISS Giddey 6' Driving Floating Jump Shot,203897,1610612758,Zach LaVine,2026
 22500132,610,Dosunmu 13' Pullup Jump Shot (9 PTS),203897,1610612758,Zach LaVine,2026
 22500132,624,MISS Okoro Tip Layup Shot,203897,1610612758,Zach LaVine,2026
+22500037,10,MISS Green 28' 3PT Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,14,MISS Kuminga 16' Pullup Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,41,MISS Green 16' Floating Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,69,MISS Podziemski 17' Pullup Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,85,Green 4' Driving Layup (5 PTS) (Spencer 1 AST),203999,1610612743,Nikola Jokić,2026
+22500037,114,Post 25' 3PT Jump Shot (3 PTS) (Jackson-Davis 1 AST),203999,1610612743,Nikola Jokić,2026
+22500037,120,Jackson-Davis 3' Hook Bank Shot (4 PTS) (Butler III 1 AST),203999,1610612743,Nikola Jokić,2026
+22500037,241,Richard 7' Floating Jump Shot (2 PTS) (Kuminga 2 AST),203999,1610612743,Nikola Jokić,2026
+22500037,273,MISS Green 24' 3PT Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,297,Green 26' 3PT Jump Shot (11 PTS) (Kuminga 3 AST),203999,1610612743,Nikola Jokić,2026
+22500037,301,MISS Butler III 15' Pullup Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,311,Green 24' 3PT Jump Shot (14 PTS) (Butler III 2 AST),203999,1610612743,Nikola Jokić,2026
+22500037,330,Green 3PT Jump Shot (17 PTS) (Podziemski 3 AST),203999,1610612743,Nikola Jokić,2026
+22500037,374,MISS Kuminga 11' Pullup Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,377,Kuminga 13' Pullup Jump Shot (6 PTS),203999,1610612743,Nikola Jokić,2026
+22500037,384,Podziemski 27' 3PT Pullup Jump Shot (5 PTS) (Green 4 AST),203999,1610612743,Nikola Jokić,2026
+22500037,413,MISS Spencer 25' 3PT Step Back Jump Shot,203999,1610612743,Nikola Jokić,2026
+22500037,118,MISS Hardaway Jr. 19' Jump Shot,1630311,1610612744,Pat Spencer,2026
+22500037,129,Jokic 2' Putback Layup (11 PTS),1630311,1610612744,Pat Spencer,2026
+22500037,132,Gordon 26' 3PT Jump Shot (10 PTS) (Jokic 6 AST),1630311,1610612744,Pat Spencer,2026
+22500037,177,MISS Valanciunas 5' Hook Shot,1630311,1610612744,Pat Spencer,2026
+22500037,442,Jokic 2' Turnaround Jump Shot (26 PTS) (Murray 7 AST),1630311,1610612744,Pat Spencer,2026
+22500037,24,Braun 2' Running Layup (4 PTS) (Jokic 3 AST),1630541,1610612744,Moses Moody,2026
+22500037,32,MISS Gordon 7' Turnaround Bank Shot,1630541,1610612744,Moses Moody,2026
+22500037,44,Murray 26' 3PT Jump Shot (3 PTS) (Jokic 4 AST),1630541,1610612744,Moses Moody,2026
+22500037,147,MISS Watson 3' Driving Layup,1630541,1610612744,Moses Moody,2026
+22500037,156,MISS Murray 25' 3PT Jump Shot,1630541,1610612744,Moses Moody,2026
+22500037,173,Murray 26' 3PT Pullup Jump Shot (6 PTS) (Watson 1 AST),1630541,1610612744,Moses Moody,2026
+22500037,181,Murray 25' 3PT Step Back Jump Shot (9 PTS),1630541,1610612744,Moses Moody,2026
+22500037,299,MISS Murray 17' Pullup Jump Shot,1630541,1610612744,Moses Moody,2026
+22500037,342,MISS Johnson 27' 3PT Jump Shot,1630541,1610612744,Moses Moody,2026
+22500037,479,Watson 2' Running Layup (6 PTS) (Murray 8 AST),1630541,1610612744,Moses Moody,2026
+22500037,87,Gordon 2' Alley Oop Dunk (7 PTS) (Jokic 5 AST),1642366,1610612744,Quinten Post,2026
+22500037,116,MISS Gordon 2' Cutting Layup Shot,1642366,1610612744,Quinten Post,2026
+22500037,127,MISS Watson 3' Running Layup,1642366,1610612744,Quinten Post,2026
+22500037,156,MISS Murray 25' 3PT Jump Shot,1642366,1610612744,Quinten Post,2026
+22500037,188,Valanciunas 4' Turnaround Hook Shot (5 PTS) (Murray 1 AST),1642366,1610612744,Quinten Post,2026
+22500037,372,Jokic 3' Cutting Layup Shot (20 PTS) (Johnson 4 AST),1642366,1610612744,Quinten Post,2026
+22500037,397,Jokic 3' Cutting Finger Roll Layup Shot (22 PTS) (Hardaway Jr. 1 AST),1642366,1610612744,Quinten Post,2026
+22500037,408,MISS Murray 27' 3PT Jump Shot,1642366,1610612744,Quinten Post,2026
+22500037,419,Jokic 4' Hook Shot (24 PTS) (Murray 6 AST),1642366,1610612744,Quinten Post,2026
+22500037,433,Murray 18' Step Back Jump Shot (23 PTS),1642366,1610612744,Quinten Post,2026
+22500037,462,MISS Valanciunas 26' 3PT Jump Shot,1642366,1610612744,Quinten Post,2026
+22500037,476,Valanciunas Tip Layup Shot (12 PTS),1642366,1610612744,Quinten Post,2026
+22500037,484,Watson 27' 3PT Step Back Jump Shot (9 PTS) (Valanciunas 1 AST),1642366,1610612744,Quinten Post,2026
+22500037,125,MISS Hield 3' Driving Finger Roll Layup,203501,1610612743,Tim Hardaway Jr.,2026
+22500037,162,Butler III 14' Running Jump Shot (5 PTS) (Spencer 2 AST),203501,1610612743,Tim Hardaway Jr.,2026
+22500037,366,Kuminga 3' Layup (4 PTS) (Green 3 AST),203501,1610612743,Tim Hardaway Jr.,2026
+22500037,380,MISS Hield 26' 3PT Jump Shot,203501,1610612743,Tim Hardaway Jr.,2026
+22500037,520,MISS Richard 25' 3PT Pullup Jump Shot,203501,1610612743,Tim Hardaway Jr.,2026
+22500037,89,Spencer 15' Turnaround Jump Shot (2 PTS),1631212,1610612743,Peyton Watson,2026
+22500037,107,MISS Butler III 6' Driving Floating Jump Shot,1631212,1610612743,Peyton Watson,2026
+22500037,109,MISS Jackson-Davis 4' Putback Layup,1631212,1610612743,Peyton Watson,2026
+22500037,111,Jackson-Davis 3' Hook Shot (2 PTS),1631212,1610612743,Peyton Watson,2026
+22500037,120,Jackson-Davis 3' Hook Bank Shot (4 PTS) (Butler III 1 AST),1631212,1610612743,Peyton Watson,2026
+22500037,130,Hield 9' Driving Floating Jump Shot (2 PTS) (Post 1 AST),1631212,1610612743,Peyton Watson,2026
+22500037,134,Post 21' Pullup Jump Shot (5 PTS),1631212,1610612743,Peyton Watson,2026
+22500037,158,MISS Green 26' 3PT Jump Shot,1631212,1610612743,Peyton Watson,2026
+22500037,165,Post 3PT Jump Shot (8 PTS) (Green 2 AST),1631212,1610612743,Peyton Watson,2026
+22500037,427,MISS Hield 18' Pullup Jump Shot,1631212,1610612743,Peyton Watson,2026
+22500037,444,Watson BLOCK (1 BLK),1631212,1610612743,Peyton Watson,2026
+22500037,483,Post 4' Driving Floating Jump Shot (14 PTS),1631212,1610612743,Peyton Watson,2026
+22500037,528,MISS Jackson-Davis 2' Tip Layup Shot,1631212,1610612743,Peyton Watson,2026
+22500037,560,Spencer 12' Turnaround Fadeaway (10 PTS),1631212,1610612743,Peyton Watson,2026
+22500037,570,Richard Tip Layup Shot (12 PTS),1631212,1610612743,Peyton Watson,2026
+22500036,20,Edwards BLOCK (1 BLK),1630162,1610612750,Anthony Edwards,2026
+22500036,116,MISS Bailey 21' Pullup Jump Shot,1630162,1610612750,Anthony Edwards,2026
+22500036,241,MISS George 14' Pullup Jump Shot,1630162,1610612750,Anthony Edwards,2026
+22500036,316,MISS Mykhailiuk 24' 3PT Running Pull-Up Jump Shot,1630162,1610612750,Anthony Edwards,2026
+22500036,333,MISS Filipowski 3' Driving Floating Jump Shot,1630162,1610612750,Anthony Edwards,2026
+22500036,365,Bailey 3PT Jump Shot (5 PTS) (George 2 AST),1630162,1610612750,Anthony Edwards,2026
+22500036,394,George 3PT Running Jump Shot (18 PTS) (Markkanen 2 AST),1630162,1610612750,Anthony Edwards,2026
+22500036,161,MISS McDaniels 14' Pullup Jump Shot,1642383,1610612762,Walter Clayton Jr.,2026
+22500036,166,MISS McDaniels 4' Driving Layup,1642383,1610612762,Walter Clayton Jr.,2026
+22500036,168,MISS McDaniels Tip Layup Shot,1642383,1610612762,Walter Clayton Jr.,2026
+22500036,582,MISS Dillingham 3PT Jump Shot,1642383,1610612762,Walter Clayton Jr.,2026
+22500036,622,MISS Dillingham 25' 3PT Pullup Jump Shot,1642383,1610612762,Walter Clayton Jr.,2026
+22500036,636,Dillingham 2' Driving Layup (8 PTS),1642383,1610612762,Walter Clayton Jr.,2026
+22500038,30,Eubanks 3' Reverse Layup (6 PTS) (Schroder 2 AST),1641717,1610612760,Cason Wallace,2026
+22500038,42,DeRozan 23' Jump Shot (2 PTS) (Schroder 3 AST),1641717,1610612760,Cason Wallace,2026
+22500038,57,MISS Schroder 27' 3PT Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,94,Monk 29' 3PT Running Jump Shot (3 PTS) (Clifford 1 AST),1641717,1610612760,Cason Wallace,2026
+22500038,251,MISS Westbrook 3PT Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,271,LaVine 27' 3PT Jump Shot (6 PTS) (Westbrook 6 AST),1641717,1610612760,Cason Wallace,2026
+22500038,345,MISS DeRozan 19' Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,357,DeRozan 3PT Jump Shot (14 PTS) (Schroder 6 AST),1641717,1610612760,Cason Wallace,2026
+22500038,367,MISS Schroder 27' 3PT Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,403,MISS Westbrook 27' 3PT Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,408,DeRozan 11' Jump Shot (18 PTS),1641717,1610612760,Cason Wallace,2026
+22500038,414,MISS Westbrook 11' Turnaround Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,597,MISS Raynaud 2' Driving Floating Bank Jump Shot,1641717,1610612760,Cason Wallace,2026
+22500038,599,Raynaud 3' Jump Shot (4 PTS),1641717,1610612760,Cason Wallace,2026
+22500038,648,MISS Clifford 6' Driving Hook Shot,1641717,1610612760,Cason Wallace,2026
+22500038,708,MISS Carter 10' Layup,1642964,1610612760,Brooks Barnhizer,2026
+22500038,23,MISS Mitchell 6' Driving Layup,201942,1610612758,DeMar DeRozan,2026
+22500038,27,Gilgeous-Alexander 2' Driving Dunk (2 PTS),201942,1610612758,DeMar DeRozan,2026
+22500038,38,Mitchell 4' Driving Layup (2 PTS),201942,1610612758,DeMar DeRozan,2026
+22500038,124,MISS Gilgeous-Alexander 2' Running Layup,201942,1610612758,DeMar DeRozan,2026
+22500038,131,MISS Youngblood 26' 3PT Jump Shot,201942,1610612758,DeMar DeRozan,2026
+22500038,186,Hartenstein 10' Floating Jump Shot (9 PTS) (Mitchell 3 AST),201942,1610612758,DeMar DeRozan,2026
+22500038,207,Hartenstein 4' Layup (15 PTS) (Mitchell 4 AST),201942,1610612758,DeMar DeRozan,2026
+22500038,341,MISS Joe 3PT Jump Shot,201942,1610612758,DeMar DeRozan,2026
+22500038,379,Hartenstein 4' Alley Oop Dunk (22 PTS) (Holmgren 1 AST),201942,1610612758,DeMar DeRozan,2026
+22500038,386,MISS Holmgren 27' 3PT Jump Shot,201942,1610612758,DeMar DeRozan,2026
+22500038,406,Wallace 26' 3PT Jump Shot (12 PTS) (Gilgeous-Alexander 2 AST),201942,1610612758,DeMar DeRozan,2026
+22500038,412,MISS Mitchell 6' Floating Jump Shot,201942,1610612758,DeMar DeRozan,2026
+22500038,490,Gilgeous-Alexander 13' Pullup Jump Shot (30 PTS),201942,1610612758,DeMar DeRozan,2026
+22500038,528,MISS Hartenstein 13' Jump Shot,201942,1610612758,DeMar DeRozan,2026
+22500038,596,Hartenstein Tip Layup Shot (31 PTS),201942,1610612758,DeMar DeRozan,2026
+22500038,600,Wallace 24' 3PT Jump Shot (15 PTS) (Mitchell 8 AST),201942,1610612758,DeMar DeRozan,2026
+22500038,133,Monk 26' 3PT Jump Shot (6 PTS) (DeRozan 2 AST),1642959,1610612760,Chris Youngblood,2026
+22500038,148,Monk 31' 3PT Jump Shot (9 PTS) (Schroder 4 AST),1642959,1610612760,Chris Youngblood,2026
+22500038,659,MISS Achiuwa 4' Driving Layup,1642959,1610612760,Chris Youngblood,2026
+22500038,681,MISS Achiuwa 10' Jump Shot,1642959,1610612760,Chris Youngblood,2026
+22500038,691,MISS Carter 27' 3PT Jump Shot,1642959,1610612760,Chris Youngblood,2026
+22500038,639,Mitchell 27' 3PT Jump Shot (15 PTS),1642269,1610612758,Devin Carter,2026
+22500038,674,Dieng 25' 3PT Jump Shot (3 PTS),1642269,1610612758,Devin Carter,2026
+22500038,677,MISS Dieng 4' Cutting Layup Shot,1642269,1610612758,Devin Carter,2026
+22500038,7,Wallace 4' Driving Finger Roll Layup (2 PTS) (Mitchell 1 AST),203471,1610612758,Dennis Schröder,2026
+22500038,59,Wallace 5' Driving Floating Bank Jump Shot (7 PTS) (Mitchell 2 AST),203471,1610612758,Dennis Schröder,2026
+22500038,65,Eubanks BLOCK (1 BLK),203471,1610612758,Dennis Schröder,2026
+22500038,73,Monk BLOCK (1 BLK),203471,1610612758,Dennis Schröder,2026
+22500038,77,MISS Gilgeous-Alexander 17' Jump Shot,203471,1610612758,Dennis Schröder,2026
+22500038,278,Mitchell 4' Driving Layup (6 PTS),203471,1610612758,Dennis Schröder,2026
+22500038,329,Joe 3PT Jump Shot (8 PTS) (Wallace 2 AST),203471,1610612758,Dennis Schröder,2026
+22500038,347,MISS Gilgeous-Alexander 2' Running Layup,203471,1610612758,Dennis Schröder,2026
+22500038,412,MISS Mitchell 6' Floating Jump Shot,203471,1610612758,Dennis Schröder,2026
+22500038,456,Joe 13' Running Pull-Up Jump Shot (10 PTS) (Caruso 3 AST),203471,1610612758,Dennis Schröder,2026
+22500038,7,Wallace 4' Driving Finger Roll Layup (2 PTS) (Mitchell 1 AST),1629234,1610612758,Drew Eubanks,2026
+22500038,15,Holmgren 21' Running Jump Shot (2 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,41,Gilgeous-Alexander 15' Pullup Jump Shot (4 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,70,Gilgeous-Alexander 6' Running Layup (6 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,204,Hartenstein 3' Hook Shot (13 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,253,Hartenstein 1' Alley Oop Dunk (20 PTS) (Mitchell 6 AST),1629234,1610612758,Drew Eubanks,2026
+22500038,257,MISS Mitchell 3' Driving Layup,1629234,1610612758,Drew Eubanks,2026
+22500038,309,Gilgeous-Alexander 26' 3PT Jump Shot (13 PTS) (Williams 1 AST),1629234,1610612758,Drew Eubanks,2026
+22500038,427,Gilgeous-Alexander 4' Driving Layup (24 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,483,Hartenstein 3' Running Dunk (28 PTS) (Caruso 5 AST),1629234,1610612758,Drew Eubanks,2026
+22500038,493,Eubanks BLOCK (2 BLK),1629234,1610612758,Drew Eubanks,2026
+22500038,508,MISS Hartenstein 15' Hook Shot,1629234,1610612758,Drew Eubanks,2026
+22500038,528,MISS Hartenstein 13' Jump Shot,1629234,1610612758,Drew Eubanks,2026
+22500038,531,Holmgren Putback Dunk (8 PTS),1629234,1610612758,Drew Eubanks,2026
+22500038,534,Holmgren 19' Step Back Jump Shot (10 PTS),1629234,1610612758,Drew Eubanks,2026
 22500026,90,MISS Johnson 3PT Jump Shot,1631104,1610612757,Blake Wesley,2026
 22500026,108,Gordon 21' Step Back Jump Shot (4 PTS),1631104,1610612757,Blake Wesley,2026
 22500026,301,Gordon Tip Layup Shot (6 PTS),1631104,1610612757,Blake Wesley,2026
@@ -16228,6 +17159,68 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500026,452,Jokic 6' Driving Hook Shot (14 PTS),201950,1610612757,Jrue Holiday,2026
 22500026,683,Gordon 20' Step Back Jump Shot (14 PTS),201950,1610612757,Jrue Holiday,2026
 22500026,700,Camara BLOCK (2 BLK),201950,1610612757,Jrue Holiday,2026
+22500033,40,Powell 25' 3PT Pullup Jump Shot (8 PTS),1642883,1610612766,Sion James,2026
+22500033,62,Mitchell 26' 3PT Running Pull-Up Jump Shot (5 PTS) (Wiggins 2 AST),1642883,1610612766,Sion James,2026
+22500033,65,MISS Mitchell 27' 3PT Pullup Jump Shot,1642883,1610612766,Sion James,2026
+22500033,69,Wiggins 14' Turnaround Fadeaway Bank Jump Shot (5 PTS),1642883,1610612766,Sion James,2026
+22500033,75,MISS Powell 3' Driving Layup,1642883,1610612766,Sion James,2026
+22500033,186,Wiggins 27' 3PT Jump Shot (11 PTS) (Jaquez Jr. 3 AST),1642883,1610612766,Sion James,2026
+22500033,190,Jaquez Jr. 7' Driving Floating Jump Shot (7 PTS) (Jovic 1 AST),1642883,1610612766,Sion James,2026
+22500033,357,MISS Larsson 25' 3PT Running Pull-Up Jump Shot,1642883,1610612766,Sion James,2026
+22500033,395,Larsson 2' Driving Layup (13 PTS),1642883,1610612766,Sion James,2026
+22500033,398,Mitchell 2' Driving Layup (9 PTS),1642883,1610612766,Sion James,2026
+22500033,465,MISS Mitchell 24' 3PT Running Jump Shot,1642883,1610612766,Sion James,2026
+22500033,589,Jaquez Jr. 10' Driving Floating Jump Shot (14 PTS),1642883,1610612766,Sion James,2026
+22500033,608,Ware 1' Running Alley Oop Dunk Shot (7 PTS) (Fontecchio 2 AST),1642883,1610612766,Sion James,2026
+22500033,622,Jaquez Jr. 1' Driving Dunk (16 PTS),1642883,1610612766,Sion James,2026
+22500033,636,MISS Jaquez Jr. 9' Driving Layup,1642883,1610612766,Sion James,2026
+22500033,640,Jaquez Jr. 8' Driving Floating Jump Shot (18 PTS) (Powell 3 AST),1642883,1610612766,Sion James,2026
+22500033,25,Larsson 26' 3PT Jump Shot (3 PTS) (Wiggins 1 AST),1630544,1610612766,Tre Mann,2026
+22500033,32,Ware 25' 3PT Jump Shot (3 PTS) (Mitchell 2 AST),1630544,1610612766,Tre Mann,2026
+22500033,40,Powell 25' 3PT Pullup Jump Shot (8 PTS),1630544,1610612766,Tre Mann,2026
+22500033,52,Larsson 10' Driving Floating Bank Jump Shot (5 PTS) (Mitchell 3 AST),1630544,1610612766,Tre Mann,2026
+22500033,218,MISS Jaquez Jr. 2' Driving Layup,1630544,1610612766,Tre Mann,2026
+22500033,260,MISS Powell 12' Pullup Jump Shot,1630544,1610612766,Tre Mann,2026
+22500033,299,MISS Ware 5' Layup,1630544,1610612766,Tre Mann,2026
+22500033,467,MISS Jaquez Jr. 4' Floating Jump Shot,1630544,1610612766,Tre Mann,2026
+22500033,495,Fontecchio 1' Driving Layup (6 PTS) (Jaquez Jr. 6 AST),1630544,1610612766,Tre Mann,2026
+22500033,501,Smith 10' Driving Floating Bank Jump Shot (5 PTS),1630544,1610612766,Tre Mann,2026
+22500033,562,MISS Smith 9' Floating Jump Shot,1630544,1610612766,Tre Mann,2026
+22500033,653,Powell 4' Driving Hook Shot (21 PTS) (Wiggins 4 AST),1630544,1610612766,Tre Mann,2026
+22500033,660,MISS Powell 1' Driving Layup,1630544,1610612766,Tre Mann,2026
+22500028,67,Banchero 1' Driving Layup (4 PTS),1629014,1610612738,Anfernee Simons,2026
+22500028,108,Black 1' Running Dunk (5 PTS) (Bane 3 AST),1629014,1610612738,Anfernee Simons,2026
+22500028,464,Banchero 18' Turnaround Jump Shot (9 PTS),1629014,1610612738,Anfernee Simons,2026
+22500028,505,MISS Suggs 14' Driving Floating Jump Shot,1629014,1610612738,Anfernee Simons,2026
+22500028,536,MISS Wagner 18' Driving Floating Jump Shot,1629014,1610612738,Anfernee Simons,2026
+22500028,615,MISS Black Tip Layup Shot,1629014,1610612738,Anfernee Simons,2026
+22500028,726,Suggs 3' Driving Reverse Layup (14 PTS),1629014,1610612738,Anfernee Simons,2026
+22500028,42,Bane 25' 3PT Jump Shot (3 PTS) (Banchero 1 AST),1628401,1610612738,Derrick White,2026
+22500028,81,MISS Bane 26' 3PT Pullup Jump Shot,1628401,1610612738,Derrick White,2026
+22500028,83,Bane 2' Cutting Layup Shot (5 PTS) (Bitadze 1 AST),1628401,1610612738,Derrick White,2026
+22500028,87,MISS Banchero 7' Driving Floating Jump Shot,1628401,1610612738,Derrick White,2026
+22500028,284,Bane 3' Driving Floating Jump Shot (7 PTS) (Suggs 2 AST),1628401,1610612738,Derrick White,2026
+22500028,292,Banchero 5' Turnaround Bank Shot (6 PTS) (Suggs 3 AST),1628401,1610612738,Derrick White,2026
+22500028,363,MISS Wagner 24' 3PT Jump Shot,1628401,1610612738,Derrick White,2026
+22500028,415,Suggs 25' 3PT Jump Shot (12 PTS) (Bane 6 AST),1628401,1610612738,Derrick White,2026
+22500028,428,MISS Suggs 26' 3PT Running Jump Shot,1628401,1610612738,Derrick White,2026
+22500028,554,MISS da Silva 6' Driving Layup,1628401,1610612738,Derrick White,2026
+22500028,613,MISS Banchero 10' Turnaround Fadeaway Shot,1628401,1610612738,Derrick White,2026
+22500028,620,MISS Bane 18' Step Back Jump Shot,1628401,1610612738,Derrick White,2026
+22500028,628,Wagner 24' 3PT Jump Shot (23 PTS) (Banchero 4 AST),1628401,1610612738,Derrick White,2026
+22500028,646,Bane 28' 3PT Pullup Jump Shot (20 PTS),1628401,1610612738,Derrick White,2026
+22500028,681,Carter Jr. 2' Running Layup (15 PTS),1628401,1610612738,Derrick White,2026
+22500028,568,Black 2' Driving Layup (11 PTS),1642864,1610612738,Hugo González,2026
+22500028,46,Wagner 1' Running Layup (2 PTS) (Banchero 2 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,49,Wagner 25' 3PT Jump Shot (5 PTS) (Bane 1 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,216,Isaac 3PT Jump Shot (3 PTS) (Wagner 2 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,280,Suggs 25' 3PT Jump Shot (6 PTS) (Bane 5 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,360,Wagner 2' Cutting Layup Shot (15 PTS) (Carter Jr. 1 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,377,Suggs 24' 3PT Jump Shot (9 PTS) (Wagner 4 AST),1627759,1610612738,Jaylen Brown,2026
+22500028,390,MISS Banchero 28' 3PT Jump Shot,1627759,1610612738,Jaylen Brown,2026
+22500028,624,Black 2' Layup (13 PTS),1627759,1610612738,Jaylen Brown,2026
+22500028,635,MISS Banchero 26' 3PT Pullup Jump Shot,1627759,1610612738,Jaylen Brown,2026
+22500028,707,Wagner 2' Driving Finger Roll Layup (27 PTS),1627759,1610612738,Jaylen Brown,2026
 22500146,9,MISS Minott 10' Driving Floating Jump Shot,1630578,1610612745,Alperen Sengun,2026
 22500146,21,Queta 1' Reverse Layup (2 PTS) (Pritchard 1 AST),1630578,1610612745,Alperen Sengun,2026
 22500146,71,MISS Brown 21' Pullup Jump Shot,1630578,1610612745,Alperen Sengun,2026
@@ -17051,6 +18044,35 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500171,541,Mitchell 26' 3PT Step Back Jump Shot (31 PTS),1642845,1610612755,VJ Edgecombe,2026
 22500171,707,MISS Merrill 15' Turnaround Jump Shot,1642845,1610612755,VJ Edgecombe,2026
 22500171,721,Mitchell 3' Driving Layup (44 PTS),1642845,1610612755,VJ Edgecombe,2026
+22500029,80,Merrill 26' 3PT Pullup Jump Shot (3 PTS),203468,1610612764,CJ McCollum,2026
+22500029,194,Nance Jr. 27' 3PT Jump Shot (3 PTS) (Mitchell 2 AST),203468,1610612764,CJ McCollum,2026
+22500029,351,Garland 27' 3PT Jump Shot (12 PTS) (Hunter 1 AST),203468,1610612764,CJ McCollum,2026
+22500029,366,MISS Hunter 3' Running Layup,203468,1610612764,CJ McCollum,2026
+22500029,370,MISS Mobley 4' Tip Layup Shot,203468,1610612764,CJ McCollum,2026
+22500029,392,Mitchell 2' Cutting Dunk Shot (10 PTS) (Allen 3 AST),203468,1610612764,CJ McCollum,2026
+22500029,404,Mitchell 2' Running Layup (12 PTS),203468,1610612764,CJ McCollum,2026
+22500029,432,MISS Hunter 27' 3PT Jump Shot,203468,1610612764,CJ McCollum,2026
+22500029,522,MISS Tyson 4' Cutting Layup Shot,203468,1610612764,CJ McCollum,2026
+22500029,541,MISS Porter Jr. 14' Pullup Jump Shot,203468,1610612764,CJ McCollum,2026
+22500029,546,Allen 2' Dunk (16 PTS) (Porter Jr. 1 AST),203468,1610612764,CJ McCollum,2026
+22500029,566,MISS Porter Jr. 3' Running Layup,203468,1610612764,CJ McCollum,2026
+22500029,574,MISS Garland 34' 3PT Pullup Jump Shot,203468,1610612764,CJ McCollum,2026
+22500029,594,Proctor 3PT Jump Shot (5 PTS) (Garland 7 AST),203468,1610612764,CJ McCollum,2026
+22500029,141,MISS Mitchell 6' Running Layup,1641715,1610612764,Cam Whitmore,2026
+22500029,51,McCollum 26' 3PT Running Jump Shot (8 PTS) (Sarr 2 AST),1629636,1610612739,Darius Garland,2026
+22500029,325,T. Johnson 27' 3PT Running Jump Shot (7 PTS) (Champagnie 2 AST),1629636,1610612739,Darius Garland,2026
+22500029,350,Middleton 7' Driving Floating Jump Shot (4 PTS),1629636,1610612739,Darius Garland,2026
+22500029,378,MISS Carrington 24' 3PT Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,380,MISS Carrington 24' 3PT Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,405,MISS McCollum 27' 3PT Pullup Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,427,McCollum 3' Running Layup (22 PTS) (Carrington 6 AST),1629636,1610612739,Darius Garland,2026
+22500029,448,MISS Kispert 10' Pullup Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,589,MISS Champagnie 27' 3PT Pullup Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,672,MISS Carrington 10' Driving Floating Jump Shot,1629636,1610612739,Darius Garland,2026
+22500029,685,MISS Riley 7' Driving Hook Shot,1629636,1610612739,Darius Garland,2026
+22500029,724,MISS A. Johnson 3' Running Layup,1631247,1610612739,Luke Travers,2026
+22500029,777,MISS Riley 4' Driving Layup,1631247,1610612739,Luke Travers,2026
+22500029,790,MISS Riley 6' Driving Layup,1631247,1610612739,Luke Travers,2026
 22500179,248,MISS James 10' Driving Floating Jump Shot,1630170,1610612759,Devin Vassell,2026
 22500179,263,Hachimura 18' Pullup Jump Shot (8 PTS) (Doncic 6 AST),1630170,1610612759,Devin Vassell,2026
 22500179,283,Hachimura 26' 3PT Jump Shot (11 PTS) (Doncic 7 AST),1630170,1610612759,Devin Vassell,2026
@@ -17708,6 +18730,28 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500102,9,MISS Edgecombe 16' Pullup Jump Shot,1641706,1610612766,Brandon Miller,2026
 22500102,20,Oubre Jr. 26' 3PT Jump Shot (3 PTS) (Maxey 2 AST),1641706,1610612766,Brandon Miller,2026
 22500102,154,MISS Oubre Jr. 26' 3PT Jump Shot,1641706,1610612766,Brandon Miller,2026
+22500038,524,Mitchell 7' Driving Layup (8 PTS) (Hartenstein 3 AST),1631165,1610612758,Keon Ellis,2026
+22500038,594,MISS Wallace 5' Layup,1631165,1610612758,Keon Ellis,2026
+22500038,101,Westbrook 11' Fadeaway Jumper (8 PTS),1630198,1610612760,Isaiah Joe,2026
+22500038,162,MISS Schroder 28' 3PT Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,255,MISS Monk 28' 3PT Step Back Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,259,Achiuwa 4' Running Layup (3 PTS) (Westbrook 5 AST),1630198,1610612760,Isaiah Joe,2026
+22500038,316,MISS Eubanks 3' Layup,1630198,1610612760,Isaiah Joe,2026
+22500038,340,Westbrook 4' Driving Layup (16 PTS),1630198,1610612760,Isaiah Joe,2026
+22500038,425,MISS Westbrook 27' 3PT Pullup Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,465,Monk 4' Floating Jump Shot (15 PTS),1630198,1610612760,Isaiah Joe,2026
+22500038,612,MISS Clifford 3PT Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,668,MISS Ellis 27' 3PT Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,672,MISS Achiuwa 24' 3PT Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,683,MISS Ellis 26' 3PT Jump Shot,1630198,1610612760,Isaiah Joe,2026
+22500038,70,Gilgeous-Alexander 6' Running Layup (6 PTS),1628370,1610612758,Malik Monk,2026
+22500038,150,Williams 27' 3PT Jump Shot (3 PTS) (Gilgeous-Alexander 1 AST),1628370,1610612758,Malik Monk,2026
+22500038,180,Hartenstein Putback Dunk (7 PTS),1628370,1610612758,Malik Monk,2026
+22500038,238,MISS Mitchell 3' Driving Layup,1628370,1610612758,Malik Monk,2026
+22500038,242,Hartenstein 4' Cutting Dunk Shot (17 PTS) (Caruso 2 AST),1628370,1610612758,Malik Monk,2026
+22500038,343,Wallace 3' Layup (9 PTS),1628370,1610612758,Malik Monk,2026
+22500038,430,MISS Mitchell 16' Driving Layup,1628370,1610612758,Malik Monk,2026
+22500038,456,Joe 13' Running Pull-Up Jump Shot (10 PTS) (Caruso 3 AST),1628370,1610612758,Malik Monk,2026
 22500127,544,MISS Kuminga 18' Pullup Jump Shot,1641738,1610612746,Kobe Brown,2026
 22500127,583,MISS Santos 25' 3PT Jump Shot,1641738,1610612746,Kobe Brown,2026
 22500127,596,Richard 26' 3PT Jump Shot (5 PTS) (Podziemski 4 AST),1641738,1610612746,Kobe Brown,2026
@@ -17788,6 +18832,27 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500124,620,MISS Bridges 24' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
 22500124,624,Knueppel 26' 3PT Jump Shot (17 PTS) (Ball 9 AST),203952,1610612748,Andrew Wiggins,2026
 22500124,656,MISS Knueppel 26' 3PT Jump Shot,203952,1610612748,Andrew Wiggins,2026
+22500028,9,Banchero BLOCK (1 BLK),1631094,1610612753,Paolo Banchero,2026
+22500028,25,MISS Queta Tip Layup Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,33,Minott 25' 3PT Jump Shot (3 PTS) (Pritchard 1 AST),1631094,1610612753,Paolo Banchero,2026
+22500028,37,Minott 2' Running Alley Oop Dunk Shot (5 PTS) (Brown 1 AST),1631094,1610612753,Paolo Banchero,2026
+22500028,57,MISS Minott 25' 3PT Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,91,MISS Brown 27' 3PT Pullup Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,117,Brown 27' 3PT Jump Shot (5 PTS) (Pritchard 2 AST),1631094,1610612753,Paolo Banchero,2026
+22500028,131,MISS Hauser 3PT Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,260,Bitadze BLOCK (1 BLK),1631094,1610612753,Paolo Banchero,2026
+22500028,294,MISS Walsh 3PT Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,323,MISS Hauser 26' 3PT Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,353,MISS Brown 17' Step Back Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,365,MISS Hauser 26' 3PT Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,383,MISS Pritchard 13' Pullup Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,392,Brown 16' Pullup Jump Shot (16 PTS) (Pritchard 3 AST),1631094,1610612753,Paolo Banchero,2026
+22500028,435,MISS Minott 4' Driving Layup,1631094,1610612753,Paolo Banchero,2026
+22500028,480,Brown 2' Running Layup (30 PTS),1631094,1610612753,Paolo Banchero,2026
+22500028,484,MISS Simons 29' 3PT Running Jump Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,650,MISS Queta Tip Layup Shot,1631094,1610612753,Paolo Banchero,2026
+22500028,685,White 1' Driving Layup (14 PTS) (Simons 2 AST),1631094,1610612753,Paolo Banchero,2026
+22500028,705,White 1' Driving Layup (16 PTS) (Hauser 3 AST),1631094,1610612753,Paolo Banchero,2026
 22500006,25,Jokic 6' Cutting Layup Shot (2 PTS) (Murray 1 AST),203110,1610612744,Draymond Green,2026
 22500006,30,Murray 5' Cutting Finger Roll Layup Shot (2 PTS) (Jokic 1 AST),203110,1610612744,Draymond Green,2026
 22500006,36,Jokic 4' Cutting Layup Shot (4 PTS) (Gordon 1 AST),203110,1610612744,Draymond Green,2026
@@ -18003,6 +19068,56 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500087,585,Lopez 25' 3PT Jump Shot (15 PTS) (Christie 1 AST),1641718,1610612762,Keyonte George,2026
 22500087,594,MISS Lopez 28' 3PT Jump Shot,1641718,1610612762,Keyonte George,2026
 22500087,611,MISS Paul 16' Pullup Jump Shot,1641718,1610612762,Keyonte George,2026
+22500030,27,Johnson 1' Reverse Layup (4 PTS) (Alexander-Walker 2 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,62,MISS Okongwu 6' Turnaround Hook Shot,1630567,1610612761,Scottie Barnes,2026
+22500030,75,Johnson 15' Turnaround Bank Shot (6 PTS),1630567,1610612761,Scottie Barnes,2026
+22500030,170,Okongwu 2' Layup (2 PTS) (Daniels 3 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,203,MISS Porzingis 26' 3PT Step Back Jump Shot,1630567,1610612761,Scottie Barnes,2026
+22500030,426,Johnson 1' Dunk (13 PTS) (Daniels 6 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,430,Risacher 1' Running Alley Oop Dunk Shot (16 PTS) (Johnson 3 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,549,Porzingis 12' Jump Bank Shot (11 PTS) (Wallace 3 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,563,MISS Porzingis 3PT Jump Shot,1630567,1610612761,Scottie Barnes,2026
+22500030,628,MISS Alexander-Walker 19' Pullup Jump Shot,1630567,1610612761,Scottie Barnes,2026
+22500030,668,Johnson 4' Driving Floating Bank Jump Shot (20 PTS) (Porzingis 3 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,688,MISS Johnson 26' 3PT Pullup Jump Shot,1630567,1610612761,Scottie Barnes,2026
+22500030,692,Alexander-Walker 2' Driving Layup (20 PTS) (Daniels 8 AST),1630567,1610612761,Scottie Barnes,2026
+22500030,7,Ingram 12' Pullup Jump Shot (2 PTS),1642258,1610612737,Zaccharie Risacher,2026
+22500030,13,Daniels BLOCK (1 BLK),1642258,1610612737,Zaccharie Risacher,2026
+22500030,65,MISS Barrett 3' Driving Layup,1642258,1610612737,Zaccharie Risacher,2026
+22500030,69,MISS Quickley 26' 3PT Running Pull-Up Jump Shot,1642258,1610612737,Zaccharie Risacher,2026
+22500030,326,MISS Barrett 3PT Jump Shot,1642258,1610612737,Zaccharie Risacher,2026
+22500030,363,MISS Barnes 7' Driving Floating Jump Shot,1642258,1610612737,Zaccharie Risacher,2026
+22500030,400,Risacher BLOCK (1 BLK),1642258,1610612737,Zaccharie Risacher,2026
+22500030,422,Barrett 7' Driving Floating Jump Shot (7 PTS) (Ingram 3 AST),1642258,1610612737,Zaccharie Risacher,2026
+22500030,432,Barrett 1' Cutting Dunk Shot (9 PTS) (Poeltl 1 AST),1642258,1610612737,Zaccharie Risacher,2026
+22500030,565,MISS Quickley 26' 3PT Jump Shot,1642258,1610612737,Zaccharie Risacher,2026
+22500030,632,Barrett 5' Driving Floating Jump Shot (13 PTS),1642258,1610612737,Zaccharie Risacher,2026
+22500030,662,Barnes 1' Running Layup (12 PTS) (Quickley 5 AST),1642258,1610612737,Zaccharie Risacher,2026
+22500030,673,Barrett 2' Driving Layup (15 PTS),1642258,1610612737,Zaccharie Risacher,2026
+22500030,682,Poeltl Tip Layup Shot (12 PTS),1642258,1610612737,Zaccharie Risacher,2026
+22500030,687,Ingram 13' Pullup Jump Shot (20 PTS),1642258,1610612737,Zaccharie Risacher,2026
+22500030,693,MISS Barrett 2' Driving Layup,1642258,1610612737,Zaccharie Risacher,2026
+22500034,516,Nembhard 3' Driving Finger Roll Layup (2 PTS),1642285,1610612763,Cam Spencer,2026
+22500034,528,MISS Hardy 3PT Running Jump Shot,1642285,1610612763,Cam Spencer,2026
+22500034,85,Washington 8' Hook Shot (6 PTS),1642907,1610612763,Cedric Coward,2026
+22500034,158,MISS Marshall 26' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,169,MISS Flagg 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,308,MISS Russell 11' Driving Floating Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,319,Flagg 3' Driving Finger Roll Layup (8 PTS),1642907,1610612763,Cedric Coward,2026
+22500034,326,Flagg 9' Driving Floating Jump Shot (10 PTS),1642907,1610612763,Cedric Coward,2026
+22500034,342,Williams 3' Driving Finger Roll Layup (4 PTS),1642907,1610612763,Cedric Coward,2026
+22500034,418,MISS Hardy 26' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,434,MISS Flagg 9' Turnaround Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,490,Hardy 24' 3PT Jump Shot (5 PTS),1642907,1610612763,Cedric Coward,2026
+22500034,522,MISS Hardy 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,524,Hardy 25' 3PT Jump Shot (8 PTS) (Christie 1 AST),1642907,1610612763,Cedric Coward,2026
+22500034,622,MISS Flagg 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,624,MISS Christie 25' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,644,MISS Williams 25' 3PT Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,672,Marshall 3PT Jump Shot (12 PTS) (Williams 1 AST),1642907,1610612763,Cedric Coward,2026
+22500034,676,Marshall 3' Running Finger Roll Layup (14 PTS) (Williams 2 AST),1642907,1610612763,Cedric Coward,2026
+22500034,688,MISS Williams 11' Driving Floating Jump Shot,1642907,1610612763,Cedric Coward,2026
+22500034,693,Marshall 1' Driving Finger Roll Layup (16 PTS) (Williams 3 AST),1642907,1610612763,Cedric Coward,2026
 22500130,11,MISS Saraf 26' 3PT Running Jump Shot,1630552,1610612737,Jalen Johnson,2026
 22500130,270,MISS Martin 26' 3PT Jump Shot,1630552,1610612737,Jalen Johnson,2026
 22500130,335,Claxton Tip Layup Shot (11 PTS),1630552,1610612737,Jalen Johnson,2026
@@ -18551,6 +19666,20 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500152,559,MISS Barrett 3' Driving Finger Roll Layup,1629111,1610612763,Jock Landale,2026
 22500152,595,MISS Quickley 27' 3PT Jump Shot,1629111,1610612763,Jock Landale,2026
 22500152,599,Murray-Boyles 1' Cutting Layup Shot (12 PTS) (Barrett 6 AST),1629111,1610612763,Jock Landale,2026
+22500038,92,MISS Joe 27' 3PT Jump Shot,1642363,1610612758,Nique Clifford,2026
+22500038,99,MISS Gilgeous-Alexander 27' 3PT Jump Shot,1642363,1610612758,Nique Clifford,2026
+22500038,146,MISS Williams 3PT Step Back Jump Shot,1642363,1610612758,Nique Clifford,2026
+22500038,194,MISS Dieng 25' 3PT Jump Shot,1642363,1610612758,Nique Clifford,2026
+22500038,614,Joe 27' 3PT Running Jump Shot (13 PTS) (Mitchell 9 AST),1642363,1610612758,Nique Clifford,2026
+22500038,646,Mitchell 28' 3PT Jump Shot (18 PTS) (Joe 1 AST),1642363,1610612758,Nique Clifford,2026
+22500038,693,MISS Joe 25' 3PT Jump Shot,1642363,1610612758,Nique Clifford,2026
+22500038,63,MISS Gilgeous-Alexander 3PT Jump Shot,1630173,1610612758,Precious Achiuwa,2026
+22500038,102,MISS Holmgren 26' 3PT Jump Shot,1630173,1610612758,Precious Achiuwa,2026
+22500038,222,Holmgren 3' Layup (4 PTS) (Hartenstein 2 AST),1630173,1610612758,Precious Achiuwa,2026
+22500038,479,Gilgeous-Alexander 17' Pullup Jump Shot (28 PTS),1630173,1610612758,Precious Achiuwa,2026
+22500038,490,Gilgeous-Alexander 13' Pullup Jump Shot (30 PTS),1630173,1610612758,Precious Achiuwa,2026
+22500038,498,MISS Williams 24' 3PT Jump Shot,1630173,1610612758,Precious Achiuwa,2026
+22500038,670,MISS Youngblood 26' 3PT Jump Shot,1630173,1610612758,Precious Achiuwa,2026
 22500169,28,Post 26' 3PT Jump Shot (3 PTS) (Kuminga 1 AST),1631109,1610612756,Mark Williams,2026
 22500169,39,Post 25' 3PT Jump Shot (6 PTS) (Butler III 1 AST),1631109,1610612756,Mark Williams,2026
 22500169,65,MISS Curry 8' Driving Floating Jump Shot,1631109,1610612756,Mark Williams,2026
@@ -21492,6 +22621,83 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500027,413,MISS Fears 25' 3PT Jump Shot,203078,1610612746,Bradley Beal,2026
 22500023,205,MISS Williams 11' Turnaround Jump Shot,1642278,1610612752,Tyler Kolek,2026
 22500023,211,Williams 26' 3PT Jump Shot (6 PTS) (Smith 1 AST),1642278,1610612752,Tyler Kolek,2026
+22500029,28,MISS Mitchell 26' 3PT Pullup Jump Shot,1642267,1610612764,Bub Carrington,2026
+22500029,127,Merrill 25' 3PT Step Back Jump Shot (6 PTS) (Allen 2 AST),1642267,1610612764,Bub Carrington,2026
+22500029,138,Porter Jr. 2' Driving Layup (2 PTS),1642267,1610612764,Bub Carrington,2026
+22500029,143,Allen Tip Dunk Shot (6 PTS),1642267,1610612764,Bub Carrington,2026
+22500029,442,MISS Garland 3PT Jump Shot,1642267,1610612764,Bub Carrington,2026
+22500029,502,Tyson 24' 3PT Jump Shot (5 PTS) (Mitchell 5 AST),1642267,1610612764,Bub Carrington,2026
+22500029,674,MISS Garland 31' 3PT Pullup Jump Shot,1642267,1610612764,Bub Carrington,2026
+22500029,681,Tyson 1' Cutting Layup Shot (10 PTS) (Nance Jr. 1 AST),1642267,1610612764,Bub Carrington,2026
+22500029,148,Mitchell 29' 3PT Step Back Jump Shot (5 PTS),1630557,1610612764,Corey Kispert,2026
+22500029,157,Merrill 26' 3PT Step Back Jump Shot (9 PTS),1630557,1610612764,Corey Kispert,2026
+22500029,174,MISS Mitchell 8' Driving Floating Jump Shot,1630557,1610612764,Corey Kispert,2026
+22500029,241,MISS Mobley 7' Driving Layup,1630557,1610612764,Corey Kispert,2026
+22500029,243,Mobley 1' Tip Layup Shot (9 PTS),1630557,1610612764,Corey Kispert,2026
+22500029,276,Merrill 17' Pullup Jump Shot (11 PTS) (Garland 3 AST),1630557,1610612764,Corey Kispert,2026
+22500029,476,MISS Tyson 7' Driving Floating Jump Shot,1630557,1610612764,Corey Kispert,2026
+22500029,508,MISS Mitchell 30' 3PT Running Pull-Up Jump Shot,1630557,1610612764,Corey Kispert,2026
+22500029,530,MISS Allen 1' Putback Dunk,1630557,1610612764,Corey Kispert,2026
+22500029,560,MISS Mitchell 28' 3PT Step Back Jump Shot,1630557,1610612764,Corey Kispert,2026
+22500029,584,MISS Garland 18' Pullup Jump Shot,1630557,1610612764,Corey Kispert,2026
+22500029,30,MISS Carrington 2' Driving Layup,1630596,1610612739,Evan Mobley,2026
+22500029,48,Carrington 26' 3PT Running Pull-Up Jump Shot (3 PTS) (McCollum 1 AST),1630596,1610612739,Evan Mobley,2026
+22500029,56,MISS Middleton 26' 3PT Pullup Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,66,MISS Sarr 26' 3PT Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,78,Sarr 16' Turnaround Fadeaway (4 PTS) (McCollum 2 AST),1630596,1610612739,Evan Mobley,2026
+22500029,206,MISS T. Johnson 12' Pullup Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,244,Kispert 4' Driving Finger Roll Layup (9 PTS) (McCollum 3 AST),1630596,1610612739,Evan Mobley,2026
+22500029,334,Middleton 6' Driving Floating Jump Shot (2 PTS),1630596,1610612739,Evan Mobley,2026
+22500029,343,MISS Carrington 2' Cutting Layup Shot,1630596,1610612739,Evan Mobley,2026
+22500029,359,MISS McCollum 24' 3PT Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,390,Sarr 1' Driving Dunk (12 PTS) (Carrington 5 AST),1630596,1610612739,Evan Mobley,2026
+22500029,446,MISS T. Johnson 6' Driving Floating Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,457,T. Johnson 2' Driving Reverse Layup (9 PTS) (Carrington 8 AST),1630596,1610612739,Evan Mobley,2026
+22500029,460,Sarr 3' Driving Bank Hook Shot (16 PTS) (Kispert 2 AST),1630596,1610612739,Evan Mobley,2026
+22500029,470,Kispert 27' 3PT Jump Shot (12 PTS) (Middleton 2 AST),1630596,1610612739,Evan Mobley,2026
+22500029,483,Sarr 2' Driving Layup (18 PTS) (Carrington 9 AST),1630596,1610612739,Evan Mobley,2026
+22500029,488,Watkins 2' Cutting Layup Shot (2 PTS) (Middleton 4 AST),1630596,1610612739,Evan Mobley,2026
+22500029,592,MISS Bagley III 2' Putback Layup,1630596,1610612739,Evan Mobley,2026
+22500029,596,Watkins 2' Driving Dunk (4 PTS) (Kispert 4 AST),1630596,1610612739,Evan Mobley,2026
+22500029,600,MISS McCollum 19' Pullup Jump Shot,1630596,1610612739,Evan Mobley,2026
+22500029,615,MISS Bagley III 3' Cutting Layup Shot,1630596,1610612739,Evan Mobley,2026
+22500029,30,MISS Carrington 2' Driving Layup,1628378,1610612739,Donovan Mitchell,2026
+22500029,32,Sarr Tip Dunk Shot (2 PTS),1628378,1610612739,Donovan Mitchell,2026
+22500029,36,MISS Sarr 3' Cutting Finger Roll Layup Shot,1628378,1610612739,Donovan Mitchell,2026
+22500029,233,MISS T. Johnson 14' Pullup Jump Shot,1628378,1610612739,Donovan Mitchell,2026
+22500029,353,Sarr 3' Floating Jump Shot (10 PTS) (Middleton 1 AST),1628378,1610612739,Donovan Mitchell,2026
+22500029,372,McCollum 26' 3PT Jump Shot (20 PTS) (Carrington 4 AST),1628378,1610612739,Donovan Mitchell,2026
+22500029,423,MISS Carrington 3PT Jump Shot,1628378,1610612739,Donovan Mitchell,2026
+22500029,448,MISS Kispert 10' Pullup Jump Shot,1628378,1610612739,Donovan Mitchell,2026
+22500029,417,MISS McCollum 24' 3PT Jump Shot,1629631,1610612739,De'Andre Hunter,2026
+22500029,427,McCollum 3' Running Layup (22 PTS) (Carrington 6 AST),1629631,1610612739,De'Andre Hunter,2026
+22500029,453,MISS Carrington 24' 3PT Running Pull-Up Jump Shot,1629631,1610612739,De'Andre Hunter,2026
+22500029,457,T. Johnson 2' Driving Reverse Layup (9 PTS) (Carrington 8 AST),1629631,1610612739,De'Andre Hunter,2026
+22500029,235,Mitchell 8' Driving Layup (7 PTS),1642364,1610612764,Jamir Watkins,2026
+22500029,243,Mobley 1' Tip Layup Shot (9 PTS),1642364,1610612764,Jamir Watkins,2026
+22500029,472,MISS Garland 27' 3PT Step Back Jump Shot,1642364,1610612764,Jamir Watkins,2026
+22500029,478,Mobley Tip Layup Shot (15 PTS),1642364,1610612764,Jamir Watkins,2026
+22500029,500,MISS Allen 4' Turnaround Hook Shot,1642364,1610612764,Jamir Watkins,2026
+22500029,526,MISS Mitchell 27' 3PT Step Back Jump Shot,1642364,1610612764,Jamir Watkins,2026
+22500029,562,MISS Mitchell 4' Driving Layup,1642364,1610612764,Jamir Watkins,2026
+22500029,598,Garland 32' 3PT Jump Shot (20 PTS) (Tyson 2 AST),1642364,1610612764,Jamir Watkins,2026
+22500029,609,Watkins BLOCK (1 BLK),1642364,1610612764,Jamir Watkins,2026
+22500029,638,Mobley 15' Jump Shot (17 PTS) (Garland 8 AST),1642364,1610612764,Jamir Watkins,2026
+22500029,706,Proctor 27' 3PT Pullup Jump Shot (14 PTS),1642364,1610612764,Jamir Watkins,2026
+22500029,734,MISS Proctor 26' 3PT Pullup Jump Shot,1642364,1610612764,Jamir Watkins,2026
+22500029,747,Vukcevic BLOCK (1 BLK),1642364,1610612764,Jamir Watkins,2026
+22500029,783,Bryant 2' Running Dunk (4 PTS),1642364,1610612764,Jamir Watkins,2026
+22500029,108,Kispert 27' 3PT Jump Shot (3 PTS) (Carrington 1 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,114,Kispert 2' Running Dunk (5 PTS) (Champagnie 1 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,196,McCollum 29' 3PT Jump Shot (11 PTS) (T. Johnson 1 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,223,McCollum 27' 3PT Pullup Jump Shot (14 PTS),1642281,1610612739,Jaylon Tyson,2026
+22500029,226,McCollum 30' 3PT Running Pull-Up Jump Shot (17 PTS) (Kispert 1 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,233,MISS T. Johnson 14' Pullup Jump Shot,1642281,1610612739,Jaylon Tyson,2026
+22500029,479,Kispert 1' Cutting Layup Shot (14 PTS) (Middleton 3 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,488,Watkins 2' Cutting Layup Shot (2 PTS) (Middleton 4 AST),1642281,1610612739,Jaylon Tyson,2026
+22500029,504,MISS Carrington 3' Cutting Layup Shot,1642281,1610612739,Jaylon Tyson,2026
+22500029,549,MISS Bagley III 4' Cutting Layup Shot,1642281,1610612739,Jaylon Tyson,2026
+22500029,679,Carrington 3PT Jump Shot (6 PTS) (Sarr 4 AST),1642281,1610612739,Jaylon Tyson,2026
 22500135,43,MISS Avdija 25' 3PT Jump Shot,1628374,1610612762,Lauri Markkanen,2026
 22500135,48,Holiday 8' Fadeaway Jumper (2 PTS),1628374,1610612762,Lauri Markkanen,2026
 22500135,73,Grant 24' 3PT Jump Shot (3 PTS) (Clingan 1 AST),1628374,1610612762,Lauri Markkanen,2026
@@ -21609,6 +22815,7 @@ gi,ei,dsc,def_id,team_id,player_name,year
 22500131,539,Quickley 13' Driving Floating Jump Shot (9 PTS) (Barrett 4 AST),1641708,1610612745,Amen Thompson,2026
 22500131,571,MISS Quickley 24' 3PT Jump Shot,1641708,1610612745,Amen Thompson,2026
 22500131,636,Quickley 25' 3PT Pullup Jump Shot (15 PTS),1641708,1610612745,Amen Thompson,2026
+22500029,687,MISS Garland 13' Driving Floating Jump Shot,1642860,1610612764,Will Riley,2026
 22500027,267,Missi 5' Floating Jump Shot (6 PTS) (Fears 6 AST),1627884,1610612746,Derrick Jones Jr.,2026
 22500027,312,Jones Jr. BLOCK (1 BLK),1627884,1610612746,Derrick Jones Jr.,2026
 22500027,341,MISS Williamson 1' Driving Reverse Layup,1627884,1610612746,Derrick Jones Jr.,2026
