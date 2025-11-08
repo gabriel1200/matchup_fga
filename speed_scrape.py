@@ -578,7 +578,7 @@ if __name__ == "__main__":
     scraper = NBAScraper(
         max_concurrent=3,        # 8 simultaneous requests
         delay_between_batches=0.01,  # 0.5s between batches
-        max_retries=3           # 3 retry attempts
+        max_retries=2           # 3 retry attempts
     )
     
     # Analyze existing log
