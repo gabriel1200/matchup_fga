@@ -69,10 +69,14 @@ def load_defender_data_for_year(year, path_template='scraped_data/{year}_dfgtota
         return pd.DataFrame()
 
 
+import pandas as pd
+import os
+
 def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team'):
     """
     Loads regular season and post-season shot data for a single year, based on
     the teams present in that year's defender data.
+    Merges score_margin from indexed files onto the shot data.
 
     Args:
         defender_df (pd.DataFrame): The defender DataFrame for a single year.
@@ -80,15 +84,65 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
         base_path (str): The base path to the shot data directory.
 
     Returns:
-        pd.DataFrame: A single DataFrame containing all shot data for the year.
+        pd.DataFrame: A single DataFrame containing all shot data for the year with score_margin.
     """
     print(f"--- Loading Team Shot Data for {year} ---")
+    
+    # --- Step 1: Load and Prepare Score Margin Index Data (Prior to Loop) ---
+    margin_dfs = []
+    
+    # Define paths to the indexed margin files (created by your previous script)
+    # Assuming structure: indexing/season_type/year/year_combined.csv
+    index_paths = [
+        f'indexing/regular_season/{year}/{year}_combined.csv',
+        f'indexing/playoffs/{year}/{year}_combined.csv'
+    ]
+    
+    print("Loading indexed score margin files...")
+    for p in index_paths:
+        if os.path.exists(p):
+            try:
+                df_idx = pd.read_csv(p)
+                # Keep only necessary columns
+                if 'score_margin' in df_idx.columns:
+                    df_idx = df_idx[['game_id', 'actionNumber', 'teamId', 'score_margin']]
+                    margin_dfs.append(df_idx)
+            except Exception as e:
+                print(f"Warning: Could not read index file {p}: {e}")
+        else:
+            print(f"Note: Index file not found at {p}")
+
+    if margin_dfs:
+        margin_data = pd.concat(margin_dfs, ignore_index=True)
+        
+        # Rename to match the shot data columns (gi, ei, team_id)
+        margin_data = margin_data.rename(columns={
+            'game_id': 'gi', 
+            'actionNumber': 'ei', 
+            'teamId': 'team_id'
+        })
+        
+        # CRITICAL: Convert join keys to int to prevent mismatch (e.g. float vs int vs string)
+        # Drop NaNs in keys just in case
+        margin_data = margin_data.dropna(subset=['gi', 'ei', 'team_id'])
+        
+        margin_data['gi'] = margin_data['gi'].astype(int)
+        margin_data['ei'] = margin_data['ei'].astype(int)
+        margin_data['team_id'] = margin_data['team_id'].astype(int)
+        
+        # Drop duplicates if any exist in the index to prevent row explosion during merge
+        margin_data = margin_data.drop_duplicates(subset=['gi', 'ei', 'team_id'])
+        
+        print(f"Loaded margin data: {len(margin_data)} rows.")
+    else:
+        margin_data = pd.DataFrame()
+        print("Warning: No margin data loaded. 'score_margin' column will be missing.")
+
+    # --- Step 2: Process Teams ---
     unique_teams = defender_df['team_id'].drop_duplicates()
-    print(unique_teams)
+    print(f"Found {len(unique_teams)} teams to process for {year}.")
     
     all_shot_data = []
-    
-    print(f"Found {len(unique_teams)} teams to process for {year}.")
     
     for team_id in unique_teams:
         season_dfs = []
@@ -114,6 +168,21 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
         if season_dfs:
             combined_df = pd.concat(season_dfs, ignore_index=True)
             combined_df['year'] = year
+            
+            # --- Step 3: Merge Score Margin ---
+            if not margin_data.empty:
+                # Ensure shot data keys are also ints
+                combined_df['gi'] = pd.to_numeric(combined_df['gi'], errors='coerce').fillna(-1).astype(int)
+                combined_df['ei'] = pd.to_numeric(combined_df['ei'], errors='coerce').fillna(-1).astype(int)
+                combined_df['team_id'] = pd.to_numeric(combined_df['team_id'], errors='coerce').fillna(-1).astype(int)
+                
+                # Merge (Left join to keep all shots, adding margin where available)
+                combined_df = combined_df.merge(
+                    margin_data, 
+                    on=['gi', 'ei', 'team_id'], 
+                    how='left'
+                )
+            
             all_shot_data.append(combined_df)
             
     if not all_shot_data:
@@ -416,15 +485,15 @@ def process_year(year, lebron_df):
     
     # Step 7: Save the processed data into the required structures
     save_merged_data_by_team_year(merged_data_year, base_path='team')
-    #save_merged_data_by_defender(merged_data_year, base_path='defender')
-    #save_merged_data_by_shooter(merged_data_year,base_path='shooter')
+    save_merged_data_by_defender(merged_data_year, base_path='defender')
+    save_merged_data_by_shooter(merged_data_year,base_path='shooter')
     
     print(f"--- Successfully completed processing for year {year}. ---\n")
 
 
 if __name__ == '__main__':
-    START_YEAR = 2017
-    END_YEAR = 2025
+    START_YEAR = 2025
+    END_YEAR = 2026
 
     # Load LEBRON stats once to be used for every year's processing
     lebron_stats = load_lebron_data()

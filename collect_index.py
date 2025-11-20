@@ -32,6 +32,7 @@ def save_by_season(files, base_output_dir, columns):
         try:
             df = pd.read_parquet(f)
             print(df.columns)
+           
             shots=['3pt','2pt']
             df=df[df['actionType'].isin(shots)]
           
