@@ -31,6 +31,11 @@ def save_by_season(files, base_output_dir, columns):
     for f in files:
         try:
             df = pd.read_parquet(f)
+            print(df.columns)
+            shots=['3pt','2pt']
+            df=df[df['actionType'].isin(shots)]
+          
+         
             year = extract_year(f)
             df['source_file'] = os.path.basename(f)
 
@@ -50,6 +55,10 @@ def save_by_season(files, base_output_dir, columns):
         os.makedirs(out_dir, exist_ok=True)
 
         out_path = os.path.join(out_dir, f"{year}_combined.csv")
+        combined.sort_values(by=['game_id','actionNumber'],inplace=True)
+        print(combined.head(1))
+        print(combined.columns)
+        print(combined.head()['teamId'])
         combined.to_csv(out_path, index=False)
 
         print(f"Saved {year} -> {out_path} ({len(combined)} rows)")
