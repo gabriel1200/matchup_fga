@@ -104,24 +104,119 @@ def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Dat
         lebron_df['player_id'] = lebron_df['player_id'].fillna(-999).astype(int).replace(-999, np.nan)
         return lebron_df
 
+def _load_margin_data(year):
+    """
+    Helper function to load and prepare the score margin index data for a specific year.
+    Returns a DataFrame with columns: ['gi', 'ei', 'team_id', 'score_margin']
+    """
+    margin_dfs = []
+    
+    # Define paths to the indexed margin files
+    index_paths = [
+        f'indexing/regular_season/{year}/{year}_combined.csv',
+        f'indexing/playoffs/{year}/{year}_combined.csv'
+    ]
+    
+    print("Loading indexed score margin files...")
+    for p in index_paths:
+        if os.path.exists(p):
+            try:
+                df_idx = pd.read_csv(p)
+                # Keep only necessary columns
+                cols_to_keep = ['score_margin']
+                
+                # Map standard index columns if they exist
+                rename_map = {}
+                if 'game_id' in df_idx.columns:
+                    rename_map['game_id'] = 'gi'
+                    cols_to_keep.append('game_id')
+                elif 'gi' in df_idx.columns:
+                    cols_to_keep.append('gi')
+                    
+                if 'actionNumber' in df_idx.columns:
+                    rename_map['actionNumber'] = 'ei'
+                    cols_to_keep.append('actionNumber')
+                elif 'ei' in df_idx.columns:
+                    cols_to_keep.append('ei')
+
+                if 'teamId' in df_idx.columns:
+                    rename_map['teamId'] = 'team_id'
+                    cols_to_keep.append('teamId')
+                elif 'team_id' in df_idx.columns:
+                    cols_to_keep.append('team_id')
+
+                # Filter and Rename
+                # Only select columns that actually exist in df_idx to avoid KeyError
+                available_cols = [c for c in cols_to_keep if c in df_idx.columns]
+                df_idx = df_idx[available_cols].rename(columns=rename_map)
+                margin_dfs.append(df_idx)
+
+            except Exception as e:
+                print(f"Warning: Could not read index file {p}: {e}")
+        else:
+            print(f"Note: Index file not found at {p}")
+
+    if not margin_dfs:
+        print("Warning: No margin data loaded. 'score_margin' column will be missing.")
+        return pd.DataFrame()
+
+    margin_data = pd.concat(margin_dfs, ignore_index=True)
+    
+    # Ensure we have the required join keys
+    required_keys = ['gi', 'ei', 'team_id']
+    if not all(col in margin_data.columns for col in required_keys):
+        print(f"Warning: Margin data missing keys. Columns found: {margin_data.columns}. Skipping merge.")
+        return pd.DataFrame()
+    
+    # CRITICAL: Convert join keys to int to prevent mismatch
+    margin_data = margin_data.dropna(subset=required_keys)
+    
+    for col in required_keys:
+        try:
+            margin_data[col] = margin_data[col].astype(int)
+        except Exception as e:
+             print(f"Error converting margin data column {col} to int: {e}")
+    
+    # Drop duplicates if any exist in the index to prevent row explosion during merge
+    margin_data = margin_data.drop_duplicates(subset=required_keys)
+    
+    print(f"Loaded margin data: {len(margin_data)} rows.")
+    return margin_data
 
 def load_defender_data_for_year(year, path_template='scraped_data/{year}_dfgtotal.csv'):
     """
-    Loads the raw defender tracking data for a single specified year.
-
-    Args:
-        year (int): The year to load data for.
-        path_template (str): A string template for the file path.
-
-    Returns:
-        pd.DataFrame: A DataFrame containing the defender tracking data for one year.
+    Loads the raw defender tracking data for a single specified year,
+    merges it with score-margin indexing, and handles dtype normalization.
     """
     print(f"--- Loading Raw Defender Data for {year} ---")
     file_path = path_template.format(year=year)
+
     try:
         frame = pd.read_csv(file_path)
-        print(f"Successfully loaded {file_path}")
+        margin = _load_margin_data(year)
+
+        # --- Normalize types for proper merge ---
+        for df in (frame, margin):
+            df['gi'] = pd.to_numeric(df['gi'], errors='coerce').astype('Int64')
+            df['ei'] = pd.to_numeric(df['ei'], errors='coerce').astype('Int64')
+
+        # --- Margin sometimes contains duplicates (multiple contesters)
+        #     Keep 1 row per (gi, ei) event
+        margin = margin[['gi', 'ei', 'score_margin']].drop_duplicates()
+
+        print(len(frame), " defender rows before merge")
+        print(len(margin), " unique margin rows")
+
+        # --- Merge ONLY on gi, ei ---
+        frame = frame.merge(
+            margin,
+            how='left',
+            on=['gi', 'ei']        )
+
+        print(len(frame), " rows after merge")
+        print(frame.head())
         return frame
+
     except FileNotFoundError:
         print(f"Warning: File not found at {file_path}, skipping year.")
         return pd.DataFrame()
@@ -249,69 +344,68 @@ def load_shot_vs_data_for_year(defender_df, year, base_path='../../shot_data/tea
 def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     """
     Merges defender tracking data with shot data, adding defender position,
-    role, and D-LEBRON rating, but ONLY for single-defender plays.
-
-    Args:
-        shot_data_df (pd.DataFrame): The DataFrame with shot details for one year.
-        defender_df (pd.DataFrame): DataFrame with defender tracking data for one year.
-        lebron_df (pd.DataFrame): The pre-loaded DataFrame with LEBRON stats for ALL years.
-        year (int): The specific year being processed, used to filter LEBRON stats.
-
-    Returns:
-        pd.DataFrame: The shot_data_df merged with the processed defender stats.
+    role, D-LEBRON rating, and score_margin.
     """
     print("--- Adding Defender Stats ---")
+    
+    # 1. Handle Empty Input Cases
     if defender_df.empty or shot_data_df.empty:
         print("Input DataFrame is empty. Returning shot data without changes.")
-        shot_data_df['DEF_ID'] = np.nan
-        shot_data_df['DEF_POSITION'] = np.nan
-        shot_data_df['DEF_ROLE'] = np.nan
-        shot_data_df['D_LEBRON'] = np.nan
-        # IMPORTANT: Add 'dsc' column as NaN placeholder for empty merge case
-        shot_data_df['dsc'] = np.nan 
+        cols_to_add = ['DEF_ID', 'DEF_POSITION', 'DEF_ROLE', 'D_LEBRON', 'dsc', 'score_margin']
+        for col in cols_to_add:
+            shot_data_df[col] = np.nan
         return shot_data_df
 
-    # 1. Group defender_df to handle single vs. multi-defender plays
+    # 2. Group defender_df to handle single vs. multi-defender plays
     defender_df['def_id'] = defender_df['def_id'].astype(str)
     
+    # Create the backbone for the merge (Game ID + Event ID + Aggregated Defender IDs)
     def_ids_agg = defender_df.groupby(['gi', 'ei'])['def_id'].apply('|'.join).reset_index()
     def_ids_agg.rename(columns={'def_id': 'DEF_ID'}, inplace=True)
 
-    # 2. Identify single-defender plays to fetch their stats
+    # --- NEW BLOCK: Preserve score_margin ---
+    # Since score_margin is the same for all rows of a specific (gi, ei) event,
+    # we extract it and merge it into our aggregated backbone.
+    if 'score_margin' in defender_df.columns:
+        margin_lookup = defender_df[['gi', 'ei', 'score_margin']].drop_duplicates()
+        def_ids_agg = def_ids_agg.merge(margin_lookup, on=['gi', 'ei'], how='left')
+    else:
+        def_ids_agg['score_margin'] = np.nan
+    # ----------------------------------------
+
+    # 3. Identify single-defender plays to fetch LEBRON stats
     defender_counts = defender_df.groupby(['gi', 'ei']).size().reset_index(name='counts')
     single_defender_plays = defender_counts[defender_counts['counts'] == 1][['gi', 'ei']]
-    # single_defender_rows now includes 'dsc' from defender_df
+    
+    # single_defender_rows includes 'dsc' from defender_df
     single_defender_rows = defender_df.merge(single_defender_plays, on=['gi', 'ei'], how='inner')
     
-    # Filter the lebron_df for the current processing year BEFORE merging.
-    # Note: This dataframe now contains index-sourced position data for 2026.
+    # Filter LEBRON stats
     lebron_for_year = lebron_df[lebron_df['year'] == year].copy()
     print(f"Filtered LEBRON stats for year {year}. Found {len(lebron_for_year)} records.")
 
-    # 3. Merge with pre-loaded LEBRON stats ONLY for single-defender rows
+    # 4. Merge LEBRON stats ONLY for single-defender rows
     single_defender_rows['def_id'] = pd.to_numeric(single_defender_rows['def_id'])
     
-    # Select and rename LEBRON columns for the defensive merge
     defender_lebron_stats = lebron_for_year[['player_id', 'POSITION', 'DEF_ROLE', 'D_LEBRON']].rename(columns={'POSITION': 'DEF_POSITION'})
     
     single_defender_stats = pd.merge(single_defender_rows, defender_lebron_stats, left_on='def_id', right_on='player_id', how='left')
 
-    # 4. Combine the aggregated DEF_IDs with the single-defender stats
-    # MODIFICATION: Included 'dsc' here to carry it into the final merge
+    # 5. Combine the aggregated DEF_IDs/Margins with the single-defender stats
+    # Note: We do NOT need to include score_margin in the list below, because it is already in def_ids_agg
     df_combined = pd.merge(def_ids_agg, 
                              single_defender_stats[['gi', 'ei', 'DEF_POSITION', 'DEF_ROLE', 'D_LEBRON', 'dsc']], 
                              on=['gi', 'ei'], how='left')
     
-    # 5. Finalize the merge with the main shot data
+    # 6. Finalize the merge with the main shot data
     df_combined.rename(columns={'gi': 'GAME_ID', 'ei': 'GAME_EVENT_ID'}, inplace=True)
-    df_combined.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'],inplace=True)
-    shot_data_df.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'],inplace=True)
-    merged_data = shot_data_df.merge(df_combined, on=['GAME_ID', 'GAME_EVENT_ID'], how='left')
-    merged_data.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'],inplace=True)
+    df_combined.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
+    shot_data_df.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
     
-    # NOTE for the new logic: The DEF_ROLE and D_LEBRON for 2026 will be 'NA_INDEX' and NaN, respectively.
-    # This is the desired behavior for now.
-    print("Successfully merged defender stats for the year.")
+    merged_data = shot_data_df.merge(df_combined, on=['GAME_ID', 'GAME_EVENT_ID'], how='left')
+    merged_data.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
+    
+    print("Successfully merged defender stats (and score_margin) for the year.")
     return merged_data
 
 def add_shooter_stats(shot_data_df, lebron_df, year):
