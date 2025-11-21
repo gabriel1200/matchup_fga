@@ -402,7 +402,7 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     df_combined.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
     shot_data_df.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
     
-    merged_data = shot_data_df.merge(df_combined, on=['GAME_ID', 'GAME_EVENT_ID'], how='left')
+    merged_data = shot_data_df.merge(df_combined, on=['GAME_ID', 'GAME_EVENT_ID'], how='left')  
     merged_data.drop_duplicates(subset=['GAME_ID','GAME_EVENT_ID'], inplace=True)
     
     print("Successfully merged defender stats (and score_margin) for the year.")
@@ -670,7 +670,7 @@ def process_year(year, lebron_df):
 if __name__ == '__main__':
     START_YEAR = 2026
     # MODIFICATION: Updated END_YEAR to 2026 to include the current season.
-    END_YEAR = 2026 
+    END_YEAR = 2026
 
     # Load LEBRON stats once to be used for every year's processing
     # The default current_season_year=2026 handles the check for the missing data.
