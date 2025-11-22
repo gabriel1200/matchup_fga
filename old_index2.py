@@ -89,10 +89,10 @@ for _, row in frame.iterrows():
 
         # --- Filter Garbage Rows ---
         df = df[
-            ~(
-                df['HOMEDESCRIPTION'].str.contains('LAY|SHOT', case=False, na=False) |
-                df['NEUTRALDESCRIPTION'].str.contains('LAY|SHOT', case=False, na=False) |
-                df['VISITORDESCRIPTION'].str.contains('LAY|SHOT', case=False, na=False)
+            (
+                df['HOMEDESCRIPTION'].str.contains('LAY|SHOT|MISS|MISSED', case=False, na=False) |
+                df['NEUTRALDESCRIPTION'].str.contains('LAY|SHOT|MISS|MISSED', case=False, na=False) |
+                df['VISITORDESCRIPTION'].str.contains('LAY|SHOT|MISS|MISSED', case=False, na=False)
             )
         ]
         
