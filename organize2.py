@@ -11,7 +11,7 @@ import sys
 # NOTE: Assuming GAME_DATES is available globally or defined here as in the original snippet
 GAME_DATES = pd.read_csv('https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/game_dates.csv')
 
-def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/main/lebron.csv', index_file='modern_index.csv', current_season_year=2026):
+def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/lebron.csv', index_file='modern_index.csv', current_season_year=2026):
     """
     Loads LEBRON player stats and supplements with position data from a local
     index file if the current season's LEBRON data is unavailable.
@@ -53,11 +53,15 @@ def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Dat
         lebron_df = pd.DataFrame()
 
     # 2. Check for current season data (2026) and supplement if missing
+    print(lebron_df['year'].unique())
+    print(current_season_year in lebron_df['year'].unique())
+  
     if lebron_df.empty or current_season_year not in lebron_df['year'].unique():
         print(f"--- Current season ({current_season_year}) LEBRON data is missing. Supplementing with {index_file}. ---")
         try:
             # 3. Load the index file
             index_df = pd.read_csv(index_file)
+            
             
             # Filter for the current season year. Assuming the index file has a 'year' column.
             current_data = index_df[index_df['year'] == current_season_year].copy()
