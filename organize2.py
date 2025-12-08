@@ -11,7 +11,77 @@ import sys
 # NOTE: Assuming GAME_DATES is available globally or defined here as in the original snippet
 GAME_DATES = pd.read_csv('https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/game_dates.csv')
 
+# --- NEW ASSIST DATA FUNCTION ---
+def load_and_add_assist_data(merged_df, year):
+    """
+    Loads and merges the ASSIST_ID data for a specific year, handling both 
+    regular and post-season prefixes.
+    
+    Args:
+        merged_df (pd.DataFrame): The shot data frame to merge into.
+        year (int): The current year being processed.
+
+    Returns:
+        pd.DataFrame: The merged DataFrame with the 'ASSIST_ID' column.
+    """
+    print(f"--- Loading and Merging Assist Data for {year} ---")
+    
+    all_assist_data = []
+    # Loop over regular season ('') and playoffs ('ps')
+    for prefix in ['', 'ps']:
+        url = f'https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/assists/{year}{prefix}/ast.csv'
+        try:
+            # Use 'EVENTNUM' as the common event ID for the assist file
+            assist_df = pd.read_csv(url, usecols=['GAME_ID', 'EVENTNUM', 'ASSIST_ID'])
+            assist_df['season_type'] = 'REG' if prefix == '' else 'PS'
+            all_assist_data.append(assist_df)
+            print(f"Loaded {len(assist_df)} assist records for {year}{prefix}.")
+        except Exception as e:
+            # This is expected if the post-season data doesn't exist yet, or if 2026 data is not fully uploaded.
+            print(f"Warning: Could not load assist data from {url}. Error: {e}")
+            continue
+
+    if not all_assist_data:
+        print("Warning: No assist data loaded. Adding NaN 'ASSIST_ID' column.")
+        merged_df['ASSIST_ID'] = np.nan
+        return merged_df
+        
+    combined_assist_df = pd.concat(all_assist_data, ignore_index=True)
+
+    # Prepare keys for merge
+    # 1. Standardize column names
+    # Rename GAME_EVENT_ID to EVENTNUM in the shot data temporarily for the merge
+    if 'GAME_EVENT_ID' in merged_df.columns:
+        merged_df.rename(columns={'GAME_EVENT_ID': 'EVENTNUM'}, inplace=True)
+    
+    # 2. Normalize data types
+    try:
+        merged_df['GAME_ID'] = pd.to_numeric(merged_df['GAME_ID'], errors='coerce').astype('Int64')
+        merged_df['EVENTNUM'] = pd.to_numeric(merged_df['EVENTNUM'], errors='coerce').astype('Int64')
+        combined_assist_df['GAME_ID'] = pd.to_numeric(combined_assist_df['GAME_ID'], errors='coerce').astype('Int64')
+        combined_assist_df['EVENTNUM'] = pd.to_numeric(combined_assist_df['EVENTNUM'], errors='coerce').astype('Int64')
+    except Exception as e:
+        print(f"Error converting merge keys to numeric: {e}")
+        merged_df['ASSIST_ID'] = np.nan
+        return merged_df # Return early if type conversion fails
+
+    # Perform the merge
+    merged_df = merged_df.merge(
+        combined_assist_df[['GAME_ID', 'EVENTNUM', 'ASSIST_ID']],
+        on=['GAME_ID', 'EVENTNUM'],
+        how='left'
+    )
+    
+    # Revert column name back to GAME_EVENT_ID
+    if 'EVENTNUM' in merged_df.columns:
+        merged_df.rename(columns={'EVENTNUM': 'GAME_EVENT_ID'}, inplace=True)
+        
+    print(f"Successfully merged ASSIST_ID column. Found {merged_df['ASSIST_ID'].notna().sum()} assists.")
+    return merged_df
+
+
 def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/lebron.csv', index_file='modern_index.csv', current_season_year=2026):
+# ... (rest of load_lebron_data function remains unchanged) ...
     """
     Loads LEBRON player stats and supplements with position data from a local
     index file if the current season's LEBRON data is unavailable.
@@ -108,7 +178,9 @@ def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Dat
         lebron_df['player_id'] = lebron_df['player_id'].fillna(-999).astype(int).replace(-999, np.nan)
         return lebron_df
 
+
 def _load_margin_data(year):
+# ... (rest of _load_margin_data function remains unchanged) ...
     """
     Helper function to load and prepare the score margin index data for a specific year.
     Returns a DataFrame with columns: ['gi', 'ei', 'team_id', 'score_margin']
@@ -188,6 +260,7 @@ def _load_margin_data(year):
     return margin_data
 
 def load_defender_data_for_year(year, path_template='scraped_data/{year}_dfgtotal.csv'):
+# ... (rest of load_defender_data_for_year function remains unchanged) ...
     """
     Loads the raw defender tracking data for a single specified year,
     merges it with score-margin indexing, and handles dtype normalization.
@@ -230,6 +303,7 @@ def load_defender_data_for_year(year, path_template='scraped_data/{year}_dfgtota
 
 
 def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team'):
+# ... (rest of load_shot_data_for_year function remains unchanged) ...
     """
     Loads regular season and post-season shot data for a single year, based on
     the teams present in that year's defender data.
@@ -287,6 +361,7 @@ def load_shot_data_for_year(defender_df, year, base_path='../../shot_data/team')
 
 
 def load_shot_vs_data_for_year(defender_df, year, base_path='../../shot_data/team'):
+# ... (rest of load_shot_vs_data_for_year function remains unchanged) ...
     """
     Loads regular season and post-season shot data for a single year, based on
     the teams present in that year's defender data.
@@ -346,6 +421,7 @@ def load_shot_vs_data_for_year(defender_df, year, base_path='../../shot_data/tea
 # ==============================================================================
 
 def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
+# ... (rest of add_defender_stats function remains unchanged) ...
     """
     Merges defender tracking data with shot data, adding defender position,
     role, D-LEBRON rating, and score_margin.
@@ -413,6 +489,7 @@ def add_defender_stats(shot_data_df, defender_df, lebron_df, year):
     return merged_data
 
 def add_shooter_stats(shot_data_df, lebron_df, year):
+# ... (rest of add_shooter_stats function remains unchanged) ...
     """
     Merges shooter offensive stats (Position, Role, O-LEBRON) onto the shot data.
 
@@ -463,6 +540,7 @@ def add_shooter_stats(shot_data_df, lebron_df, year):
 # ==============================================================================
 
 def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
+# ... (rest of save_merged_data_by_team_year function remains unchanged) ...
     """
     Saves the merged shot data back into a structured directory,
     split by team, year, and season type.
@@ -537,6 +615,7 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
 
 
 def save_merged_data_by_defender(merged_df, base_path='defender'):
+# ... (rest of save_merged_data_by_defender function remains unchanged) ...
     """
     Saves the merged shot data into a directory structured by defender,
     year, and season type.
@@ -576,6 +655,7 @@ def save_merged_data_by_defender(merged_df, base_path='defender'):
     print("Finished saving data by defender for the year.")
 
 def save_merged_data_by_shooter(merged_df, base_path='shooter'):
+# ... (rest of save_merged_data_by_shooter function remains unchanged) ...
     """
     Saves the merged shot data into a directory structured by defender,
     year, and season type.
@@ -651,11 +731,18 @@ def process_year(year, lebron_df):
     # Step 5: Process and merge shooter data
     merged_data_year = add_shooter_stats(merged_data_year, lebron_df, year)
     
+    # --- NEW STEP 5.5: Merge ASSIST_ID data ---
+    merged_data_year = load_and_add_assist_data(merged_data_year, year)
+    # ------------------------------------------
 
     merged_vs_data_year = add_defender_stats(shot_data_year_vs, dfga_year, lebron_df, year)
     
-    # Step 5: Process and merge shooter data
+    # Step 5: Process and merge shooter data (VS data)
     merged_vs_data_year = add_shooter_stats(merged_vs_data_year, lebron_df, year)
+    
+    # --- NEW STEP 5.5: Merge ASSIST_ID data (VS data) ---
+    merged_vs_data_year = load_and_add_assist_data(merged_vs_data_year, year)
+    # ----------------------------------------------------
     
     # Step 6: Show coverage stats for the year
     coverage = 100 - (100 * merged_data_year['DEF_ID'].isna().sum() / len(merged_data_year))
