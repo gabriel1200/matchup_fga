@@ -73,8 +73,7 @@ def load_and_add_assist_data(merged_df, year):
     )
     
     # Revert column name back to GAME_EVENT_ID
-    if 'EVENTNUM' in merged_df.columns:
-        merged_df.rename(columns={'EVENTNUM': 'GAME_EVENT_ID'}, inplace=True)
+
         
     print(f"Successfully merged ASSIST_ID column. Found {merged_df['ASSIST_ID'].notna().sum()} assists.")
     return merged_df
