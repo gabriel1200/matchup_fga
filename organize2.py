@@ -559,6 +559,7 @@ def save_merged_data_by_team_year(merged_df, base_path='team', vs = False):
     print(merged_df[['GAME_ID','TEAM_ID']])
     print(len(merged_df))
     merged_df = merged_df.merge(opp_info,on=['GAME_ID','TEAM_ID'])
+    merged_df['EVENTNUM']=merged_df['GAME_EVENT_ID']
     print(len(merged_df))
 
     print("--- Saving Data by Team/Year ---")
@@ -626,6 +627,7 @@ def save_merged_data_by_defender(merged_df, base_path='defender'):
     
     df_filtered = merged_df.dropna(subset=['DEF_ID']).copy()
     df_filtered['DEF_ID'] = df_filtered['DEF_ID'].astype(str)
+    df_filtered['EVENTNUM']=df_filtered['GAME_EVENT_ID']
     
     s = df_filtered['DEF_ID'].str.split('|').explode()
     unique_defender_ids = s.unique()
@@ -666,6 +668,7 @@ def save_merged_data_by_shooter(merged_df, base_path='shooter'):
     
     df_filtered = merged_df.dropna(subset=['PLAYER_ID']).copy()
     df_filtered['PLAYER_ID'] = df_filtered['PLAYER_ID'].astype(str)
+    df_filtered['EVENTNUM']=df_filtered['GAME_EVENT_ID']
     
     s = df_filtered['PLAYER_ID']
     unique_shooter_ids = s.unique()
@@ -724,8 +727,7 @@ def process_year(year, lebron_df):
     shot_data_year_vs = load_shot_vs_data_for_year(dfga_year, year)
     if shot_data_year.empty:
         return # Skip to next year if no shot data
-    shot_data_year.rename(columns={'GAME_EVENT_ID':'EVENTNUM'},inplace=True)
-    shot_data_year_vs.rename(columns={'GAME_EVENT_ID':'EVENTNUM'},inplace=True)
+
     # Step 4: Process and merge defender data
     merged_data_year = add_defender_stats(shot_data_year, dfga_year, lebron_df, year)
     
