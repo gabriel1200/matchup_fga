@@ -73,7 +73,8 @@ def load_and_add_assist_data(merged_df, year):
     )
     
     # Revert column name back to GAME_EVENT_ID
-
+    if 'EVENTNUM' in merged_df.columns:
+        merged_df.rename(columns={'EVENTNUM': 'GAME_EVENT_ID'}, inplace=True)
         
     print(f"Successfully merged ASSIST_ID column. Found {merged_df['ASSIST_ID'].notna().sum()} assists.")
     return merged_df
@@ -723,7 +724,8 @@ def process_year(year, lebron_df):
     shot_data_year_vs = load_shot_vs_data_for_year(dfga_year, year)
     if shot_data_year.empty:
         return # Skip to next year if no shot data
-        
+    shot_data_year.rename(columns={'GAME_EVENT_ID':'EVENTNUM'},inplace=True)
+    shot_data_year_vs.rename(columns={'GAME_EVENT_ID':'EVENTNUM'},inplace=True)
     # Step 4: Process and merge defender data
     merged_data_year = add_defender_stats(shot_data_year, dfga_year, lebron_df, year)
     
