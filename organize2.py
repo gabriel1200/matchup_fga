@@ -1,5 +1,9 @@
 # FILE: reorganize_dfga.by_year.py
 
+import os, datetime as _dt
+_today = _dt.date.today()
+SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import pandas as pd
 import os
 import numpy as np
@@ -80,7 +84,7 @@ def load_and_add_assist_data(merged_df, year):
     return merged_df
 
 
-def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/lebron.csv', index_file='modern_index.csv', current_season_year=2026):
+def load_lebron_data(url='https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/lebron.csv', index_file='modern_index.csv', current_season_year=SEASON_YEAR):
 # ... (rest of load_lebron_data function remains unchanged) ...
     """
     Loads LEBRON player stats and supplements with position data from a local
@@ -762,13 +766,12 @@ def process_year(year, lebron_df):
 
 
 if __name__ == '__main__':
-    START_YEAR = 2026
-    # MODIFICATION: Updated END_YEAR to 2026 to include the current season.
-    END_YEAR = 2026
+    START_YEAR = SEASON_YEAR
+    END_YEAR = SEASON_YEAR
 
     # Load LEBRON stats once to be used for every year's processing
     # The default current_season_year=2026 handles the check for the missing data.
-    lebron_stats = load_lebron_data()
+    lebron_stats = load_lebron_data(current_season_year=SEASON_YEAR)
 
     if not lebron_stats.empty:
         # Loop through each year and process its data individually (inclusive of END_YEAR)

@@ -1,3 +1,7 @@
+import os, datetime as _dt
+_today = _dt.date.today()
+SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import requests
 import pandas as pd
 import time
@@ -154,7 +158,7 @@ class NBAScraper:
                     "game_id": str(game_id),
                     "team_id": "unknown",
                     "player_name": "unknown",
-                    "year": 2025,
+                    "year": 2025,  # season-lint: ok (one-off CSV migration)
                     "timestamp": "migrated_from_csv",
                     "success": True,
                     "record_count": 1,
@@ -398,7 +402,7 @@ class NBAScraper:
             master_record = pd.read_csv(master_record_path)
             master_record['TEAM_ID'] = master_record['TEAM_ID'].astype(int)
             master_record['PLAYER_ID'] = master_record['PLAYER_ID'].astype(int)
-            master_record = master_record[master_record.year >= 2025]
+            master_record = master_record[master_record.year >= SEASON_YEAR]
     
         except Exception as e:
             print(f"Error loading master record: {e}")
@@ -559,7 +563,7 @@ class NBAScraper:
                
                 columns=['gi','ei','dsc','def_id','team_id','player_name','year']
                 print(year)
-                if year == '2026':
+                if year == str(SEASON_YEAR):
                     print('hit current year')
                     final_df[columns].to_csv(f"scraped_data/{year}_dfgtotal.csv")
                 print(f"  ✓ Combined file saved: {final_path} with {final_count} total records")
