@@ -716,9 +716,9 @@ def process_year(year, lebron_df):
     
     # Step 1: Load the raw defender tracking data for the year
     dfga_year = load_defender_data_for_year(year)
-    print(dfga_year[dfga_year.team_id.isna()])
     if dfga_year.empty:
         return # Skip to the next year if no data
+    print(dfga_year[dfga_year.team_id.isna()])
 
     # Step 2: Drop duplicates from defender data
     pre_dup_len = len(dfga_year)
