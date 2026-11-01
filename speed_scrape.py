@@ -1,6 +1,7 @@
 import os, datetime as _dt
 _today = _dt.date.today()
 SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+EMPTY_RETRY_DAYS = 4  # re-ask a current-season pair that returned 0 rows until this many days after its first try
 PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import requests
 import pandas as pd
@@ -79,7 +80,10 @@ class NBAScraper:
                          success, record_count=0, error_msg=None):
         """Update the scrape log with a new attempt"""
         key = f"{player_id}_{game_id}"
+        prev = log_data.get(key) or {}
         log_data[key] = {
+            # kept across retries so EMPTY_RETRY_DAYS counts from the first try, not the latest
+            "first_attempt": prev.get("first_attempt") or prev.get("timestamp") or datetime.now().isoformat(),
             "player_id": str(player_id),
             "game_id": str(game_id),
             "team_id": str(team_id),
@@ -417,12 +421,25 @@ class NBAScraper:
         unique_combinations['scrape_key'] = unique_combinations['PLAYER_ID'].astype(str) + "_" + unique_combinations['GAME_ID'].astype(str)
         already_attempted = set(log_data.keys())
         
-        unique_combinations['log_status'] = unique_combinations['scrape_key'].apply(
-            lambda x: 'never_attempted' if x not in already_attempted else 
-                     ('successful' if log_data[x]['success'] else 'failed')
-        )
-        
-        never_attempted = unique_combinations[unique_combinations['log_status'] == 'never_attempted']
+        def status(x):
+            if x not in already_attempted:
+                return 'never_attempted'
+            e = log_data[x]
+            if not e['success']:
+                return 'failed'
+            # 0 rows is often "not filled in yet": the Oct 24 2026 run logged all 12 Oct 23 games as 0 rows and they
+            # were never asked again (they had rows when re-asked Nov 1). Re-ask current-season zeros for a few days.
+            if e.get('record_count') == 0 and int(e.get('year') or 0) >= SEASON_YEAR:
+                first = datetime.fromisoformat(e.get('first_attempt') or e['timestamp'])
+                if (datetime.now() - first).days < EMPTY_RETRY_DAYS:
+                    return 'empty_recent'
+            return 'successful'
+        unique_combinations['log_status'] = unique_combinations['scrape_key'].apply(status)
+
+        empty_recent = unique_combinations[unique_combinations['log_status'] == 'empty_recent']
+        if len(empty_recent):
+            print(f"Re-asking {len(empty_recent)} recent combinations that returned 0 rows")
+        never_attempted = pd.concat([unique_combinations[unique_combinations['log_status'] == 'never_attempted'], empty_recent])
         previously_failed = unique_combinations[unique_combinations['log_status'] == 'failed']
         
         if force_retry_failed:
