@@ -1,0 +1,1565 @@
+Season config: 2026-27 (year=2027, regular)
+/home/gaber/basketball/web_app/venv/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (7.6.0)/charset_normalizer (3.3.2) doesn't match a supported version!
+  warnings.warn(
+Loaded scrape log with 230801 previous attempts
+
+=== SCRAPE LOG ANALYSIS ===
+Total attempts logged: 230801
+Successful attempts: 230796
+Failed attempts: 5
+Success rate: 100.0%
+Total video records found: 458667
+=== LOADING SCRAPE LOG ===
+Loaded scrape log with 230801 previous attempts
+
+=== LOADING EXISTING CSV DATA ===
+Checking existing scraped data in 11 year directories...
+  Loading from combined file: scraped_data/year_2022/combined_video_details_2022.csv
+    Found 25490 combinations for 2022
+  Loading from combined file: scraped_data/year_2023/combined_video_details_2023.csv
+    Found 25358 combinations for 2023
+  Loading from combined file: scraped_data/year_2018/combined_video_details_2018.csv
+    Found 25917 combinations for 2018
+  Loading from combined file: scraped_data/year_2021/combined_video_details_2021.csv
+    Found 22923 combinations for 2021
+  Loading from combined file: scraped_data/year_2024/combined_video_details_2024.csv
+    Found 25758 combinations for 2024
+  Loading from combined file: scraped_data/year_2020/combined_video_details_2020.csv
+    Found 22287 combinations for 2020
+  Loading from combined file: scraped_data/year_2026/combined_video_details_2026.csv
+    Found 27218 combinations for 2026
+  Loading from combined file: scraped_data/year_2017/combined_video_details_2017.csv
+    Found 63 combinations for 2017
+  Loading from combined file: scraped_data/year_2019/combined_video_details_2019.csv
+    Found 25590 combinations for 2019
+  Loading from combined file: scraped_data/year_2025/combined_video_details_2025.csv
+    Found 26990 combinations for 2025
+  Loading from combined file: scraped_data/year_2027/combined_video_details_2027.csv
+    Found 662 combinations for 2027
+Total unique combinations with data in CSV files: 228256
+
+Found 1990 unique player-game combinations
+
+Will attempt 1328 combinations (including 5 retries)
+
+=== STARTING CONCURRENT SCRAPING ===
+Concurrency: 3 simultaneous requests
+Batch delay: 0.5s between batches
+
+Processing batch 1/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 111 records
+Saved 2027 batch 7122 with 111 records to scraped_data/year_2027/batch_7122_20261101_150106.csv
+
+Processing batch 2/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 87 records
+Saved 2027 batch 7123 with 87 records to scraped_data/year_2027/batch_7123_20261101_150112.csv
+
+Processing batch 3/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 81 records
+Saved 2027 batch 7124 with 81 records to scraped_data/year_2027/batch_7124_20261101_150117.csv
+
+Processing batch 4/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7125 with 85 records to scraped_data/year_2027/batch_7125_20261101_150122.csv
+
+Processing batch 5/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 96 records
+Saved 2027 batch 7126 with 96 records to scraped_data/year_2027/batch_7126_20261101_150129.csv
+
+Processing batch 6/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 86 records
+Saved 2027 batch 7127 with 86 records to scraped_data/year_2027/batch_7127_20261101_150135.csv
+
+Processing batch 7/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 113 records
+Saved 2027 batch 7128 with 113 records to scraped_data/year_2027/batch_7128_20261101_150142.csv
+
+Processing batch 8/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 138 records
+Saved 2027 batch 7129 with 138 records to scraped_data/year_2027/batch_7129_20261101_150147.csv
+
+Processing batch 9/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 107 records
+Saved 2027 batch 7130 with 107 records to scraped_data/year_2027/batch_7130_20261101_150153.csv
+
+Processing batch 10/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 129 records
+Saved 2027 batch 7131 with 129 records to scraped_data/year_2027/batch_7131_20261101_150158.csv
+
+Processing batch 11/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 113 records
+Saved 2027 batch 7132 with 113 records to scraped_data/year_2027/batch_7132_20261101_150203.csv
+
+Processing batch 12/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 76 records
+Saved 2027 batch 7133 with 76 records to scraped_data/year_2027/batch_7133_20261101_150209.csv
+
+Processing batch 13/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 92 records
+Saved 2027 batch 7134 with 92 records to scraped_data/year_2027/batch_7134_20261101_150216.csv
+
+Processing batch 14/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 105 records
+Saved 2027 batch 7135 with 105 records to scraped_data/year_2027/batch_7135_20261101_150221.csv
+
+Processing batch 15/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 82 records
+Saved 2027 batch 7136 with 82 records to scraped_data/year_2027/batch_7136_20261101_150227.csv
+
+Processing batch 16/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 72 records
+Saved 2027 batch 7137 with 72 records to scraped_data/year_2027/batch_7137_20261101_150232.csv
+
+Processing batch 17/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 136 records
+Saved 2027 batch 7138 with 136 records to scraped_data/year_2027/batch_7138_20261101_150238.csv
+
+Processing batch 18/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7139 with 97 records to scraped_data/year_2027/batch_7139_20261101_150243.csv
+
+Processing batch 19/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7140 with 97 records to scraped_data/year_2027/batch_7140_20261101_150250.csv
+
+Processing batch 20/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 61 records
+Saved 2027 batch 7141 with 61 records to scraped_data/year_2027/batch_7141_20261101_150255.csv
+
+Processing batch 21/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 94 records
+Saved 2027 batch 7142 with 94 records to scraped_data/year_2027/batch_7142_20261101_150301.csv
+
+Processing batch 22/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 28 records
+Saved 2027 batch 7143 with 28 records to scraped_data/year_2027/batch_7143_20261101_150306.csv
+
+Processing batch 23/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 94 records
+Saved 2027 batch 7144 with 94 records to scraped_data/year_2027/batch_7144_20261101_150311.csv
+
+Processing batch 24/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 79 records
+Saved 2027 batch 7145 with 79 records to scraped_data/year_2027/batch_7145_20261101_150317.csv
+
+Processing batch 25/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 58 records
+Saved 2027 batch 7146 with 58 records to scraped_data/year_2027/batch_7146_20261101_150324.csv
+
+Processing batch 26/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7147 with 97 records to scraped_data/year_2027/batch_7147_20261101_150329.csv
+
+Processing batch 27/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7148 with 85 records to scraped_data/year_2027/batch_7148_20261101_150334.csv
+
+Processing batch 28/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 88 records
+Saved 2027 batch 7149 with 88 records to scraped_data/year_2027/batch_7149_20261101_150339.csv
+
+Processing batch 29/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 109 records
+Saved 2027 batch 7150 with 109 records to scraped_data/year_2027/batch_7150_20261101_150344.csv
+
+Processing batch 30/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 91 records
+Saved 2027 batch 7151 with 91 records to scraped_data/year_2027/batch_7151_20261101_150350.csv
+
+Processing batch 31/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 71 records
+Saved 2027 batch 7152 with 71 records to scraped_data/year_2027/batch_7152_20261101_150357.csv
+
+Processing batch 32/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 106 records
+Saved 2027 batch 7153 with 106 records to scraped_data/year_2027/batch_7153_20261101_150402.csv
+
+Processing batch 33/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 84 records
+Saved 2027 batch 7154 with 84 records to scraped_data/year_2027/batch_7154_20261101_150408.csv
+
+Processing batch 34/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 43 records
+Saved 2027 batch 7155 with 43 records to scraped_data/year_2027/batch_7155_20261101_150414.csv
+
+Processing batch 35/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 77 records
+Saved 2027 batch 7156 with 77 records to scraped_data/year_2027/batch_7156_20261101_150418.csv
+
+Processing batch 36/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 102 records
+Saved 2027 batch 7157 with 102 records to scraped_data/year_2027/batch_7157_20261101_150423.csv
+
+Processing batch 37/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 95 records
+Saved 2027 batch 7158 with 95 records to scraped_data/year_2027/batch_7158_20261101_150430.csv
+
+Processing batch 38/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 75 records
+Saved 2027 batch 7159 with 75 records to scraped_data/year_2027/batch_7159_20261101_150434.csv
+
+Processing batch 39/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 99 records
+Saved 2027 batch 7160 with 99 records to scraped_data/year_2027/batch_7160_20261101_150439.csv
+
+Processing batch 40/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 68 records
+Saved 2027 batch 7161 with 68 records to scraped_data/year_2027/batch_7161_20261101_150444.csv
+
+Processing batch 41/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 112 records
+Saved 2027 batch 7162 with 112 records to scraped_data/year_2027/batch_7162_20261101_150450.csv
+
+Processing batch 42/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 109 records
+Saved 2027 batch 7163 with 109 records to scraped_data/year_2027/batch_7163_20261101_150455.csv
+
+Processing batch 43/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 109 records
+Saved 2027 batch 7164 with 109 records to scraped_data/year_2027/batch_7164_20261101_150502.csv
+
+Processing batch 44/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 113 records
+Saved 2027 batch 7165 with 113 records to scraped_data/year_2027/batch_7165_20261101_150508.csv
+
+Processing batch 45/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 125 records
+Saved 2027 batch 7166 with 125 records to scraped_data/year_2027/batch_7166_20261101_150513.csv
+
+Processing batch 46/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 83 records
+Saved 2027 batch 7167 with 83 records to scraped_data/year_2027/batch_7167_20261101_150518.csv
+
+Processing batch 47/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 77 records
+Saved 2027 batch 7168 with 77 records to scraped_data/year_2027/batch_7168_20261101_150523.csv
+
+Processing batch 48/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 23 records
+Saved 2027 batch 7169 with 23 records to scraped_data/year_2027/batch_7169_20261101_150528.csv
+
+Processing batch 49/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 124 records
+Saved 2027 batch 7170 with 124 records to scraped_data/year_2027/batch_7170_20261101_150535.csv
+
+Processing batch 50/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 100 records
+Saved 2027 batch 7171 with 100 records to scraped_data/year_2027/batch_7171_20261101_150540.csv
+
+Processing batch 51/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 75 records
+Saved 2027 batch 7172 with 75 records to scraped_data/year_2027/batch_7172_20261101_150545.csv
+
+Processing batch 52/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 86 records
+Saved 2027 batch 7173 with 86 records to scraped_data/year_2027/batch_7173_20261101_150551.csv
+
+Processing batch 53/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 76 records
+Saved 2027 batch 7174 with 76 records to scraped_data/year_2027/batch_7174_20261101_150556.csv
+
+Processing batch 54/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7175 with 85 records to scraped_data/year_2027/batch_7175_20261101_150602.csv
+
+Processing batch 55/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 88 records
+Saved 2027 batch 7176 with 88 records to scraped_data/year_2027/batch_7176_20261101_150609.csv
+
+Processing batch 56/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7177 with 97 records to scraped_data/year_2027/batch_7177_20261101_150614.csv
+
+Processing batch 57/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 81 records
+Saved 2027 batch 7178 with 81 records to scraped_data/year_2027/batch_7178_20261101_150620.csv
+
+Processing batch 58/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 95 records
+Saved 2027 batch 7179 with 95 records to scraped_data/year_2027/batch_7179_20261101_150626.csv
+
+Processing batch 59/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 75 records
+Saved 2027 batch 7180 with 75 records to scraped_data/year_2027/batch_7180_20261101_150632.csv
+
+Processing batch 60/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7181 with 97 records to scraped_data/year_2027/batch_7181_20261101_150638.csv
+
+Processing batch 61/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 75 records
+Saved 2027 batch 7182 with 75 records to scraped_data/year_2027/batch_7182_20261101_150645.csv
+
+Processing batch 62/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 84 records
+Saved 2027 batch 7183 with 84 records to scraped_data/year_2027/batch_7183_20261101_150651.csv
+
+Processing batch 63/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 95 records
+Saved 2027 batch 7184 with 95 records to scraped_data/year_2027/batch_7184_20261101_150657.csv
+
+Processing batch 64/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 98 records
+Saved 2027 batch 7185 with 98 records to scraped_data/year_2027/batch_7185_20261101_150702.csv
+
+Processing batch 65/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 89 records
+Saved 2027 batch 7186 with 89 records to scraped_data/year_2027/batch_7186_20261101_150708.csv
+
+Processing batch 66/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 112 records
+Saved 2027 batch 7187 with 112 records to scraped_data/year_2027/batch_7187_20261101_150713.csv
+
+Processing batch 67/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 71 records
+Saved 2027 batch 7188 with 71 records to scraped_data/year_2027/batch_7188_20261101_150720.csv
+
+Processing batch 68/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 94 records
+Saved 2027 batch 7189 with 94 records to scraped_data/year_2027/batch_7189_20261101_150725.csv
+
+Processing batch 69/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 87 records
+Saved 2027 batch 7190 with 87 records to scraped_data/year_2027/batch_7190_20261101_150730.csv
+
+Processing batch 70/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 127 records
+Saved 2027 batch 7191 with 127 records to scraped_data/year_2027/batch_7191_20261101_150735.csv
+
+Processing batch 71/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 94 records
+Saved 2027 batch 7192 with 94 records to scraped_data/year_2027/batch_7192_20261101_150741.csv
+
+Processing batch 72/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 16 records
+Saved 2027 batch 7193 with 16 records to scraped_data/year_2027/batch_7193_20261101_150745.csv
+
+Processing batch 73/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 120 records
+Saved 2027 batch 7194 with 120 records to scraped_data/year_2027/batch_7194_20261101_150752.csv
+
+Processing batch 74/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 101 records
+Saved 2027 batch 7195 with 101 records to scraped_data/year_2027/batch_7195_20261101_150758.csv
+
+Processing batch 75/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 114 records
+Saved 2027 batch 7196 with 114 records to scraped_data/year_2027/batch_7196_20261101_150803.csv
+
+Processing batch 76/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 113 records
+Saved 2027 batch 7197 with 113 records to scraped_data/year_2027/batch_7197_20261101_150808.csv
+
+Processing batch 77/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 55 records
+Saved 2027 batch 7198 with 55 records to scraped_data/year_2027/batch_7198_20261101_150813.csv
+
+Processing batch 78/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 120 records
+Saved 2027 batch 7199 with 120 records to scraped_data/year_2027/batch_7199_20261101_150818.csv
+
+Processing batch 79/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 66 records
+Saved 2027 batch 7200 with 66 records to scraped_data/year_2027/batch_7200_20261101_150825.csv
+
+Processing batch 80/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 94 records
+Saved 2027 batch 7201 with 94 records to scraped_data/year_2027/batch_7201_20261101_150830.csv
+
+Processing batch 81/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 95 records
+Saved 2027 batch 7202 with 95 records to scraped_data/year_2027/batch_7202_20261101_150835.csv
+
+Processing batch 82/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 103 records
+Saved 2027 batch 7203 with 103 records to scraped_data/year_2027/batch_7203_20261101_150841.csv
+
+Processing batch 83/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 76 records
+Saved 2027 batch 7204 with 76 records to scraped_data/year_2027/batch_7204_20261101_150846.csv
+
+Processing batch 84/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 74 records
+Saved 2027 batch 7205 with 74 records to scraped_data/year_2027/batch_7205_20261101_150851.csv
+
+Processing batch 85/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 109 records
+Saved 2027 batch 7206 with 109 records to scraped_data/year_2027/batch_7206_20261101_150858.csv
+
+Processing batch 86/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 68 records
+Saved 2027 batch 7207 with 68 records to scraped_data/year_2027/batch_7207_20261101_150903.csv
+
+Processing batch 87/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 87 records
+Saved 2027 batch 7208 with 87 records to scraped_data/year_2027/batch_7208_20261101_150908.csv
+
+Processing batch 88/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 99 records
+Saved 2027 batch 7209 with 99 records to scraped_data/year_2027/batch_7209_20261101_150914.csv
+
+Processing batch 89/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 108 records
+Saved 2027 batch 7210 with 108 records to scraped_data/year_2027/batch_7210_20261101_150919.csv
+
+Processing batch 90/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 115 records
+Saved 2027 batch 7211 with 115 records to scraped_data/year_2027/batch_7211_20261101_150924.csv
+
+Processing batch 91/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 75 records
+Saved 2027 batch 7212 with 75 records to scraped_data/year_2027/batch_7212_20261101_150929.csv
+
+Processing batch 92/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 79 records
+Saved 2027 batch 7213 with 79 records to scraped_data/year_2027/batch_7213_20261101_150936.csv
+
+Processing batch 93/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 59 records
+Saved 2027 batch 7214 with 59 records to scraped_data/year_2027/batch_7214_20261101_150940.csv
+
+Processing batch 94/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 108 records
+Saved 2027 batch 7215 with 108 records to scraped_data/year_2027/batch_7215_20261101_150945.csv
+
+Processing batch 95/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7216 with 85 records to scraped_data/year_2027/batch_7216_20261101_150950.csv
+
+Processing batch 96/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 63 records
+Saved 2027 batch 7217 with 63 records to scraped_data/year_2027/batch_7217_20261101_150955.csv
+
+Processing batch 97/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7218 with 85 records to scraped_data/year_2027/batch_7218_20261101_151001.csv
+
+Processing batch 98/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 118 records
+Saved 2027 batch 7219 with 118 records to scraped_data/year_2027/batch_7219_20261101_151007.csv
+
+Processing batch 99/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 68 records
+Saved 2027 batch 7220 with 68 records to scraped_data/year_2027/batch_7220_20261101_151013.csv
+
+Processing batch 100/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 96 records
+Saved 2027 batch 7221 with 96 records to scraped_data/year_2027/batch_7221_20261101_151018.csv
+
+Processing batch 101/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 78 records
+Saved 2027 batch 7222 with 78 records to scraped_data/year_2027/batch_7222_20261101_151023.csv
+
+Processing batch 102/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 63 records
+Saved 2027 batch 7223 with 63 records to scraped_data/year_2027/batch_7223_20261101_151028.csv
+
+Processing batch 103/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 74 records
+Saved 2027 batch 7224 with 74 records to scraped_data/year_2027/batch_7224_20261101_151033.csv
+
+Processing batch 104/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 108 records
+Saved 2027 batch 7225 with 108 records to scraped_data/year_2027/batch_7225_20261101_151040.csv
+
+Processing batch 105/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 68 records
+Saved 2027 batch 7226 with 68 records to scraped_data/year_2027/batch_7226_20261101_151048.csv
+
+Processing batch 106/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 85 records
+Saved 2027 batch 7227 with 85 records to scraped_data/year_2027/batch_7227_20261101_151053.csv
+
+Processing batch 107/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 107 records
+Saved 2027 batch 7228 with 107 records to scraped_data/year_2027/batch_7228_20261101_151058.csv
+
+Processing batch 108/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 97 records
+Saved 2027 batch 7229 with 97 records to scraped_data/year_2027/batch_7229_20261101_151104.csv
+
+Processing batch 109/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 56 records
+Saved 2027 batch 7230 with 56 records to scraped_data/year_2027/batch_7230_20261101_151108.csv
+
+Processing batch 110/111 (12 combinations)...
+  Batch results: 12 successful, 0 failed, 135 records
+Saved 2027 batch 7231 with 135 records to scraped_data/year_2027/batch_7231_20261101_151115.csv
+
+Processing batch 111/111 (8 combinations)...
+  Batch results: 8 successful, 0 failed, 75 records
+Saved 2027 batch 7232 with 75 records to scraped_data/year_2027/batch_7232_20261101_151120.csv
+
+=== SCRAPING COMPLETE ===
+Total combinations attempted: 1328
+Successful requests: 1328
+Failed requests: 0
+Total video records saved: 9978
+Success rate: 100.0%
+Estimated time saved: 44.3 min -> 8.3 min
+Speed improvement: ~5.3x faster
+Found 11 year directories: ['year_2017', 'year_2018', 'year_2019', 'year_2020', 'year_2021', 'year_2022', 'year_2023', 'year_2024', 'year_2025', 'year_2026', 'year_2027']
+
+Processing 2017: Found 2 batch files
+2017
+  ✓ Combined file saved: scraped_data/year_2017/combined_video_details_2017.csv with 576 total records
+
+Processing 2018: Found 522 batch files
+2018
+  ✓ Combined file saved: scraped_data/year_2018/combined_video_details_2018.csv with 237305 total records
+
+Processing 2019: Found 513 batch files
+2019
+  ✓ Combined file saved: scraped_data/year_2019/combined_video_details_2019.csv with 243791 total records
+
+Processing 2020: Found 449 batch files
+2020
+  ✓ Combined file saved: scraped_data/year_2020/combined_video_details_2020.csv with 212869 total records
+
+Processing 2021: Found 465 batch files
+2021
+  ✓ Combined file saved: scraped_data/year_2021/combined_video_details_2021.csv with 219403 total records
+
+Processing 2022: Found 511 batch files
+2022
+  ✓ Combined file saved: scraped_data/year_2022/combined_video_details_2022.csv with 244270 total records
+
+Processing 2023: Found 510 batch files
+2023
+  ✓ Combined file saved: scraped_data/year_2023/combined_video_details_2023.csv with 247934 total records
+
+Processing 2024: Found 517 batch files
+2024
+  ✓ Combined file saved: scraped_data/year_2024/combined_video_details_2024.csv with 248949 total records
+
+Processing 2025: Found 664 batch files
+  Removed 1815 duplicate records for 2025
+2025
+  ✓ Combined file saved: scraped_data/year_2025/combined_video_details_2025.csv with 256465 total records
+
+Processing 2026: Found 2564 batch files
+  Removed 177 duplicate records for 2026
+2026
+  ✓ Combined file saved: scraped_data/year_2026/combined_video_details_2026.csv with 252821 total records
+
+Processing 2027: Found 172 batch files
+2027
+hit current year
+  ✓ Combined file saved: scraped_data/year_2027/combined_video_details_2027.csv with 15448 total records
+Loaded scrape log with 232124 previous attempts
+
+=== SCRAPE LOG ANALYSIS ===
+Total attempts logged: 232124
+Successful attempts: 232124
+Failed attempts: 0
+Success rate: 100.0%
+Total video records found: 468645
+Loaded metadata for 38074 games.
+         teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+0  1.610613e+09             7          0  ...     False   BOS          -2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2009 -> indexing/regular_season/2009/2009_combined.csv (398108 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+184377  1.610613e+09             7          0  ...     False   BOS           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2018 -> indexing/regular_season/2018/2018_combined.csv (423414 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+97506  1.610613e+09             2          0  ...     False   DET           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2016 -> indexing/regular_season/2016/2016_combined.csv (416098 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+96953  1.610613e+09             2          0  ...     False   NYK           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2017 -> indexing/regular_season/2017/2017_combined.csv (420230 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+106834  1.610613e+09             2          0  ...     False   WAS           3.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2013 -> indexing/regular_season/2013/2013_combined.csv (403218 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+249095  1.610613e+09             2          2  ...     False   DET           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2005 -> indexing/regular_season/2005/2005_combined.csv (395252 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+13403  1.610613e+09             2          0  ...     False   NOP           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2015 -> indexing/regular_season/2015/2015_combined.csv (411140 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+143951  1.610613e+09             2          0  ...     False   CHI           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1998 -> indexing/regular_season/1998/1998_combined.csv (379072 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+39200  1.610613e+09             3          0  ...     False   BOS           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1999 -> indexing/regular_season/1999/1999_combined.csv (226754 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+82440  1.610613e+09             2          0  ...     False   BOS           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2011 -> indexing/regular_season/2011/2011_combined.csv (399580 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+115933  1.610613e+09             7          0  ...     False   MIL           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2022 -> indexing/regular_season/2022/2022_combined.csv (433426 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+305151  1.610613e+09             7          2  ...     False   IND           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2024 -> indexing/regular_season/2024/2024_combined.csv (437386 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+1931  1.610613e+09            10          0  ...     False   DET           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2027 -> indexing/regular_season/2027/2027_combined.csv (31170 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+80370  1.610613e+09             5          0  ...     False   NYK           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2000 -> indexing/regular_season/2000/2000_combined.csv (390440 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+272135  1.610613e+09             2          2  ...     False   PHI           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2006 -> indexing/regular_season/2006/2006_combined.csv (388628 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+241960  1.610613e+09             2          2  ...     False   CLE           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2010 -> indexing/regular_season/2010/2010_combined.csv (401978 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+76327  1.610613e+09            12          2  ...     False   BKN           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2021 -> indexing/regular_season/2021/2021_combined.csv (381940 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+238324  1.610613e+09             2          0  ...     False   ORL           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2003 -> indexing/regular_season/2003/2003_combined.csv (384218 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+54356  1.610613e+09             9          3  ...     False   NYK           1.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2012 -> indexing/regular_season/2012/2012_combined.csv (322450 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+72754  1.610613e+09             7          0  ...     False   PHI           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2023 -> indexing/regular_season/2023/2023_combined.csv (434442 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+251148  1.610613e+09             7          0  ...     False   NOP           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2020 -> indexing/regular_season/2020/2020_combined.csv (376232 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+26707  1.610613e+09             2          0  ...     False   CLE           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2002 -> indexing/regular_season/2002/2002_combined.csv (386526 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+13223  1.610613e+09             2          0  ...     False   IND           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2014 -> indexing/regular_season/2014/2014_combined.csv (408344 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+160354  1.610613e+09             3          0  ...     False   POR           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2008 -> indexing/regular_season/2008/2008_combined.csv (401002 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+43597  1.610613e+09             7          0  ...     False   PHI           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2019 -> indexing/regular_season/2019/2019_combined.csv (438916 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+148821  1.610613e+09             7          0  ...     False   ATL           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2025 -> indexing/regular_season/2025/2025_combined.csv (439058 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+321885  1.610613e+09             8          0  ...     False   HOU           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2026 -> indexing/regular_season/2026/2026_combined.csv (438316 rows)
+         teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+0  1.610613e+09             2          0  ...     False   MIA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2004 -> indexing/regular_season/2004/2004_combined.csv (379606 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+104680  1.610613e+09             2          0  ...     False   NYK           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2001 -> indexing/regular_season/2001/2001_combined.csv (383328 rows)
+              teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+195757  1.610613e+09             2          0  ...     False   MIA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2007 -> indexing/regular_season/2007/2007_combined.csv (392144 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+64434  1.610613e+09             4          0  ...     False   CHI           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1997 -> indexing/regular_season/1997/1997_combined.csv (377180 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+7088  1.610613e+09             2          0  ...      True   MIA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2013 -> indexing/playoffs/2013/2013_combined.csv (26992 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+16854  1.610613e+09             2          2  ...      True   IND           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2014 -> indexing/playoffs/2014/2014_combined.csv (28478 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+13048  1.610613e+09             2          0  ...      True   CHI           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2012 -> indexing/playoffs/2012/2012_combined.csv (26480 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+4018  1.610613e+09             2          0  ...      True   BKN           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2015 -> indexing/playoffs/2015/2015_combined.csv (27390 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+16492  1.610613e+09             3          0  ...      True   BKN           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2005 -> indexing/playoffs/2005/2005_combined.csv (26578 rows)
+         teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+0  1.610613e+09             2          0  ...      True   IND           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2011 -> indexing/playoffs/2011/2011_combined.csv (25082 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+8679  1.610613e+09             2          0  ...      True   UTA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2001 -> indexing/playoffs/2001/2001_combined.csv (22788 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+19255  1.610613e+09             7          2  ...      True   MIL           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2019 -> indexing/playoffs/2019/2019_combined.csv (28518 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+14215  1.610613e+09             7          2  ...      True   PHI           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2021 -> indexing/playoffs/2021/2021_combined.csv (29542 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+10096  1.610613e+09             7          0  ...      True   BOS           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2024 -> indexing/playoffs/2024/2024_combined.csv (27680 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+12133  1.610613e+09             6          0  ...      True   TOR           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2018 -> indexing/playoffs/2018/2018_combined.csv (27632 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+21345  1.610613e+09             2          0  ...      True   IND           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2004 -> indexing/playoffs/2004/2004_combined.csv (25234 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+9769  1.610613e+09             2          0  ...      True   IND           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2002 -> indexing/playoffs/2002/2002_combined.csv (22690 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+2029  1.610613e+09             3          0  ...      True   MIA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2000 -> indexing/playoffs/2000/2000_combined.csv (23140 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+9451  1.610613e+09             2          0  ...      True   DET           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2003 -> indexing/playoffs/2003/2003_combined.csv (28010 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+9203  1.610613e+09             7          0  ...      True   DET           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2026 -> indexing/playoffs/2026/2026_combined.csv (28946 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+5780  1.610613e+09             7          0  ...      True   ATL           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2022 -> indexing/playoffs/2022/2022_combined.csv (29144 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+6098  1.610613e+09             2          0  ...      True   DET           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2009 -> indexing/playoffs/2009/2009_combined.csv (26286 rows)
+         teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+0  1.610613e+09             7          2  ...      True   MIL           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2020 -> indexing/playoffs/2020/2020_combined.csv (28214 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+10815  1.610613e+09             7          0  ...      True   MIA           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2023 -> indexing/playoffs/2023/2023_combined.csv (29302 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+14890  1.610613e+09             2          0  ...      True   CHI           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2017 -> indexing/playoffs/2017/2017_combined.csv (26438 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+21493  1.610613e+09             2          0  ...      True   ORL           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2007 -> indexing/playoffs/2007/2007_combined.csv (24472 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+8673  1.610613e+09             5          2  ...      True   MIA           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1999 -> indexing/playoffs/1999/1999_combined.csv (19714 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+7339  1.610613e+09             2          0  ...      True   ATL           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1998 -> indexing/playoffs/1998/1998_combined.csv (21100 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+2744  1.610613e+09             8          3  ...      True   CLE           3.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2025 -> indexing/playoffs/2025/2025_combined.csv (28754 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+11217  1.610613e+09             3          2  ...      True   DET           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2006 -> indexing/playoffs/2006/2006_combined.csv (27542 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+6147  1.610613e+09             4          0  ...      True   BOS           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2008 -> indexing/playoffs/2008/2008_combined.csv (26708 rows)
+             teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+12353  1.610613e+09             2          2  ...      True   NYK           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 1997 -> indexing/playoffs/1997/1997_combined.csv (21900 rows)
+            teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+5755  1.610613e+09             3          0  ...      True   DET           2.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2016 -> indexing/playoffs/2016/2016_combined.csv (28590 rows)
+         teamId  actionNumber  scoreHome  ...  playoffs  team  score_margin
+0  1.610613e+09             2          0  ...      True   CLE           0.0
+
+[1 rows x 8 columns]
+Index(['teamId', 'actionNumber', 'scoreHome', 'scoreAway', 'game_id',
+       'playoffs', 'team', 'score_margin'],
+      dtype='object')
+Saved 2010 -> indexing/playoffs/2010/2010_combined.csv (25516 rows)
+--- Loading LEBRON Stats (once for all years) ---
+Successfully loaded LEBRON data from https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/lebron.csv.
+[2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023
+ 2024 2025 2026]
+False
+--- Current season (2027) LEBRON data is missing. Supplementing with modern_index.csv. ---
+Warning: No data found for year 2027 in modern_index.csv. LEBRON data remains incomplete.
+
+========================= PROCESSING YEAR: 2027 =========================
+--- Loading Raw Defender Data for 2027 ---
+Loading indexed score margin files...
+Note: Index file not found at indexing/playoffs/2027/2027_combined.csv
+Loaded margin data: 15585 rows.
+15448  defender rows before merge
+15585  unique margin rows
+15448  rows after merge
+   Unnamed: 0        gi   ei  ...  player_name  year  score_margin
+0           0  22600121   28  ...  Josh Giddey  2027           7.0
+1           1  22600121   56  ...  Josh Giddey  2027           7.0
+2           2  22600121   85  ...  Josh Giddey  2027           7.0
+3           3  22600121   88  ...  Josh Giddey  2027           4.0
+4           4  22600121  224  ...  Josh Giddey  2027          16.0
+
+[5 rows x 9 columns]
+Empty DataFrame
+Columns: [Unnamed: 0, gi, ei, dsc, def_id, team_id, player_name, year, score_margin]
+Index: []
+Defender data length for 2027: 15448 -> 15448 (after dropping duplicates)
+--- Loading Team Shot Data for 2027 ---
+Empty DataFrame
+Columns: [Unnamed: 0, gi, ei, dsc, def_id, team_id, player_name, year, score_margin]
+Index: []
+0       1610612741
+12      1610612738
+77      1610612742
+83      1610612760
+106     1610612750
+117     1610612744
+169     1610612757
+178     1610612765
+227     1610612764
+240     1610612749
+284     1610612763
+339     1610612766
+351     1610612751
+475     1610612756
+530     1610612737
+550     1610612740
+692     1610612762
+704     1610612759
+820     1610612754
+991     1610612747
+1059    1610612758
+1270    1610612743
+1285    1610612755
+1301    1610612739
+1494    1610612748
+1677    1610612752
+2205    1610612746
+2296    1610612745
+2517    1610612753
+3021    1610612761
+Name: team_id, dtype: int64
+Found 30 teams to process for 2027.
+Finished loading shot data for 2027.
+--- Loading Team Shot Data for 2027 ---
+Empty DataFrame
+Columns: [Unnamed: 0, gi, ei, dsc, def_id, team_id, player_name, year, score_margin]
+Index: []
+0       1610612741
+12      1610612738
+77      1610612742
+83      1610612760
+106     1610612750
+117     1610612744
+169     1610612757
+178     1610612765
+227     1610612764
+240     1610612749
+284     1610612763
+339     1610612766
+351     1610612751
+475     1610612756
+530     1610612737
+550     1610612740
+692     1610612762
+704     1610612759
+820     1610612754
+991     1610612747
+1059    1610612758
+1270    1610612743
+1285    1610612755
+1301    1610612739
+1494    1610612748
+1677    1610612752
+2205    1610612746
+2296    1610612745
+2517    1610612753
+3021    1610612761
+Name: team_id, dtype: int64
+Found 30 teams to process for 2027.
+Finished loading shot data for 2027.
+--- Adding Defender Stats ---
+Filtered LEBRON stats for year 2027. Found 0 records.
+Successfully merged defender stats (and score_margin) for the year.
+--- Adding Shooter Stats ---
+Successfully merged shooter stats for 2027.
+--- Loading and Merging Assist Data for 2027 ---
+Loaded 4346 assist records for 2027.
+Warning: Could not load assist data from https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/assists/2027ps/ast.csv. Error: HTTP Error 404: Not Found
+Successfully merged ASSIST_ID column. Found 4345 assists.
+--- Adding Defender Stats ---
+Filtered LEBRON stats for year 2027. Found 0 records.
+Successfully merged defender stats (and score_margin) for the year.
+--- Adding Shooter Stats ---
+Successfully merged shooter stats for 2027.
+--- Loading and Merging Assist Data for 2027 ---
+Loaded 4346 assist records for 2027.
+Warning: Could not load assist data from https://raw.githubusercontent.com/gabriel1200/shot_data/refs/heads/master/assists/2027ps/ast.csv. Error: HTTP Error 404: Not Found
+Successfully merged ASSIST_ID column. Found 4345 assists.
+
+--- Coverage Stats for 2027 ---
+For 2027, 99.04% of shots have logged defenders.
+data
+int64
+int64
+Int64
+int64
+/home/gaber/basketball/contract/matchups/organize2.py:561: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  opp_info['OPP_ID']= opp_info['opp_team'].map(team_map)
+        GAME_ID     TEAM_ID
+0      29600012  1610612756
+1      29600012  1610612747
+2      29600007  1610612754
+3      29600004  1610612753
+4      29600013  1610612746
+...         ...         ...
+76143  22600147  1610612757
+76144  22600152  1610612759
+76145  22600153  1610612745
+76146  22600152  1610612750
+76147  22600148  1610612766
+
+[76148 rows x 2 columns]
+        GAME_ID     TEAM_ID
+0      22600016  1610612741
+1      22600016  1610612741
+2      22600016  1610612741
+3      22600016  1610612741
+4      22600016  1610612741
+...         ...         ...
+15581  22600136  1610612761
+15582  22600136  1610612761
+15583  22600136  1610612761
+15584  22600136  1610612761
+15585  22600136  1610612761
+
+[15586 rows x 2 columns]
+15586
+15586
+--- Saving Data by Team/Year ---
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+Finished saving data by team for the year.
+data
+int64
+int64
+Int64
+int64
+/home/gaber/basketball/contract/matchups/organize2.py:561: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  opp_info['OPP_ID']= opp_info['opp_team'].map(team_map)
+        GAME_ID     TEAM_ID
+0      29600012  1610612756
+1      29600012  1610612747
+2      29600007  1610612754
+3      29600004  1610612753
+4      29600013  1610612746
+...         ...         ...
+76143  22600147  1610612757
+76144  22600152  1610612759
+76145  22600153  1610612745
+76146  22600152  1610612750
+76147  22600148  1610612766
+
+[76148 rows x 2 columns]
+        GAME_ID     TEAM_ID
+0      22600088  1610612741
+1      22600088  1610612741
+2      22600088  1610612741
+3      22600088  1610612741
+4      22600088  1610612741
+...         ...         ...
+15581  22600019  1610612761
+15582  22600019  1610612761
+15583  22600019  1610612761
+15584  22600019  1610612761
+15585  22600019  1610612761
+
+[15586 rows x 2 columns]
+15586
+15586
+--- Saving Data by Team/Year ---
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+/home/gaber/basketball/contract/matchups/organize2.py:581: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  team_year_data.sort_values(by=['GAME_DATE','GAME_ID','GAME_EVENT_ID'],inplace=True)
+Finished saving data by team for the year.
+--- Saving Data by Defender/Year ---
+Found 426 unique defender IDs to process for the year.
+Finished saving data by defender for the year.
+--- Saving Data by Defender/Year ---
+Found 428 unique shooter IDs to process for the year.
+Finished saving data by defender for the year.
+--- Successfully completed processing for year 2027. ---
+
+
+PIPELINE EXECUTION COMPLETE FOR ALL YEARS.
+BACKFILL_DONE
