@@ -9,6 +9,8 @@ import time
 import os
 from datetime import datetime
 import sys
+sys.path.insert(0, os.path.expanduser("~/basketball"))
+from nba_headers import NBA_HEADERS  # shared stats.nba.com headers; refresh there when requests hang
 import json
 import asyncio
 import aiohttp
@@ -32,26 +34,10 @@ class NBAScraper:
         self.session = None
         self.lock = threading.Lock()
         
-        # Headers for requests
-        headers = {
-            "accept": "/",
-            "accept-encoding": "gzip, deflate, br, zstd",
-            "accept-language": "en-US,en;q=0.9",
-            "cache-control": "no-cache",
-            "dnt": "1",
-            "origin": "https://www.nba.com/",
-            "pragma": "no-cache",
-            "priority": "u=1, i",
-            "referer": "https://www.nba.com/",
-            "sec-ch-ua": '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": '"Windows"',
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-site",
-            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
-        }
-        self.headers=headers
+        # Shared stats.nba.com headers (~/basketball/nba_headers.py; all_scrapes checks them first).
+        # 2026-11-09: the Chrome-147 set hardcoded here started getting silent read timeouts on
+        # videodetailsasset while the shared set answered in ~1 s. Refresh headers there, not here.
+        self.headers = dict(NBA_HEADERS)
 
     def load_scrape_log(self, log_file="scrape_log.json"):
         """Load the scrape log that tracks all attempted scrapes"""
